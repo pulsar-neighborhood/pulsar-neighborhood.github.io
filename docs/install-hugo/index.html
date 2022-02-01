@@ -1,23 +1,13 @@
 <!doctype html><html lang=en>
 <head>
-<meta name=generator content="Hugo 0.92.1">
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="ie=edge">
-<title>Hugo Whisper Theme</title>
+<title>Install Hugo - Hugo Whisper Theme</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Hugo Whisper is a documentation theme built with Hugo.">
-<meta property="og:title" content="Hugo Whisper Theme">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hugo-whisper.netlify.app">
-<meta property="og:image" content="https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png">
-<meta property="og:description" content="Hugo Whisper is a documentation theme built with Hugo.">
-<meta name=twitter:card content="summary">
-<meta name=twitter:site content="@zerostaticio">
-<meta name=twitter:creator content="@zerostaticio">
 <link rel=icon href=/favicon.png>
 <link rel=stylesheet href=/css/style.min.6aa5eecd4ca7c47fb2ca9b0775a7bd787e3e64a2eadf0fef8c9f924498f49127.css>
 </head>
-<body class="page page-home">
+<body class="page page-default-single">
 <div id=main-menu-mobile class=main-menu-mobile>
 <ul>
 <li class=menu-item-home>
@@ -62,27 +52,40 @@
 </button>
 </div>
 </div>
-<div class=strip>
-<div class="container pt-4 pb-16">
+<div class="container pt-2 pt-md-6 pb-3 pb-md-6">
 <div class=row>
-<div class=col-12>
-<h1 class=title>Hugo Whisper Docs</h1>
+<div class="col-12 col-md-3 mb-3">
+<div class=sidebar>
+<div class=docs-menu>
+<h4>Docs</h4>
+<ul>
+<li class=active>
+<a href=/docs/install-hugo/>Install Hugo</a>
+</li>
+<li>
+<a href=/docs/install-theme/>Install Theme</a>
+</li>
+<li>
+<a href=/docs/configure/>Configuration</a>
+</li>
+<li>
+<a href=/docs/specimen/>Specimen</a>
+</li>
+<li>
+<a href=/docs/example/>Hugo Whisper</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-9">
+<h1 class=title>Install Hugo</h1>
 <div class=content>
-<p>Whisper is a documentation theme built with Hugo. The design and functionality is intentionally minimal.</p>
-</div>
-<a class="button button-primary mb-2" href=/docs>
-Read The Docs
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class=strip>
-<div class="container pt-4 pb-4">
-<div class="row justify-content-center">
-<div class="col-12 col-md-10">
-<div class=terminal>
-<img src=/images/terminal.gif>
+<p>To use this theme you will need to have Hugo installed. If you don&rsquo;t already have Hugo installed please follow the official <a href=https://gohugo.io/getting-started/installing/>installation guide</a></p>
+<h3 id=check-hugo-version>Check Hugo Version</h3>
+<p>This theme uses <a href=https://gohugo.io/hugo-pipes/scss-sass/>Hugo Pipes</a> to compile SCSS and minify assets. Please make sure you have the <code>Hugo Extended</code> version installed. If you are not using the extended version this theme will not not compile.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>hugo version
+</code></pre></div>
 </div>
 </div>
 </div>
