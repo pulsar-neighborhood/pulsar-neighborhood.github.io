@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://pulsar-neighborhood.github.io"
 languageCode = "en-us"
 title = "Hugo Whisper Theme"
 themesDir = "themes"
