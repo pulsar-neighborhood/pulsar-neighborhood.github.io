@@ -1,7 +1,7 @@
 ---
 title: "Second Guide"
 date: 2022-02-04T08:39:19-05:00
-draft: true
+draft: false
 layout: guide
 categories:
     - get-started

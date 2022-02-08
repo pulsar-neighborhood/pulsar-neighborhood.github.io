@@ -1,7 +1,7 @@
 ---
 title: "Second Article"
 date: 2022-02-04T08:38:50-05:00
-draft: true
+draft: false
 layout: article
 categories: 
     #- get-started
