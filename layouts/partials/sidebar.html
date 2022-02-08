@@ -1,6 +1,9 @@
 {{$currentNode := .}}
-
-<div class="spotlight">
+{{ $githubSvg := resources.Get "svg/github-brands.svg" }}
+{{ $linkedinSvg := resources.Get "svg/linkedin-in-brands.svg" }}
+{{ $twitterSvg := resources.Get "svg/twitter-brands.svg" }}
+{{ $youtubeSvg := resources.Get "svg/youtube-brands.svg" }}
+<div class="spotlight mb-2">
   <div class="row">
     <div class="col-12">
       <div class="row">
@@ -8,17 +11,26 @@
           <h4>Pulsar User Spotlight</h4>
         </div>
       </div>
-      {{ range where site.RegularPages "layout" "in" "spotlight" }}
+      {{ range where site.RegularPages "Layout" "spotlight" }}
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 text-center">
             {{if .Params.img}}
-            <img src="{{.Params.img}}" alt="" />
+              <a href="{{ .RelPermalink }}"><img src="{{.Params.img}}" alt="" class="img-fluid border rounded-circle" style="max-width:80%" /></a>
             {{end}}
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-            {{.Params.short }}
+            {{.Params.fullName }}
+            <img src="{{ $githubSvg.RelPermalink }}" alt="" class="img-fluid" style="max-height:20px;">
+            <img src="{{ $linkedinSvg.RelPermalink }}" alt="" class="img-fluid" style="max-height:20px;">
+            <img src="{{ $twitterSvg.RelPermalink }}" alt="" class="img-fluid" style="max-height:20px;">
+            <img src="{{ $youtubeSvg.RelPermalink }}" alt="" class="img-fluid" style="max-height:20px;">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-muted">
+            {{.Params.summary }}
           </div>
         </div>
       {{ end }}
