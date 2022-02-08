@@ -1,0 +1,42 @@
+baseURL: /
+languageCode: en-us
+title: Pulsar Neighborhood
+noindex: true
+
+pygmentsCodeFences: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsUseClasses: true
+
+disqusShortname: pulsar-neighborhood
+
+outputs:
+  home:
+    - HTML
+    - JSON
+  page:
+    - HTML
+  search:
+    - HTML
+    - JSON
+  section:
+    - HTML
+
+markup:
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: true
+    tabWidth: 2
+
+enableEmoji: true
+
+taxonomies:
+  category: categories
+  tag: tags
+  

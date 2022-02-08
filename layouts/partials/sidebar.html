@@ -1,0 +1,57 @@
+{{$currentNode := .}}
+
+<div class="spotlight">
+  <div class="row">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-12">
+          <h4>Pulsar User Spotlight</h4>
+        </div>
+      </div>
+      {{ range where site.RegularPages "layout" "in" "spotlight" }}
+        <div class="row">
+          <div class="col-12">
+            {{if .Params.img}}
+            <img src="{{.Params.img}}" alt="" />
+            {{end}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            {{.Params.short }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+<div class="filters-menu">
+  <div class="row">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-12">
+          <h4>Level</h4>
+          <ul>
+            <li><input class="form-check-input" type="checkbox" value="" id="100"  onclick="toggleFilter(filterOptions.levelFilters, this.id)"><label class="form-check-label" for="100" onchange="">Beginner (100)</label></li>
+            <li><input class="form-check-input" type="checkbox" value="" id="200"  onclick="toggleFilter(filterOptions.levelFilters, this.id)"><label class="form-check-label" for="200">Intermediate (200)</label></li>
+            <li><input class="form-check-input" type="checkbox" value="" id="300"  onclick="toggleFilter(filterOptions.levelFilters, this.id)"><label class="form-check-label" for="300">Advanced (300)</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h4>Category</h4>
+          <ul>
+            {{ range $.Site.Taxonomies.categories.ByCount }}
+              {{ $foramttedTerm := .Term | replaceRE "[.]" "_" | urlize}}
+              <li>
+                <input class="form-check-input" type="checkbox" value="" id="{{ $foramttedTerm }}"  onclick="toggleFilter(filterOptions.categoryFilters, this.id)">
+                  <label class="form-check-label" for="{{ $foramttedTerm }}">{{.Term | humanize | title }} [{{len .Pages}}]</label>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

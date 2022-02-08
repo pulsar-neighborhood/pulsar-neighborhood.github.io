@@ -1,0 +1,10 @@
+
+{{ define "main"}}
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <article>
+    {{ .Content }}
+  </article>
+  {{ template "_internal/disqus.html" . }}
+{{ end }}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_description }}" />
+  <meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" />
+  <meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
+  <meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
+  <meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+  <meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
+  <meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
+  <meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
+  <meta name="twitter:creator" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_creator }}" />
+  <link rel="icon" href="{{ "favicon.png" | absURL}}">
+
+  {{ if .Site.Params.noindex }}
+    <meta name="robots" content="noindex" /> 
+  {{ end }}
+
+  {{ if .Site.IsServer }}
+  {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
+  <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+  {{ else }}
+  {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" false) }}
+  <link rel="stylesheet" href="{{ ($style | fingerprint).RelPermalink }}">
+  {{ end }}
+
+  {{ block "header_css" . }}{{ end }}
+
+</head>
+{{ $showToc := and (.Params.showtoc | default true) (.Page.TableOfContents) }}
+<body class='page'>
+  {{ partial "main-menu-mobile.html" . }}
+  <div class="wrapper">
+    {{ partial "header.html" . }}
+
+    <div class="container pt-2 pb-3">
+      <div class="row">
+        <div class="col-12 col-md-2">
+          <div class="sidebar">
+            {{ partial "sidebar.html" . }}
+          </div>
+        </div>
+        {{ if $showToc }}
+          <div class="col-12 col-md-8">
+        {{ else }}
+        <div class="col-12 col-md-10">
+        {{ end }}
+          {{ block "main" . }}
+          {{ end }}
+        </div>
+
+        {{ if $showToc }}
+        <div class="col-12 col-md-2 bg-light">
+          <nav class="navbar navbar-light bg-light">
+            <div><h4>In this article</h4></div>
+            <div>{{ .TableOfContents | replaceRE "<li>" "<li class='pb-1 text-muted'>" |  safeHTML }}</div>
+          </nav>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  
+  {{ partial "footer.html" . }}
+
+  {{ block "footer_js" . }}
+  {{ end }}
+
+  {{ $scripts := resources.Get "js/scripts.js" }}
+  {{ $scripts := resources.Get "js/filter.js" }}
+
+  {{ if .Site.IsServer }}
+  <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
+  {{ else }}
+  <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
+  {{ end }}
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  
+  {{ partial "google-analytics.html" . }}
+
+</body>
+
+</html>

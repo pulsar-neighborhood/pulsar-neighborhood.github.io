@@ -1,0 +1,25 @@
+{{ define "main"}}
+<div class="strip">
+    <div class="container pt-0 pb-16">
+      <div class="row">
+        <div class="col-12">
+          <div class="content">
+            <main>
+                <article>
+                    <header>
+                        <h1>{{ .Title }}</h1>
+                    </header>
+                    {{ .Content }}
+                </article>
+                <aside>
+                    {{ .TableOfContents }}
+                </aside>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+{{ template "_internal/disqus.html" . }}
