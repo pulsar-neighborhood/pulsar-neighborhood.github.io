@@ -8,4 +8,19 @@ assignees: ''
 
 ---
 
+## Title
 
+## Search categories
+- one
+- two
+- three
+
+## Tags
+- one
+- two
+- three
+
+## Level
+100|200|300
+
+## Content
