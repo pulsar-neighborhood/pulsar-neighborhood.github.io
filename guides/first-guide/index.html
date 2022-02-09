@@ -1,4 +1,232 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>First Guide - Pulsar Neighborhood</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content>
+<meta property="og:title" content>
+<meta property="og:type" content>
+<meta property="og:url" content>
+<meta property="og:image" content>
+<meta property="og:description" content>
+<meta name=twitter:card content>
+<meta name=twitter:site content>
+<meta name=twitter:creator content>
+<link rel=icon href=https://pulsar-neighborhood.com/favicon.png>
+<link rel=stylesheet href=/css/style.bdad22d924ce7c4a1d4e6df975137b690284925065f097066102dd649b771a55.css>
+</head>
+<body class="page bg-secondary">
+<div id=main-menu-mobile class=main-menu-mobile>
+<ul>
+</ul>
+</div>
+<div class=wrapper>
+<div class="header sticky-top bg-secondary">
+<div class=container>
+<div class=logo>
+<a href=https://pulsar-neighborhood.com><img src=/png/blue-logotype.png class=img-fluid></a>
+</div>
+<div class=logo-mobile>
+<a href=https://pulsar-neighborhood.com><img src=/png/blue-logotype.png class=img-fluid></a>
+</div>
+<div id=main-menu class=main-menu>
+<ul>
+<li class=menu-item-about><a href=https://pulsar.apache.org/ target=_blank><span>About Pulsar</span></a></li>
+<li class=menu-item-docs><a href=https://pulsar.apache.org/docs/en/standalone/ target=_blank><span></span>Documentation</span></a></li>
+<li class=menu-item-news><a href=https://pulsar.apache.org/blog/ target=_blank><span></span>Project News</span></a></li>
+</ul>
+</div>
+<button id=toggle-main-menu-mobile class="hamburger hamburger--slider" type=button>
+<span class=hamburger-box>
+<span class=hamburger-inner></span>
+</span>
+</button>
+</div>
+</div>
+<div class="container pt-2 pb-3">
+<div class=row>
+<div class="col-0 col-md-2">
+<div class=sidebar>
+<div class="spotlight mb-2 border border-primary rounded">
+<div class="row bg-primary no-gutters p-1">
+<div class="col-12 text-secondary">&nbsp;Community Spotlight</div>
+</div>
+<div class=p-1>
+<div class=row>
+<div class="col-12 text-center">
+<a href=/spotlight/><img src=https://pulsar-neighborhood.github.io/images/spotlight/David.png alt class=img-fluid style=max-width:80%></a>
+</div>
+</div>
+<div class=row>
+<div class="col-12 text-center p-1">David Dieruf</div>
+</div>
+<div class=row>
+<div class="col-12 text-center">
+<a href=https://github.com/ddieruf target=_blank><img src=/svg/github-brands.svg title="David Dieruf on GitHub" class=img-fluid style=max-height:20px></a>
+<a href=https://twitter.com/dierufdavid target=_blank><img src=/svg/twitter-brands.svg title="David Dieruf on Twitter" class=img-fluid style=max-height:20px></a>
+<a href=https://www.youtube.com/channel/UCMg2uPix5ZKO4Vp52k5a6ZQ target=_blank><img src=/svg/youtube-brands.svg title="David Dieruf on YouTube" class=img-fluid style=max-height:20px></a>
+<a href=https://linkedin.com/in/ddieruf target=_blank><img src=/svg/linkedin-in-brands.svg title="David Dieruf on LinkedIn" class=img-fluid style=max-height:20px></a>
+<a href=https://www.twitch.tv/daviddieruf target=_blank><img src=/svg/twitch-brands.svg title="David Dieruf on Twitch" class=img-fluid style=max-height:20px></a>
+<a href=david@dierufventures.com target=_blank><img src=/svg/envelope-solid.svg title="Email David Dieruf" class=img-fluid style=max-height:20px></a>
+<a href=https://dieruf.net target=_blank><img src=/svg/address-card-solid.svg title="David Dieruf's site" class=img-fluid style=max-height:20px></a>
+</div>
+</div>
+</div>
+</div>
+<div class="spotlight mb-2 border border-primary rounded">
+<div class="row bg-primary no-gutters">
+<div class="col-12 text-secondary p-1">&nbsp;Find Articles and Guides</div>
+</div>
+<div class=p-1>
+<div class="row no-gutters">
+<div class="col-12 mb-1">
+<h4>Level</h4>
+<ul>
+<li><input class=form-check-input type=checkbox id=100 onclick=toggleFilter(filterOptions.levelFilters,this.id)><label class=form-check-label for=100>&nbsp;Beginner (100)</label></li>
+<li><input class=form-check-input type=checkbox id=200 onclick=toggleFilter(filterOptions.levelFilters,this.id)><label class=form-check-label for=200>&nbsp;Intermediate (200)</label></li>
+<li><input class=form-check-input type=checkbox id=300 onclick=toggleFilter(filterOptions.levelFilters,this.id)><label class=form-check-label for=300>&nbsp;Advanced (300)</label></li>
+</ul>
+</div>
+<div class="row no-gutters">
+<div class=col-12>
+<h4>Category</h4>
+<ul>
+<li>
+<input class=form-check-input type=checkbox id=get-started onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=get-started>&nbsp;Get Started [2]</label>
+</li>
+<li>
+<input class=form-check-input type=checkbox id=pulsar-architectures onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=pulsar-architectures>&nbsp;Pulsar Architectures [2]</label>
+</li>
+<li>
+<input class=form-check-input type=checkbox id=managed-pulsar onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=managed-pulsar>&nbsp;Managed Pulsar [1]</label>
+</li>
+<li>
+<input class=form-check-input type=checkbox id=use-cases onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=use-cases>&nbsp;Use Cases [1]</label>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-8">
+<header>
+<h1>First Guide</h1>
+</header>
+<article>
+<p>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
+de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
+crimen habet Priamum nec.</p>
+<nav>
+<div class="nav nav-tabs" id=nav-tab role=tablist>
+<a class="nav-item nav-link active" id=nav-febdca data-toggle=tab href=#febdca role=tab aria-controls=nav-home aria-selected=true>C#</a>
+<a class="nav-item nav-link" id=nav-bfacde data-toggle=tab href=#bfacde role=tab aria-controls=nav-home aria-selected=true>Java</a>
+<a class="nav-item nav-link" id=nav-dcefba data-toggle=tab href=#dcefba role=tab aria-controls=nav-home aria-selected=true>Go</a>
+<a class="nav-item nav-link" id=nav-febdac data-toggle=tab href=#febdac role=tab aria-controls=nav-home aria-selected=true>Python</a>
+</div>
+</nav>
+<div class=tab-content id=nav-tab-content>
+<div class="tab-pane fade show active" id=febdca role=tabpanel aria-labelledby=nav-1>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt id=1><a style=outline:none;text-decoration:none;color:inherit href=#1>1</a>
+</span><span class=lnt id=2><a style=outline:none;text-decoration:none;color:inherit href=#2>2</a>
+</span><span class=lnt id=3><a style=outline:none;text-decoration:none;color:inherit href=#3>3</a>
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-csharp data-lang=csharp><span class=k>public</span> <span class=k>void</span> <span class=n>DoSomehting</span><span class=p>(){</span>
+    <span class=k>return</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade show" id=bfacde role=tabpanel aria-labelledby=nav-1>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt id=1><a style=outline:none;text-decoration:none;color:inherit href=#1>1</a>
+</span><span class=lnt id=2><a style=outline:none;text-decoration:none;color:inherit href=#2>2</a>
+</span><span class=lnt id=3><a style=outline:none;text-decoration:none;color:inherit href=#3>3</a>
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=kd>public</span> <span class=kt>void</span> <span class=nf>DoSomehting</span><span class=o>(){</span>
+    <span class=k>return</span><span class=o>;</span>
+<span class=o>}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade show" id=dcefba role=tabpanel aria-labelledby=nav-1>
+<strong>Go Content</strong>
+</div>
+<div class="tab-pane fade show" id=febdac role=tabpanel aria-labelledby=nav-1>
+<strong>Python Content</strong>
+</div>
+</div>
+</article>
 <div id=disqus_thread></div>
 <script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//pulsar-neighborhood.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
 <noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
 <a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+</div>
+<div class="col-0 col-md-2 bg-light">
+<nav class="navbar navbar-light bg-light">
+<div class=row>
+<div class=col-12>
+<h4>In this article</h4>
+</div>
+<div class=col-12><nav id=TableOfContents></nav> </div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class=sub-footer>
+<div class="container col-12 col-md-8 offset-md-4">
+<div class="row text-center">
+<div class=col-12>
+<a href=https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/tree/main/content/guides/first-guide.md target=_blank>Improve this page</a>
+</div>
+</div>
+<div class="row mb-1">
+<div class=col-2>Pulsar Neighborhood</div>
+<div class=col><a href=https://github.com/pulsar-neighborhood target=_blank>GitHub</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href=https://twitter.com/pulsar_neighbor target=_blank>Twitter</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href=https://www.youtube.com/c/ApachePulsarNeighborhood target=_blank>YouTube</a>
+</div>
+</div>
+<div class="row mb-1">
+<div class=col-2>Apache Pulsar</div>
+<div class=col><a href=https://pulsar.apache.org target=_blank>Project</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href=https://github.com/apache-pulsar target=_blank>Github</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href=https://twitter.com/Apache_Pulsar target=_blank>Twitter</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href=https://twitter.com/Apache_Pulsar target=_blank>Stackoverflow</a>
+</div>
+</div>
+</div>
+<div class="row text-center">
+<div class="col-12 text-center">
+<div>Privacy Policy&nbsp;&nbsp;|&nbsp;&nbsp;Terms & Condition</div>
+</div>
+</div>
+</div>
+<script type=text/javascript src=/js/filter.min.61f99ccebbf7fdff6e350a3a1f3c28981e50d6a68dc16e4a413d3afd2b187395.js></script>
+<script src=https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js integrity=sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js integrity=sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF crossorigin=anonymous></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8S9SD43SBH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-8S9SD43SBH')</script>
+</body>
+</html>

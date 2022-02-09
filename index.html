@@ -17,19 +17,19 @@
 <link rel=icon href=https://pulsar-neighborhood.com/favicon.png>
 <link rel=stylesheet href=/css/style.bdad22d924ce7c4a1d4e6df975137b690284925065f097066102dd649b771a55.css>
 </head>
-<body class=page>
+<body class="page bg-secondary">
 <div id=main-menu-mobile class=main-menu-mobile>
 <ul>
 </ul>
 </div>
 <div class=wrapper>
-<div class="header sticky-top">
+<div class="header sticky-top bg-secondary">
 <div class=container>
 <div class=logo>
-<a href=https://pulsar-neighborhood.com>Pulsar<br>Neighborhood</a>
+<a href=https://pulsar-neighborhood.com><img src=/png/blue-logotype.png class=img-fluid></a>
 </div>
 <div class=logo-mobile>
-<a href=https://pulsar-neighborhood.com>Pulsar<br>Neighborhood</a>
+<a href=https://pulsar-neighborhood.com><img src=/png/blue-logotype.png class=img-fluid></a>
 </div>
 <div id=main-menu class=main-menu>
 <ul>
@@ -47,70 +47,67 @@
 </div>
 <div class="container pt-2 pb-3">
 <div class=row>
-<div class="col-12 col-md-2">
+<div class="col-0 col-md-2">
 <div class=sidebar>
-<div class="spotlight mb-2">
-<div class=row>
-<div class=col-12>
-<div class=row>
-<div class=col-12>
-<h4>Pulsar User Spotlight</h4>
+<div class="spotlight mb-2 border border-primary rounded">
+<div class="row bg-primary no-gutters p-1">
+<div class="col-12 text-secondary">&nbsp;Community Spotlight</div>
 </div>
+<div class=p-1>
+<div class=row>
+<div class="col-12 text-center">
+<a href=/spotlight/><img src=https://pulsar-neighborhood.github.io/images/spotlight/David.png alt class=img-fluid style=max-width:80%></a>
+</div>
+</div>
+<div class=row>
+<div class="col-12 text-center p-1">David Dieruf</div>
 </div>
 <div class=row>
 <div class="col-12 text-center">
-<a href=/spotlight/><img src=../../images/spotlight/David.png alt class="img-fluid border rounded-circle" style=max-width:80%></a>
-</div>
-</div>
-<div class=row>
-<div class=col-12>
-David Dieruf
-<img src=/svg/github-brands.svg alt class=img-fluid style=max-height:20px>
-<img src=/svg/linkedin-in-brands.svg alt class=img-fluid style=max-height:20px>
-<img src=/svg/twitter-brands.svg alt class=img-fluid style=max-height:20px>
-<img src=/svg/youtube-brands.svg alt class=img-fluid style=max-height:20px>
-</div>
-</div>
-<div class=row>
-<div class="col-12 text-muted">
-Putting together Pulsar and C#!
+<a href=https://github.com/ddieruf target=_blank><img src=/svg/github-brands.svg title="David Dieruf on GitHub" class=img-fluid style=max-height:20px></a>
+<a href=https://twitter.com/dierufdavid target=_blank><img src=/svg/twitter-brands.svg title="David Dieruf on Twitter" class=img-fluid style=max-height:20px></a>
+<a href=https://www.youtube.com/channel/UCMg2uPix5ZKO4Vp52k5a6ZQ target=_blank><img src=/svg/youtube-brands.svg title="David Dieruf on YouTube" class=img-fluid style=max-height:20px></a>
+<a href=https://linkedin.com/in/ddieruf target=_blank><img src=/svg/linkedin-in-brands.svg title="David Dieruf on LinkedIn" class=img-fluid style=max-height:20px></a>
+<a href=https://www.twitch.tv/daviddieruf target=_blank><img src=/svg/twitch-brands.svg title="David Dieruf on Twitch" class=img-fluid style=max-height:20px></a>
+<a href=david@dierufventures.com target=_blank><img src=/svg/envelope-solid.svg title="Email David Dieruf" class=img-fluid style=max-height:20px></a>
+<a href=https://dieruf.net target=_blank><img src=/svg/address-card-solid.svg title="David Dieruf's site" class=img-fluid style=max-height:20px></a>
 </div>
 </div>
 </div>
 </div>
+<div class="spotlight mb-2 border border-primary rounded">
+<div class="row bg-primary no-gutters">
+<div class="col-12 text-secondary p-1">&nbsp;Find Articles and Guides</div>
 </div>
-<div class=filters-menu>
-<div class=row>
-<div class=col-12>
-<div class=row>
-<div class=col-12>
+<div class=p-1>
+<div class="row no-gutters">
+<div class="col-12 mb-1">
 <h4>Level</h4>
 <ul>
-<li><input class=form-check-input type=checkbox id=100 onclick=toggleFilter(filterOptions.levelFilters,this.id)><label class=form-check-label for=100>Beginner (100)</label></li>
-<li><input class=form-check-input type=checkbox id=200 onclick=toggleFilter(filterOptions.levelFilters,this.id)><label class=form-check-label for=200>Intermediate (200)</label></li>
-<li><input class=form-check-input type=checkbox id=300 onclick=toggleFilter(filterOptions.levelFilters,this.id)><label class=form-check-label for=300>Advanced (300)</label></li>
+<li><input class=form-check-input type=checkbox id=100 onclick=toggleFilter(filterOptions.levelFilters,this.id)><label class=form-check-label for=100>&nbsp;Beginner (100)</label></li>
+<li><input class=form-check-input type=checkbox id=200 onclick=toggleFilter(filterOptions.levelFilters,this.id)><label class=form-check-label for=200>&nbsp;Intermediate (200)</label></li>
+<li><input class=form-check-input type=checkbox id=300 onclick=toggleFilter(filterOptions.levelFilters,this.id)><label class=form-check-label for=300>&nbsp;Advanced (300)</label></li>
 </ul>
 </div>
-</div>
-<div class=row>
+<div class="row no-gutters">
 <div class=col-12>
 <h4>Category</h4>
 <ul>
 <li>
 <input class=form-check-input type=checkbox id=get-started onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=get-started>Get Started [2]</label>
+<label class=form-check-label for=get-started>&nbsp;Get Started [2]</label>
 </li>
 <li>
 <input class=form-check-input type=checkbox id=pulsar-architectures onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=pulsar-architectures>Pulsar Architectures [2]</label>
+<label class=form-check-label for=pulsar-architectures>&nbsp;Pulsar Architectures [2]</label>
 </li>
 <li>
 <input class=form-check-input type=checkbox id=managed-pulsar onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=managed-pulsar>Managed Pulsar [1]</label>
+<label class=form-check-label for=managed-pulsar>&nbsp;Managed Pulsar [1]</label>
 </li>
 <li>
 <input class=form-check-input type=checkbox id=use-cases onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=use-cases>Use Cases [1]</label>
+<label class=form-check-label for=use-cases>&nbsp;Use Cases [1]</label>
 </li>
 </ul>
 </div>
@@ -126,31 +123,26 @@ Putting together Pulsar and C#!
 <div class=row>
 <div class=col-12>
 <div class=content>
-<main><h1 id=welcome-to-the-neighborhood->Welcome to the Neighborhood 👋</h1>
-<p>Pulsar neighborhood is dedicated to learning about the Pulsar Project. Whether you are just getting started, wanting to learn more, or on your way to production the Neighborhood is here to help.</p>
-<h2 id=latest-in-the-neighborhood>Latest in the Neighborhood</h2>
-<section class=section>
-<div>
-<div>
-<article class=pb-2>
-<div>
-<a class=text-decoration-none href=/articles/second-article/>Second Article</a>
+<main>
+<div class=mb-4>
+<h1>Welcome to the Neighborhood 👋</h1>
+Pulsar neighborhood is dedicated to learning about the Pulsar Project. Whether you are just getting
+started, wanting to learn more, or on your way to production the Neighborhood is here to help.
 </div>
-<div>this is the sumnmary of this article</div>
-</article>
-<article class=pb-2>
+<div class=mb-4>
+<h2>Latest in the Neighborhood</h2>
+<div class=m-1><span class="text-muted font-weight-light">Jan 2</span> <a class=text-decoration-none href=/articles/second-article/>Second Article</a></div>
+<div class=m-1><span class="text-muted font-weight-light">Jan 2</span> <a class=text-decoration-none href=/articles/first-article/>Happenings in the Apache Pulsar Neighborhood Feb. ‘22</a></div>
+</div>
 <div>
-<a class=text-decoration-none href=/articles/first-article/>Happenings in the Apache Pulsar Neighborhood Feb. ‘22</a>
+<h2>Latest from the Pulsar community</h2>
+<div class=m-1><span class="text-muted font-weight-light">Dec 2021</span> <a class=text-decoration-none href=https://pulsar.apache.org/blog/2021/12/14/Apache-Pulsar-2-7-4 target=_blank>What's New in
+Apache Pulsar 2.7.4</a></div>
+<div class=m-1><span class="text-muted font-weight-light">Dec 2021</span> <a class=text-decoration-none href=https://pulsar.apache.org/blog/2021/12/11/Log4j-CVE/ target=_blank>Log4j2 Zero Day
+vulnerability (CVE-2021-44228)</a></div>
+<div class=m-1><span class="text-muted font-weight-light">Sep 2021</span> <a class=text-decoration-none href=https://pulsar.apache.org/blog/2021/09/23/Apache-Pulsar-2-8-1/ target=_blank>Apache Pulsar
+2.8.1</a></div>
 </div>
-<div>For this issue, a new PMC member, 2 new committers, a call to help improve the quality of the code, a meetup in Italian, and a new and improved home page coming soon. Plus our normal features of a Stack Overflow question and some monthly community stats.</div>
-</article>
-</div>
-</div>
-</section>
-<h2 id=latest-from-the-pulsar-community>Latest from the Pulsar community</h2>
-<p>Dec 14, 2021 - <a href=https://pulsar.apache.org/blog/2021/12/14/Apache-Pulsar-2-7-4>What’s New in Apache Pulsar 2.7.4</a></p>
-<p>Dec 11, 2021 - <a href=https://pulsar.apache.org/blog/2021/12/11/Log4j-CVE/>Log4j2 Zero Day vulnerability (CVE-2021-44228)</a></p>
-<p>Sep 23, 2021 - <a href=https://pulsar.apache.org/blog/2021/09/23/Apache-Pulsar-2-8-1/>Apache Pulsar 2.8.1</a></p>
 </main>
 </div>
 </div>
@@ -162,37 +154,31 @@ Putting together Pulsar and C#!
 </div>
 </div>
 <div class=sub-footer>
-<div class=container>
+<div class="container col-12 col-md-8 offset-md-4">
+<div class="row mb-1">
+<div class=col-2>Pulsar Neighborhood</div>
+<div class=col><a href=https://github.com/pulsar-neighborhood target=_blank>GitHub</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href=https://twitter.com/pulsar_neighbor target=_blank>Twitter</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href=https://www.youtube.com/c/ApachePulsarNeighborhood target=_blank>YouTube</a>
+</div>
+</div>
+<div class="row mb-1">
+<div class=col-2>Apache Pulsar</div>
+<div class=col><a href=https://pulsar.apache.org target=_blank>Project</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href=https://github.com/apache-pulsar target=_blank>Github</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href=https://twitter.com/Apache_Pulsar target=_blank>Twitter</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href=https://twitter.com/Apache_Pulsar target=_blank>Stackoverflow</a>
+</div>
+</div>
+</div>
 <div class="row text-center">
-<div class="col-4 text-center">
-<div class="row no-gutter">
-<div class="col text-left">Neighborhood</div>
-<div class=col><a href=https://github.com/pulsar-neighborhood target=_blank>GitHub</a></div>
-<div>|</div>
-<div class=col><a href=https://twitter.com/pulsar_neighbor target=_blank>Twitter</a></div>
-<div>|</div>
-<div class=col><a href=https://www.youtube.com/c/ApachePulsarNeighborhood target=_blank>YouTube</a></div>
-</div>
-</div>
-</div>
-<div class="row mb-2 mt-1">
-<div class="col-4 text-center">
-<div class="row no-gutter">
-<div class="col text-left">Pulsar</div>
-<div class=col><a href=https://pulsar.apache.org target=_blank>Project</a></div>
-<div>|</div>
-<div class=col><a href=https://github.com/apache-pulsar target=_blank>Github</a></div>
-<div>|</div>
-<div class=col><a href=https://twitter.com/Apache_Pulsar target=_blank>Twitter</a></div>
-<div>|</div>
-<div class=col><a href=https://twitter.com/Apache_Pulsar target=_blank>Stackoverflow</a></div>
-</div>
-</div>
-</div>
-<div class="row text-left">
-<div class="col-12 text-left">
+<div class="col-12 text-center">
 <div>Privacy Policy&nbsp;&nbsp;|&nbsp;&nbsp;Terms & Condition</div>
-</div>
 </div>
 </div>
 </div>
