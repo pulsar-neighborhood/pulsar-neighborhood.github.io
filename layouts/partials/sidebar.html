@@ -24,33 +24,31 @@
     <div class="row">
       <div class="col-12 text-center p-1">{{.Params.fullName }}</div>
     </div>
-    <div class="row">
-      <div class="col-12 text-center">
+    <div class="row text-center no-gutters">
         {{if .Params.github}}
-          <a href="{{ .Params.github }}" target="_blank"><img src="{{ $githubSvg.RelPermalink }}" title="{{.Params.fullName }} on GitHub" class="img-fluid" style="max-height:20px;"></a>
+        <div class="col pr-1"><a href="{{ .Params.github }}" target="_blank"><img src="{{ $githubSvg.RelPermalink }}" title="{{.Params.fullName }} on GitHub" class="img-fluid"></a></div>
         {{end}}
         {{if .Params.twitter}}
-        <a href="{{ .Params.twitter }}" target="_blank"><img src="{{ $twitterSvg.RelPermalink }}" title="{{.Params.fullName }} on Twitter" class="img-fluid" style="max-height:20px;"></a>
+        <div class="col pr-1"><a href="{{ .Params.twitter }}" target="_blank"><img src="{{ $twitterSvg.RelPermalink }}" title="{{.Params.fullName }} on Twitter" class="img-fluid" style=""></a></div>
         {{end}}
         {{if .Params.facebook}}
-        <a href="{{ .Params.facebook }}" target="_blank"><img src="{{ $facebookSvg.RelPermalink }}" title="{{.Params.fullName }} on Facebook" class="img-fluid" style="max-height:20px;"></a>
+        <div class="col pr-1"><a href="{{ .Params.facebook }}" target="_blank"><img src="{{ $facebookSvg.RelPermalink }}" title="{{.Params.fullName }} on Facebook" class="img-fluid" style=""></a></div>
         {{end}}
         {{if .Params.youtube}}
-        <a href="{{ .Params.youtube }}" target="_blank"><img src="{{ $youtubeSvg.RelPermalink }}" title="{{.Params.fullName }} on YouTube" class="img-fluid" style="max-height:20px;"></a>
+        <div class="col pr-1"><a href="{{ .Params.youtube }}" target="_blank"><img src="{{ $youtubeSvg.RelPermalink }}" title="{{.Params.fullName }} on YouTube" class="img-fluid" style=""></a></div>
         {{end}}
         {{if .Params.linkedin}}
-        <a href="{{ .Params.linkedin }}" target="_blank"><img src="{{ $linkedinSvg.RelPermalink }}" title="{{.Params.fullName }} on LinkedIn" class="img-fluid" style="max-height:20px;"></a>
+        <div class="col pr-1"><a href="{{ .Params.linkedin }}" target="_blank"><img src="{{ $linkedinSvg.RelPermalink }}" title="{{.Params.fullName }} on LinkedIn" class="img-fluid" style=""></a></div>
         {{end}}
         {{if .Params.twitch}}
-        <a href="{{ .Params.twitch }}" target="_blank"><img src="{{ $twitchSvg.RelPermalink }}" title="{{.Params.fullName }} on Twitch" class="img-fluid" style="max-height:20px;"></a>
+        <div class="col pr-1"><a href="{{ .Params.twitch }}" target="_blank"><img src="{{ $twitchSvg.RelPermalink }}" title="{{.Params.fullName }} on Twitch" class="img-fluid" style=""></a></div>
         {{end}}
         {{if .Params.email}}
-        <a href="{{ .Params.email }}" target="_blank"><img src="{{ $emailSvg.RelPermalink }}" title="Email {{.Params.fullName }}" class="img-fluid" style="max-height:20px;"></a>
+        <div class="col pr-1"><a href="{{ .Params.email }}" target="_blank"><img src="{{ $emailSvg.RelPermalink }}" title="Email {{.Params.fullName }}" class="img-fluid" style=""></a></div>
         {{end}}
         {{if .Params.other}}
-        <a href="{{ .Params.other }}" target="_blank"><img src="{{ $otherSvg.RelPermalink }}" title="{{.Params.fullName }}'s site" class="img-fluid" style="max-height:20px;"></a>
+        <div class="col pr-1"><a href="{{ .Params.other }}" target="_blank"><img src="{{ $otherSvg.RelPermalink }}" title="{{.Params.fullName }}'s site" class="img-fluid" style=""></a></div>
         {{end}}
-      </div>
     </div>
   </div>
   {{ end }}
