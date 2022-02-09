@@ -8348,7 +8348,7 @@ p {
   @media (min-width: 576px) {
     .logo {
       display: block;
-      width: 70px; } }
+      width: 162px; } }
   .logo img {
     width: 100%;
     height: auto; }

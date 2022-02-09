@@ -1,17 +1,15 @@
+{{ $logoFull := resources.Get "png/blue-logotype.png" }}
+{{ $logoMobile := resources.Get "png/blue-logotype.png" }}
+
 <div class='header sticky-top'>
   <div class="container">
     <div class="logo">
-      <a href="{{ .Site.BaseURL }}">Pulsar<br />Neighborhood</a>
+      <a href="{{ .Site.BaseURL }}"><img src="{{ $logoFull.RelPermalink }}" class="img-fluid" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="{{ .Site.BaseURL }}">Pulsar<br />Neighborhood</a>
+      <a href="{{ .Site.BaseURL }}"><img src="{{ $logoMobile.RelPermalink }}" class="img-fluid"/></a>
     </div>
     {{ partial "main-menu.html" . }}
     {{ partial "hamburger.html" . }}
   </div>
 </div>
-
-<!-- <form action="/search" method="GET">
-  <input type="search" name="q" id="search-query" placeholder="Search....">
-  <button type="submit">Search</button>
-</form> -->
