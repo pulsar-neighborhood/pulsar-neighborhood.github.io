@@ -15,20 +15,31 @@
             <div class="mb-4">
               <h2>Latest in the Neighborhood</h2>
               {{ range first 6 $latestPages }}
-              <div class="m-1"><span class="text-muted font-weight-light">Jan 2</span> <a class="text-decoration-none"
-                  href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+              <div class="m-1">
+                <span class="text-muted font-weight-light">Jan 2</span>
+                <div class="badge badge-pill border border-muted">
+                  {{ .Params.layout }}</span>
+                </div>
+                <div class="pl-1 badge badge-pill  border border-muted">
+                  <span class="text-muted small">level </span>{{ .Params.level }}</span>
+                </div>
+                <a class="text-decoration-none" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </div>
               {{ end }}
             </div>
             <div class="">
               <h2>Latest from the Pulsar community</h2>
-              <div class="m-1"><span class="text-muted font-weight-light">Dec 2021</span> <a class="text-decoration-none"
-                  href="https://pulsar.apache.org/blog/2021/12/14/Apache-Pulsar-2-7-4" target="_blank">What's New in
+              <div class="m-1"><span class="text-muted font-weight-light">Dec 2021</span> <a
+                  class="text-decoration-none" href="https://pulsar.apache.org/blog/2021/12/14/Apache-Pulsar-2-7-4"
+                  target="_blank">What's New in
                   Apache Pulsar 2.7.4</a></div>
-              <div class="m-1"><span class="text-muted font-weight-light">Dec 2021</span> <a class="text-decoration-none"
-                  href="https://pulsar.apache.org/blog/2021/12/11/Log4j-CVE/" target="_blank">Log4j2 Zero Day
+              <div class="m-1"><span class="text-muted font-weight-light">Dec 2021</span> <a
+                  class="text-decoration-none" href="https://pulsar.apache.org/blog/2021/12/11/Log4j-CVE/"
+                  target="_blank">Log4j2 Zero Day
                   vulnerability (CVE-2021-44228)</a></div>
-              <div class="m-1"><span class="text-muted font-weight-light">Sep 2021</span> <a class="text-decoration-none"
-                  href="https://pulsar.apache.org/blog/2021/09/23/Apache-Pulsar-2-8-1/" target="_blank">Apache Pulsar
+              <div class="m-1"><span class="text-muted font-weight-light">Sep 2021</span> <a
+                  class="text-decoration-none" href="https://pulsar.apache.org/blog/2021/09/23/Apache-Pulsar-2-8-1/"
+                  target="_blank">Apache Pulsar
                   2.8.1</a></div>
             </div>
 

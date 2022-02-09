@@ -1,10 +1,12 @@
 
 {{ define "main"}}
-  <header>
-    <h1>{{ .Title }}</h1>
-  </header>
-  <article>
-    {{ .Content }}
-  </article>
-  {{ template "_internal/disqus.html" . }}
+  <div class="container">
+    <header class="mb-5">
+      <h1>{{ .Title }}</h1>
+    </header>
+    <article>
+      {{ .Content }}
+    </article>
+    {{ template "_internal/disqus.html" . }}
+  </div>
 {{ end }}

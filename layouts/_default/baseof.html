@@ -55,13 +55,13 @@
         </div>
 
         {{ if $showToc }}
-        <div class="col-0 col-md-2 bg-light">
-          <nav class="navbar navbar-light bg-light">
+        <div class="col-0 col-md-2">
+          <nav class="navbar navbar-light">
             <div class="row">
               <div class="col-12">
                 <h4>In this article</h4>
               </div>
-              <div class="col-12">{{ .TableOfContents | replaceRE "<li>" "<li class='pb-1 text-muted'>" |  safeHTML }}              </div>
+              <div class="col-12 border-left border-primary">{{ .TableOfContents }}              </div>
             </div>
           </nav>
         </div>
