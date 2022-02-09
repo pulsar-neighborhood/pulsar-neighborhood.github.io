@@ -1,6 +1,4 @@
 .sub-footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
   @include media-breakpoint-up(md) {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -8,7 +6,7 @@
   .sub-footer-inner {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     @include media-breakpoint-up(md) {
       flex-direction: row;
     }
