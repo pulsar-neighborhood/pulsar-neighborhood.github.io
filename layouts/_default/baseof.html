@@ -40,7 +40,7 @@
 
     <div class="container pt-2 pb-3">
       <div class="row">
-        <div class="col-12 col-md-2">
+        <div class="col-0 col-md-2">
           <div class="sidebar">
             {{ partial "sidebar.html" . }}
           </div>
@@ -55,10 +55,14 @@
         </div>
 
         {{ if $showToc }}
-        <div class="col-12 col-md-2 bg-light">
+        <div class="col-0 col-md-2 bg-light">
           <nav class="navbar navbar-light bg-light">
-            <div><h4>In this article</h4></div>
-            <div>{{ .TableOfContents | replaceRE "<li>" "<li class='pb-1 text-muted'>" |  safeHTML }}</div>
+            <div class="row">
+              <div class="col-12">
+                <h4>In this article</h4>
+              </div>
+              <div class="col-12">{{ .TableOfContents | replaceRE "<li>" "<li class='pb-1 text-muted'>" |  safeHTML }}              </div>
+            </div>
           </nav>
         </div>
         {{ end }}

@@ -6072,16 +6072,16 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } }
+      max-width: 100%; } }
   @media (min-width: 768px) {
     .container {
-      max-width: 720px; } }
+      max-width: 100%; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 100%; } }
   @media (min-width: 1300px) {
     .container {
-      max-width: 1400px; } }
+      max-width: 100%; } }
 .container-fluid {
   width: 100%;
   padding-right: 10px;

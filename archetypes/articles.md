@@ -4,6 +4,7 @@ date: {{ .Date }}
 draft: true
 weight: 100
 layout: article
+showtoc: true
 categories: 
     #- get-started
     #- use-cases
