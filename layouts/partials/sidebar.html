@@ -3,54 +3,73 @@
 {{ $linkedinSvg := resources.Get "svg/linkedin-in-brands.svg" }}
 {{ $twitterSvg := resources.Get "svg/twitter-brands.svg" }}
 {{ $youtubeSvg := resources.Get "svg/youtube-brands.svg" }}
-<div class="spotlight mb-2">
-  <div class="row">
-    <div class="col-12">
-      <div class="row">
-        <div class="col-12">
-          <h4>Pulsar User Spotlight</h4>
-        </div>
+{{ $emailSvg := resources.Get "svg/envelope-solid.svg" }}
+{{ $facebookSvg := resources.Get "svg/facebook-brands.svg" }}
+{{ $twitchSvg := resources.Get "svg/twitch-brands.svg" }}
+{{ $otherSvg := resources.Get "svg/address-card-solid.svg" }}
+
+<div class="spotlight mb-2 border border-primary rounded">
+  <div class="row bg-primary no-gutters p-1">
+    <div class="col-12 text-secondary">&nbsp;Community Spotlight</div>
+  </div>
+  {{ range where site.RegularPages "Layout" "spotlight" }}
+  <div class="p-1">
+    <div class="row">
+      <div class="col-12 text-center">
+        {{if .Params.imgUrl}}
+          <a href="{{ .RelPermalink }}"><img src="{{.Params.imgUrl}}" alt="" class="img-fluid " style="max-width:80%" /></a>
+        {{end}}
       </div>
-      {{ range where site.RegularPages "Layout" "spotlight" }}
-        <div class="row">
-          <div class="col-12 text-center">
-            {{if .Params.img}}
-              <a href="{{ .RelPermalink }}"><img src="{{.Params.img}}" alt="" class="img-fluid border rounded-circle" style="max-width:80%" /></a>
-            {{end}}
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            {{.Params.fullName }}
-            <img src="{{ $githubSvg.RelPermalink }}" alt="" class="img-fluid" style="max-height:20px;">
-            <img src="{{ $linkedinSvg.RelPermalink }}" alt="" class="img-fluid" style="max-height:20px;">
-            <img src="{{ $twitterSvg.RelPermalink }}" alt="" class="img-fluid" style="max-height:20px;">
-            <img src="{{ $youtubeSvg.RelPermalink }}" alt="" class="img-fluid" style="max-height:20px;">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 text-muted">
-            {{.Params.summary }}
-          </div>
-        </div>
-      {{ end }}
+    </div>
+    <div class="row">
+      <div class="col-12 text-center p-1">{{.Params.fullName }}</div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        {{if .Params.github}}
+          <a href="{{ .Params.github }}" target="_blank"><img src="{{ $githubSvg.RelPermalink }}" title="{{.Params.fullName }} on GitHub" class="img-fluid" style="max-height:20px;"></a>
+        {{end}}
+        {{if .Params.twitter}}
+        <a href="{{ .Params.twitter }}" target="_blank"><img src="{{ $twitterSvg.RelPermalink }}" title="{{.Params.fullName }} on Twitter" class="img-fluid" style="max-height:20px;"></a>
+        {{end}}
+        {{if .Params.facebook}}
+        <a href="{{ .Params.facebook }}" target="_blank"><img src="{{ $facebookSvg.RelPermalink }}" title="{{.Params.fullName }} on Facebook" class="img-fluid" style="max-height:20px;"></a>
+        {{end}}
+        {{if .Params.youtube}}
+        <a href="{{ .Params.youtube }}" target="_blank"><img src="{{ $youtubeSvg.RelPermalink }}" title="{{.Params.fullName }} on YouTube" class="img-fluid" style="max-height:20px;"></a>
+        {{end}}
+        {{if .Params.linkedin}}
+        <a href="{{ .Params.linkedin }}" target="_blank"><img src="{{ $linkedinSvg.RelPermalink }}" title="{{.Params.fullName }} on LinkedIn" class="img-fluid" style="max-height:20px;"></a>
+        {{end}}
+        {{if .Params.twitch}}
+        <a href="{{ .Params.twitch }}" target="_blank"><img src="{{ $twitchSvg.RelPermalink }}" title="{{.Params.fullName }} on Twitch" class="img-fluid" style="max-height:20px;"></a>
+        {{end}}
+        {{if .Params.email}}
+        <a href="{{ .Params.email }}" target="_blank"><img src="{{ $emailSvg.RelPermalink }}" title="Email {{.Params.fullName }}" class="img-fluid" style="max-height:20px;"></a>
+        {{end}}
+        {{if .Params.other}}
+        <a href="{{ .Params.other }}" target="_blank"><img src="{{ $otherSvg.RelPermalink }}" title="{{.Params.fullName }}'s site" class="img-fluid" style="max-height:20px;"></a>
+        {{end}}
+      </div>
     </div>
   </div>
+  {{ end }}
 </div>
-<div class="filters-menu">
-  <div class="row">
-    <div class="col-12">
-      <div class="row">
-        <div class="col-12">
-          <h4>Level</h4>
-          <ul>
-            <li><input class="form-check-input" type="checkbox" value="" id="100"  onclick="toggleFilter(filterOptions.levelFilters, this.id)"><label class="form-check-label" for="100" onchange="">Beginner (100)</label></li>
-            <li><input class="form-check-input" type="checkbox" value="" id="200"  onclick="toggleFilter(filterOptions.levelFilters, this.id)"><label class="form-check-label" for="200">Intermediate (200)</label></li>
-            <li><input class="form-check-input" type="checkbox" value="" id="300"  onclick="toggleFilter(filterOptions.levelFilters, this.id)"><label class="form-check-label" for="300">Advanced (300)</label></li>
-          </ul>
-        </div>
+<div class="spotlight mb-2 border border-primary rounded">
+  <div class="row bg-primary no-gutters">
+    <div class="col-12 text-secondary p-1">&nbsp;Find Articles and Guides</div>
+  </div>
+  <div class="p-1">
+    <div class="row no-gutters">
+      <div class="col-12 mb-1">
+        <h4>Level</h4>
+        <ul>
+          <li><input class="form-check-input" type="checkbox" value="" id="100"  onclick="toggleFilter(filterOptions.levelFilters, this.id)"><label class="form-check-label" for="100" onchange="">&nbsp;Beginner (100)</label></li>
+          <li><input class="form-check-input" type="checkbox" value="" id="200"  onclick="toggleFilter(filterOptions.levelFilters, this.id)"><label class="form-check-label" for="200">&nbsp;Intermediate (200)</label></li>
+          <li><input class="form-check-input" type="checkbox" value="" id="300"  onclick="toggleFilter(filterOptions.levelFilters, this.id)"><label class="form-check-label" for="300">&nbsp;Advanced (300)</label></li>
+        </ul>
       </div>
-      <div class="row">
+      <div class="row no-gutters">
         <div class="col-12">
           <h4>Category</h4>
           <ul>
@@ -58,7 +77,7 @@
               {{ $foramttedTerm := .Term | replaceRE "[.]" "_" | urlize}}
               <li>
                 <input class="form-check-input" type="checkbox" value="" id="{{ $foramttedTerm }}"  onclick="toggleFilter(filterOptions.categoryFilters, this.id)">
-                  <label class="form-check-label" for="{{ $foramttedTerm }}">{{.Term | humanize | title }} [{{len .Pages}}]</label>
+                  <label class="form-check-label" for="{{ $foramttedTerm }}">&nbsp;{{.Term | humanize | title }} [{{len .Pages}}]</label>
               </li>
             {{ end }}
           </ul>

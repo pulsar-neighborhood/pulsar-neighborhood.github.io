@@ -1,7 +1,7 @@
 {{ $logoFull := resources.Get "png/blue-logotype.png" }}
 {{ $logoMobile := resources.Get "png/blue-logotype.png" }}
 
-<div class='header sticky-top'>
+<div class='header sticky-top bg-secondary'>
   <div class="container">
     <div class="logo">
       <a href="{{ .Site.BaseURL }}"><img src="{{ $logoFull.RelPermalink }}" class="img-fluid" /></a>
