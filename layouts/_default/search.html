@@ -28,16 +28,17 @@
                 </div>
             </div>
         </template>
-
-        {{ $search := resources.Get "js/search.js" }}
-        {{ if .Site.IsServer }}
-        <script type="text/javascript" src="{{ $search.RelPermalink }}"></script>
-        {{ else }}
-        <script type="text/javascript" src="{{ ($search | minify | fingerprint).RelPermalink }}"></script>
-        {{ end }}
-
-        <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.5.3"></script>
     </div>
 </main>
 
+{{ end }}
+
+{{ define "footer_js" }}
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.5.3"></script>
+    {{ $search := resources.Get "js/search.js" }}
+    {{ if .Site.IsServer }}
+    <script type="text/javascript" src="{{ $search.RelPermalink }}"></script>
+    {{ else }}
+    <script type="text/javascript" src="{{ ($search | minify | fingerprint).RelPermalink }}"></script>
+    {{ end }}
 {{ end }}

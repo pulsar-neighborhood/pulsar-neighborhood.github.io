@@ -5,7 +5,7 @@ draft: true
 weight: 100
 layout: article
 showtoc: true
-categories: 
+categories:  # must be lowercase shishkabob
     #- get-started
     #- use-cases
     #- managed-pulsar
@@ -17,6 +17,10 @@ tags:
     #- storage
 level: #100, 200, 300
 summary:
+imgUrl:
+author:
+    name:
+    imgUrl:
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

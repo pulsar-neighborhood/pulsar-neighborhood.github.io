@@ -4,14 +4,8 @@ date: 2022-02-04T08:38:50-05:00
 draft: false
 layout: article
 categories: 
-    #- get-started
-    #- use-cases
-    #- managed-pulsar
     - pulsar-architectures
-    #- moving-to-pulsar
 tags:
-    #- microservices
-    #- functions
     - storage
 level: 300
 summary: this is the sumnmary of this article

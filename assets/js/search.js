@@ -25,9 +25,10 @@ function search(searchQuery) {
         });
     });
 }
-
+function param(name) {
+    return decodeURIComponent((location.search.split(name + '=')[1] || '').split('&')[0]).replace(/\+/g, ' ');
+}
 function populateResults(results) {
-
     var searchQuery = document.getElementById("search-query")?.value;
     var searchResults = document.getElementById("search-results");
 
@@ -35,7 +36,6 @@ function populateResults(results) {
     var searchResultTemplate = document.getElementById("search-result-template");
 
     results.forEach(function (result, key) {
-        //console.log(result);
         var searchResultRoot = searchResultTemplate.content.cloneNode(true);
         var typeNode = searchResultRoot.getElementById("search-result-type") ?? null;
         var dateNode = searchResultRoot.getElementById("search-result-date") ?? null;
@@ -52,7 +52,7 @@ function populateResults(results) {
         if(titleNode !== null) titleNode.innerHTML = result.item.title;
         if(dateNode !== null) dateNode.innerHTML = "{0} {1}".format(new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric'}).format(resultDate),
         (resultDate.getFullYear() < new Date().getFullYear() ? ', {0}'.format(resultDate.getFullYear()) : ''));
-        if(levelNode !== null) levelNode.innerHTML = result.item.level;
+        if(levelNode !== null) (shouldClearNode(result.item.level) ? levelNode.parentNode.classList.add('d-none') : levelNode.innerHTML = result.item.level);
         if(summaryNode !== null) summaryNode.innerHTML = result.item.summary;
         if(linkNode !== null) linkNode.href = result.item.permalink;
         
@@ -71,11 +71,9 @@ function populateResults(results) {
         searchResults?.appendChild(searchResultRoot);
     });
 }
-
-function param(name) {
-    return decodeURIComponent((location.search.split(name + '=')[1] || '').split('&')[0]).replace(/\+/g, ' ');
+function shouldClearNode(val){
+    return (val === undefined || val === null || val.length < 1);
 }
-
 function buildSearchQuery(){
 	var textSearchVal = param("s").trim() ?? null;
 	var levelFilters = param("l")?.trim().split(',').filter(Number) ?? [];
@@ -100,9 +98,14 @@ function buildSearchQuery(){
 		searchFilters.push({summary: `${textSearchVal}`});
 	}
 
-    searchFilters.push(convertArrayToOrSearch("level", levelFilters));
-    searchFilters.push(convertArrayToOrSearch("categories", categoryFilters));
-    searchFilters.push(convertArrayToOrSearch("tags", tagFilters));
+    if(levelFilters.length > 0)
+        searchFilters.push(convertArrayToOrSearch("level", levelFilters));
+    
+    if(categoryFilters.length > 0)
+        searchFilters.push(convertArrayToOrSearch("categories", categoryFilters));
+    
+    if(tagFilters.length > 0)
+        searchFilters.push(convertArrayToOrSearch("tags", tagFilters));
 
 	return {$and: searchFilters.filter(n => n)};
 }
@@ -121,23 +124,6 @@ function convertArrayToOrSearch(label, arr){
     });
 
     return {$or: retArr};
-}
-String.prototype.format = function () {
-    // store arguments in an array
-    var args = arguments;
-    // use replace to iterate over the string
-    // select the match and check if related argument is present
-    // if yes, replace the match with the argument
-    return this.replace(/{([0-9]+)}/g, function (match, index) {
-      // check if the argument is present
-      return typeof args[index] == 'undefined' ? match : args[index];
-    });
-  };
-String.prototype.toCamelCase = function(str) {
-return str
-    .replace(/\s(.)/g, function($1) { return $1.toUpperCase(); })
-    .replace(/\s/g, '')
-    .replace(/^(.)/, function($1) { return $1.toLowerCase(); });
 }
 
 var summaryInclude = 60;
@@ -162,7 +148,6 @@ var fuseOptions = {
 };
 
 var searchQuery = buildSearchQuery();
-
 if(searchQuery === null){
 	document.getElementById('search-results').innerHTML = '<p class="search-results-empty">Please enter a word or phrase above, or see <a href="/tags/">all tags</a>.</p>';
 }else{
