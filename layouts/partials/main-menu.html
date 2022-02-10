@@ -1,5 +1,8 @@
+{{ $rssSvg := resources.Get "svg/square-rss-solid.svg" }}
+
 <div id="main-menu" class="main-menu">
   <ul>
+    <li><a href="/index.xml"><img src="{{ $rssSvg.RelPermalink }}" title="Subscribe to the neighborhood feed" class="img-fluid" style="height:30px;" /></a></li>
     <li class=""><a href="https://pulsar.apache.org/" target="_blank"><span>About Apache Pulsar</span></a></li>
     <li class=""><a href="https://pulsar.apache.org/docs/en/standalone/" target="_blank"><span></span>Project Documentation</span></a></li>
     <li class=""><a href="https://pulsar.apache.org/blog/" target="_blank"><span></span>Project News</span></a></li>
