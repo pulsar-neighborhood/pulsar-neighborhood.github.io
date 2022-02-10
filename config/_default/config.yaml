@@ -13,9 +13,9 @@ disqusShortname: pulsar-neighborhood
 outputs:
   home:
     - HTML
-    - JSON
   page:
     - HTML
+    - RSS
   search:
     - HTML
     - JSON
@@ -41,3 +41,12 @@ taxonomies:
   category: categories
   tag: tags
   
+related:
+  includeNewer: false
+  indices:
+  - name: categories
+    weight: 100
+  - name: tags
+    weight: 100
+  threshold: 80
+  toLower: false

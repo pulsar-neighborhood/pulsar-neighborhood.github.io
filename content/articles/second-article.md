@@ -7,8 +7,10 @@ categories:
     - pulsar-architectures
 tags:
     - storage
+    - release
 level: 300
-summary: this is the sumnmary of this article
+summary: Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondumde obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigeraecrimen habet Priamum nec.
+imgUrl: https://miro.medium.com/fit/c/1360/1360/1*KTNrGZT4pvfz5B9_KE2BZg.png
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

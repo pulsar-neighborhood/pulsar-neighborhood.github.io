@@ -8,6 +8,7 @@ showtoc: true
 categories: # must be lowercase shishkabob
     - newsletter
 tags:
+    - release
 summary: For this issue, a new PMC member, 2 new committers, a call to help improve the quality of the code, a meetup in Italian, and a new and improved home page coming soon. Plus our normal features of a Stack Overflow question and some monthly community stats.
 imgUrl: https://miro.medium.com/fit/c/1360/1360/1*KTNrGZT4pvfz5B9_KE2BZg.png
 author:

@@ -1,4 +1,7 @@
+
+
 {{ define "main"}}
+{{ $related := .Site.RegularPages.RelatedIndices . "categories" "tags" | first 3 }}
 <div class="container">
   <header class="mb-5">
     <div class="pb-2">
@@ -24,6 +27,26 @@
   <article>
     {{ .Content }}
   </article>
+
+  {{ with $related }}
+    <div class="row border border-primary rounded">
+      <div class="col p-2">
+        <h3>You might also like...</h3>
+        <div class="row">
+          {{ range . }}
+          <div class="col text-center p-2">
+            {{if .Params.imgUrl}}
+            <div><a href="{{ .RelPermalink }}"><img src="{{ .Params.imgUrl }}" alt="" class="img-fluid" style="max-width:150px" /></a></div>
+            {{end}}
+            <div class="pt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+            <div class="pt-2">{{ .Params.Summary | truncate 100 }}</div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+  <br />
   {{ template "_internal/disqus.html" . }}
 </div>
 {{ end }}
