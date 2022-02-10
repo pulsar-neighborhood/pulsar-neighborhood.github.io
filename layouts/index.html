@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $latestPages := where .Site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ $latestPages := where .Site.Pages "Kind" "page" }}
 <div>
   <div class="container pt-0">
     <div class="row">
@@ -14,15 +14,17 @@
             </div>
             <div class="mb-4">
               <h2>Latest in the Neighborhood</h2>
-              {{ range first 6 $latestPages }}
-              <div class="m-1">
-                <span class="text-muted font-weight-light">Jan 2</span>
+              {{ range first 5 $latestPages }}
+              <div class="m-1 mb-2">
+                <span class="text-muted font-weight-light">{{ .Date.Format "Jan 1" }}</span>
                 <div class="badge badge-pill border border-muted">
-                  {{ .Params.layout }}</span>
+                  {{ .Params.layout | title }}</span>
                 </div>
-                <div class="pl-1 badge badge-pill  border border-muted">
+                {{if .Params.level }}<div class="pl-1 badge badge-pill  border border-muted">
+
                   <span class="text-muted small">level </span>{{ .Params.level }}</span>
-                </div>
+
+                </div> {{ end }}
                 <a class="text-decoration-none" href="{{ .RelPermalink }}">{{ .Title }}</a>
               </div>
               {{ end }}
@@ -42,9 +44,6 @@
                   target="_blank">Apache Pulsar
                   2.8.1</a></div>
             </div>
-
-
-
           </main>
         </div>
       </div>
