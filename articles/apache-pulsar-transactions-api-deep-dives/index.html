@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="ie=edge">
-<title>functions - Pulsar Neighborhood</title>
+<title>Apache Pulsar Transactions API Deep Dives - Pulsar Neighborhood</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content>
 <meta property="og:title" content>
@@ -94,28 +94,12 @@
 <h4>Category</h4>
 <ul>
 <li>
-<input class=form-check-input type=checkbox id=pulsar-architectures onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=pulsar-architectures>&nbsp;Pulsar Architectures [3]</label>
-</li>
-<li>
-<input class=form-check-input type=checkbox id=get-started onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=get-started>&nbsp;Get Started [2]</label>
-</li>
-<li>
-<input class=form-check-input type=checkbox id=managed-pulsar onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=managed-pulsar>&nbsp;Managed Pulsar [1]</label>
-</li>
-<li>
-<input class=form-check-input type=checkbox id=moving-to-pulsar onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=moving-to-pulsar>&nbsp;Moving to Pulsar [1]</label>
+<input class=form-check-input type=checkbox id=deep-dives onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=deep-dives>&nbsp;Deep Dives [1]</label>
 </li>
 <li>
 <input class=form-check-input type=checkbox id=newsletter onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
 <label class=form-check-label for=newsletter>&nbsp;Newsletter [1]</label>
-</li>
-<li>
-<input class=form-check-input type=checkbox id=use-cases onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=use-cases>&nbsp;Use Cases [1]</label>
 </li>
 </ul>
 </div>
@@ -125,15 +109,45 @@
 </div>
 </div>
 </div>
-<div class="col-12 col-md-10">
-<span class=overview>Overview</span>
-<h1 class=title>functions</h1>
-<div class=content>
+<div class="col-12 col-md-8">
+<div class=container>
+<header class=mb-5>
+<div class=pb-2>
 </div>
-<div class="summary mb-2">
-<h2 class=title-summary><a href=https://pulsar-neighborhood.com/guides/second-guide/>Second Guide</a></h2>
-<p>this is the sumnmary of this guide</p>
+<h1>Apache Pulsar Transactions API Deep Dives</h1>
+</header>
+<div class=row>
+<div class="col-12 text-right">
 </div>
+<div class="col-12 text-right">
+</div>
+<div class="col-12 text-right">
+<span class=text-muted>Published:</span> January 3, 2022
+</div>
+</div>
+<article>
+<p>Transactions are an API in Apache Pulsar that enables atomic operations among pulsar consumers and producers. This talk covers the motivating factors for Transactions in a system like Apache Pulsar, deep dives into the transactions API, and walks through some examples of using Transactions with the pulsar4s client. Attendees can expect to learn about Pulsar Transaction in-depth and take away ways they can use Pulsar Transactions in their applications.</p>
+<p>Jowanza Joseph is VP of Engineering at Finicity, A Mastercard Company. Jowanza&rsquo;s career has focused on large-scale distributed systems and distributed pub/sub. Jowanza is the author of Master Apache Pulsar.</p>
+<div class=youtube>
+<iframe src=https://www.youtube.com/embed/hpvLVRWHu2A allowfullscreen title="YouTube Video"></iframe>
+</div>
+</article>
+<br>
+<div id=disqus_thread></div>
+<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//pulsar-neighborhood.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+</div>
+</div>
+<div class="col-0 col-md-2">
+<nav class="navbar navbar-light">
+<div class=row>
+<div class=col-12>
+<h4>In this article</h4>
+</div>
+<div class="col-12 border-left border-primary"><nav id=TableOfContents></nav> </div>
+</div>
+</nav>
 </div>
 </div>
 </div>
