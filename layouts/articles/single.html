@@ -3,7 +3,7 @@
 {{ define "main"}}
 {{ $related := .Site.RegularPages.RelatedIndices . "categories" "tags" | first 3 }}
 <div class="container">
-  <header class="mb-5">
+  <header class="mb-3">
     <div class="pb-2">
       {{if .Params.imgUrl}}
       <img src="{{.Params.imgUrl}}" alt="" class="img-fluid" style="max-width:85%;max-height:200px" />
@@ -11,14 +11,14 @@
     </div>
     <h1>{{ .Title }}</h1>
   </header>
-  <div class="row">
+  <div class="row mb-3">
     <div class="col-12 text-right">{{if .Params.author.imgUrl}}
       <img src="{{.Params.author.imgUrl}}" alt="" class="img-fluid" style="max-height:100px;" />
       {{end}}
     </div>
     <div class="col-12 text-right">
       {{ if .Params.author.name }}
-       {{ .Params.author.name }}
+      <span class="text-muted">Author:</span> {{ .Params.author.name }}
       {{ end }}</div>
       <div class="col-12 text-right">
          <span class="text-muted">Published:</span> {{ .Date.Format "January 2, 2006" }}
