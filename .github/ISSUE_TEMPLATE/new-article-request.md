@@ -8,19 +8,13 @@ assignees: ''
 
 ---
 
-## Title
+<The issue title can be a suggested title for the content>
 
-## Search categories
-- one
-- two
-- three
+## Your Name
 
-## Tags
-- one
-- two
-- three
+## Url of an image to represent you (or attach to the issue)
 
-## Level
-100|200|300
+## Level of Pulsar understanding
+100 (beginner)|200 (intermediate)|300 (advanced)
 
-## Content
+## Content (don't worry about formatting, the site moderators can help)
