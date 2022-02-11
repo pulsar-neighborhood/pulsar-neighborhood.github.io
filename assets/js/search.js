@@ -36,6 +36,7 @@ function populateResults(results) {
     var searchResultTemplate = document.getElementById("search-result-template");
 
     results.forEach(function (result, key) {
+        console.log(result);
         var searchResultRoot = searchResultTemplate.content.cloneNode(true);
         var typeNode = searchResultRoot.getElementById("search-result-type") ?? null;
         var dateNode = searchResultRoot.getElementById("search-result-date") ?? null;
@@ -54,7 +55,7 @@ function populateResults(results) {
         (resultDate.getFullYear() < new Date().getFullYear() ? ', {0}'.format(resultDate.getFullYear()) : ''));
         if(levelNode !== null) (shouldClearNode(result.item.level) ? levelNode.parentNode.classList.add('d-none') : levelNode.innerHTML = result.item.level);
         if(summaryNode !== null) summaryNode.innerHTML = result.item.summary;
-        if(linkNode !== null) linkNode.href = result.item.permalink;
+        if(linkNode !== null) linkNode.href = result.item.relpermalink;
         
         result.item.tags?.forEach((tag) => {
             var li = document.createElement('li');

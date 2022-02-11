@@ -8,7 +8,9 @@
                                     "level" .Params.level
                                     "description" .Description 
                                     "summary" (.Params.summary | truncate 400)
-                                    "permalink" .Permalink)
+                                    "permalink" .Permalink
+                                    "relpermalink" .RelPermalink
+                                    )
                                 -}}
 {{- end -}}
 {{- $.Scratch.Get "index" | jsonify -}}
