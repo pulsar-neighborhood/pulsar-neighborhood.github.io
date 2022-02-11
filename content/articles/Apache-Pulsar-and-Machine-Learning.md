@@ -1,6 +1,6 @@
 ---
-title: "Apache Pulsar and Machine Learning"
-date: 2022-02-11T15:54:13-05:00
+title: "[Video] Apache Pulsar and Machine Learning"
+date: 2021-09-16T15:54:13-05:00
 draft: false
 weight: 100
 layout: article

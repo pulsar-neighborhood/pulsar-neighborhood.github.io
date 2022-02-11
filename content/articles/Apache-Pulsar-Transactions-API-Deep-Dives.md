@@ -1,5 +1,5 @@
 ---
-title: "Apache Pulsar Transactions API Deep Dives"
+title: "[Video] Apache Pulsar Transactions API Deep Dives"
 date: 2022-01-03T14:55:27-05:00
 draft: false
 weight: 100

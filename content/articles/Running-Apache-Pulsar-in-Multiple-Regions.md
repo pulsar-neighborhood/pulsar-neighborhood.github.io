@@ -1,5 +1,5 @@
 ---
-title: "Running Apache Pulsar in Multiple Regions"
+title: "[Video] Running Apache Pulsar in Multiple Regions"
 date: 2021-07-20T16:00:07-05:00
 draft: false
 weight: 100
