@@ -17,3 +17,37 @@ Once submitted a site contributor will be in contact with next steps.
 The site has two different type of content - articles and guides. Articles can be thought of as a blog post but could have code snippets. Generally 
 
 If you have ideas of content you would like to see on the site, 
+
+## Content formatting examples
+
+### Tabs
+{{< tabs tabTotal="4">}}
+{{< tab tabName="C#" >}}
+
+```csharp
+public void DoSomehting(){
+    return;
+}
+```
+
+{{< /tab >}}
+{{< tab tabName="Java" >}}
+
+```java
+public void DoSomehting(){
+    return;
+}
+```
+
+{{< /tab >}}
+{{< tab tabName="Go">}}
+
+**Go Content**
+
+{{< /tab >}}
+{{< tab tabName="Python">}}
+
+**Python Content**
+
+{{< /tab >}}
+{{< /tabs >}}

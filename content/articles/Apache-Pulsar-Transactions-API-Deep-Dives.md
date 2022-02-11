@@ -1,22 +1,16 @@
 ---
-title: "A cool video about something"
-date: 2022-02-09T14:55:27-05:00
+title: "Apache Pulsar Transactions API Deep Dives"
+date: 2022-01-03T14:55:27-05:00
 draft: false
 weight: 100
-layout: guide
-showtoc: false
+layout: article
+showtoc: true
 categories:
-    #- get-started
-    #- use-cases
-    - managed-pulsar
-    - pulsar-architectures
-    - moving-to-pulsar
+    - deep-dives
 tags:
-    #- microservices
-    #- functions
-    #- storage
-level: 100
-summary:
+    - transactions
+level: 300
+summary: Transactions are an API in Apache Pulsar that enables atomic operations among pulsar consumers and producers. This talk covers the motivating factors for Transactions in a system like Apache Pulsar, deep dives into the transactions API, and walks through some examples of using Transactions with the pulsar4s client.
 ---
 
 Transactions are an API in Apache Pulsar that enables atomic operations among pulsar consumers and producers. This talk covers the motivating factors for Transactions in a system like Apache Pulsar, deep dives into the transactions API, and walks through some examples of using Transactions with the pulsar4s client. Attendees can expect to learn about Pulsar Transaction in-depth and take away ways they can use Pulsar Transactions in their applications.
