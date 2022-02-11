@@ -13,6 +13,7 @@ disqusShortname: pulsar-neighborhood
 outputs:
   home:
     - HTML
+    - JSON
   page:
     - HTML
     - RSS

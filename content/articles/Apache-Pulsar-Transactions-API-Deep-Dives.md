@@ -6,7 +6,7 @@ weight: 100
 layout: article
 showtoc: true
 categories:
-    - deep-dives
+    - pulsar-architecture
 tags:
     - transactions
 level: 300
