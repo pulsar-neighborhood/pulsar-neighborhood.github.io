@@ -94,12 +94,20 @@
 <h4>Category</h4>
 <ul>
 <li>
-<input class=form-check-input type=checkbox id=deep-dives onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=deep-dives>&nbsp;Deep Dives [1]</label>
+<input class=form-check-input type=checkbox id=pulsar-architecture onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=pulsar-architecture>&nbsp;Pulsar Architecture [6]</label>
 </li>
 <li>
 <input class=form-check-input type=checkbox id=newsletter onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=newsletter>&nbsp;Newsletter [1]</label>
+<label class=form-check-label for=newsletter>&nbsp;Newsletter [2]</label>
+</li>
+<li>
+<input class=form-check-input type=checkbox id=at-the-edge onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=at-the-edge>&nbsp;At the Edge [1]</label>
+</li>
+<li>
+<input class=form-check-input type=checkbox id=machine-learning onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=machine-learning>&nbsp;Machine Learning [1]</label>
 </li>
 </ul>
 </div>
@@ -132,6 +140,25 @@
 <iframe src=https://www.youtube.com/embed/hpvLVRWHu2A allowfullscreen title="YouTube Video"></iframe>
 </div>
 </article>
+<div class="row border border-primary rounded">
+<div class="col p-2">
+<h3>You might also like...</h3>
+<div class=row>
+<div class="col text-center p-2">
+<div class=pt-2><a href=/articles/internals-of-stream-processing/>[Video] Internals of Stream Processing</a></div>
+<div class=pt-2>Stream Processing Systems (SPSs) are an integral part of modern data-intensive companies. In a world …</div>
+</div>
+<div class="col text-center p-2">
+<div class=pt-2><a href=/articles/apache-bookkeeper-and-apache-zookeeper-for-apache-pulsar/>Apache Bookkeeper and Apache Zookeeper for Apache Pulsar</a></div>
+<div class=pt-2>Enrico Olivelli speaks to the Japan Apache Pulsar User Group about how Apache Pulsar uses Apache …</div>
+</div>
+<div class="col text-center p-2">
+<div class=pt-2><a href=/articles/apache-pulsar-deep-dive-an-end-to-end-view-of-the-data-flow/>[Video] Apache Pulsar Deep Dive an End-to-End View of the Data Flow</a></div>
+<div class=pt-2>Enrico Olivelli gives us a tour of how data moves from the Producer to the Consumer.</div>
+</div>
+</div>
+</div>
+</div>
 <br>
 <div id=disqus_thread></div>
 <script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//pulsar-neighborhood.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
