@@ -23,4 +23,5 @@ Transactions are an API in Apache Pulsar that enables atomic operations among pu
 
 Jowanza Joseph is VP of Engineering at Finicity, A Mastercard Company. Jowanza's career has focused on large-scale distributed systems and distributed pub/sub. Jowanza is the author of Master Apache Pulsar.
 
-{{< youtube hpvLVRWHu2A >}}
+{{< youtube id="hpvLVRWHu2A" class="youtube" >}}
+
