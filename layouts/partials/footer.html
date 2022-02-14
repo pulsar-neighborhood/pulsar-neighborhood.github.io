@@ -1,3 +1,14 @@
+{{ $githubSvg := resources.Get "svg/github-brands.svg" }}
+{{ $linkedinSvg := resources.Get "svg/linkedin-in-brands.svg" }}
+{{ $twitterSvg := resources.Get "svg/twitter-brands.svg" }}
+{{ $youtubeSvg := resources.Get "svg/youtube-brands.svg" }}
+{{ $emailSvg := resources.Get "svg/envelope-solid.svg" }}
+{{ $facebookSvg := resources.Get "svg/facebook-brands.svg" }}
+{{ $twitchSvg := resources.Get "svg/twitch-brands.svg" }}
+{{ $otherSvg := resources.Get "svg/address-card-solid.svg" }}
+{{ $stackoverflowSvg := resources.Get "svg/stack-overflow-brands.svg" }}
+{{ $pulsarJpg := resources.Get "png/pulsar-icon.jpg" }}
+
 <div class="sub-footer m-5">
   <div class="col-8 offset-2 "><hr class="bg-primary text-primary" /></div>
   <div class="sub-footer-inner mt-2">
@@ -9,43 +20,41 @@
       </div>
     {{ end }} -->
     <div class="">
-      <div class="">Pulsar Neighborhood</div>
+      <div class="mb-1">Pulsar Neighborhood</div>
       <div class="">
         <ul>
-          <li>
-            <a href="https://github.com/pulsar-neighborhood" target="_blank">GitHub</a>
+          <li style="width:40px">
+            <a href="https://github.com/pulsar-neighborhood" target="_blank"><img src="{{ $githubSvg.RelPermalink }}" title="Pulsar Neighborhood on GitHub" class="img-fluid"></a>
           </li>
-          <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-          <li><a href="https://twitter.com/pulsar_neighbor" target="_blank">Twitter</a>
+          <li class="ml-3 mr-1" style="width:40px">
+            <a href="https://twitter.com/pulsar_neighbor" target="_blank"><img src="{{ $twitterSvg.RelPermalink }}" title="Pulsar Neighborhood on Twitter" class="img-fluid"></a>
           </li>
-          <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-          <li><a href="https://www.youtube.com/c/ApachePulsarNeighborhood" target="_blank">YouTube</a>
+          <li style="width:40px"><a href="https://www.youtube.com/c/ApachePulsarNeighborhood" target="_blank"><img src="{{ $youtubeSvg.RelPermalink }}" title="Pulsar Neighborhood on YouTube" class="img-fluid"></a>
           </li>
         </ul>
       </div>
     </div>
     <div class="p-5"></div>
     <div class="">
-      <div class="">Apache Pulsar</div>
+      <div class="mb-1">Apache Pulsar</div>
       <div class="">
         <ul>
-          <li>
-            <a href="https://pulsar.apache.org" target="_blank">Project</a>
+          <li style="width:40px">
+            <a href="https://pulsar.apache.org" target="_blank"><img src="{{ $pulsarJpg.RelPermalink }}" title="Apache Pulsar project home" class="img-fluid"></a>
           </li>
-          <li>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <li class="ml-3 mr-1" style="width:40px"><a href="https://github.com/apache-pulsar" target="_blank"><img src="{{ $githubSvg.RelPermalink }}" title="Apache Pulsar on GitHub" class="img-fluid"></a>
           </li>
-          <li><a href="https://github.com/apache-pulsar" target="_blank">Github</a>
+          <li class="mr-1" style="width:40px"><a href="https://twitter.com/Apache_Pulsar" target="_blank"><img src="{{ $twitterSvg.RelPermalink }}" title="Apache Pulsar on Twitter" class="img-fluid"></a>
           </li>
-          <li>&nbsp;&nbsp;|&nbsp;&nbsp;
-          </li>
-          <li><a href="https://twitter.com/Apache_Pulsar" target="_blank">Twitter</a>
-          </li>
-          <li> &nbsp;&nbsp;|&nbsp;&nbsp;
-          </li>
-          <li><a href="https://stackoverflow.com/questions/tagged/apache-pulsar" target="_blank">Stackoverflow</a>
+          <li style="width:30px"><a href="https://stackoverflow.com/questions/tagged/apache-pulsar" target="_blank"><img src="{{ $stackoverflowSvg.RelPermalink }}" title="Apache Pulsar on Stackoverflow" class="img-fluid"></a>
           </li>
         </ul>
       </div>
+    </div>
+  </div>
+  <div class="row text-center mb-3">
+    <div class="col-12">
+      <a class="btn btn-info" href="https://pulsar.apache.org/en/contact/" target="_blank">Join the Pulsar community</a>
     </div>
   </div>
   <div class="row text-center">
