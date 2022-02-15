@@ -39,7 +39,7 @@ So please join us in welcoming all three of our new committers and take a moment
 ## **10k Stars on GitHub**
 ![image](https://user-images.githubusercontent.com/1042872/153696409-541d0749-dc0d-420e-8fae-372e358cc5b0.png)
 
-And speaking of GitHub, Apache Pulsar hit a major milestone on Sunday 28 November. We surpassed **10,000** stars on GitHub. In February 2021, we had just over 7k stars, so in the last 3 quarters, we have increased our Stars by 45%. We wrote a [short blog post](https://medium.com/apache-pulsar-neighborhood/9-966-stars-who-will-be-the-10-000-bea11ba92b48) about our history and how we have grown since our inception five years ago. At this rate, we will get our second 10,000 stars in about 18 months. If you haven’t already, please star [Apache Pulsar](https://github.com/apache/pulsar) and let’s see if we can get to 20k by the end of 2022!
+And speaking of GitHub, Apache Pulsar hit a major milestone on Sunday 28 November. We surpassed **10,000** stars on GitHub. In February 2021, we had just over 7k stars, so in the last 3 quarters, we have increased our Stars by 45%. We wrote a [short blog post]({{< relref "/articles/9966-stars-who-will-be-the-10000" >}}) about our history and how we have grown since our inception five years ago. At this rate, we will get our second 10,000 stars in about 18 months. If you haven’t already, please star [Apache Pulsar](https://github.com/apache/pulsar) and let’s see if we can get to 20k by the end of 2022!
 
 ## **Upcoming events…**
 
