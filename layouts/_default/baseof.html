@@ -33,6 +33,9 @@
 
   {{ block "header_css" . }}{{ end }}
 
+  <style>
+    .ctct-form-defaults { padding: 15px !important;}
+  </style>
 </head>
 {{ $showToc := and (.Params.showtoc | default true) (.Page.TableOfContents) }}
 {{ $showNewsletterSignup := and (.Params.showNewsletterSignup | default true) (.Page.TableOfContents) }}
