@@ -1,6 +1,6 @@
 ---
 title: "Happenings in the Pulsar Neighborhood Feb '22"
-date: 2022-02-10T10:58:45-05:00
+date: 2022-02-05T10:58:45-05:00
 draft: false
 weight: 100
 layout: article

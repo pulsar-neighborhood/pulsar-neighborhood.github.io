@@ -6,7 +6,7 @@ weight: 100
 layout: article
 showtoc: true
 categories:  # must be lowercase shishkabob
-    - pulsar-architecture
+    - pulsar-components
 tags:
     - bookkeeper
     - zookeeper
