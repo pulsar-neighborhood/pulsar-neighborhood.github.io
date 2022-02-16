@@ -1,10 +1,43 @@
-
 {{ define "main"}}
-<header>
-  <h1>{{ .Title }}</h1>
-</header>
-<article>
-  {{ .Content }}
-</article>
-{{ template "_internal/disqus.html" . }}
+{{ $linkedinSvg := resources.Get "svg/linkedin-in-brands.svg" }}
+{{ $twitterSvg := resources.Get "svg/twitter-brands.svg" }}
+
+<div class="container">
+  <header class="mb-3">
+    <div class="pb-2">
+      {{if .Params.imgUrl}}
+      <img src="{{.Params.imgUrl}}" alt="" class="img-fluid" style="max-width:85%;max-height:200px" />
+      {{end}}
+    </div>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <div class="row mb-3 no-gutters">
+    <div class="col-2">
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item flex-fill border-0 p-0 mr-3" >
+          <a href="https://www.linkedin.com/sharing/share-offsite/?mini=true&url=https:{{ .Permalink }}&title={{ .Title }}" target="_blank"><img src="{{ $linkedinSvg.RelPermalink }}" title="Share this on LinkedIn" class="img-fluid"></a>
+        </li>
+        <li class="list-group-item flex-fill border-0 p-0 mr-3">
+          <a  target="_blank"
+  href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}&hashtags=apachepulsar&via=pulsar_neighbor">
+  <img src="{{ $twitterSvg.RelPermalink }}" title="Share this on Twitter" class="img-fluid"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="col text-right">
+      {{ if .Params.author.name }}
+      <span class="text-muted">Author:</span> {{ .Params.author.name }}<br/>
+      {{ end }}
+      <span class="text-muted">Published:</span> {{ .Date.Format "January 2, 2006" }}
+    </div>
+    {{if .Params.author.imgUrl}}
+    <div class="col-1"><img src="{{.Params.author.imgUrl}}" alt="" class="img-fluid" style="max-height:100px;" /></div>
+    {{end}}
+  </div>
+  <article>
+    {{ .Content }}
+  </article>
+  <br />
+  {{ template "_internal/disqus.html" . }}
+</div>
 {{ end }}
