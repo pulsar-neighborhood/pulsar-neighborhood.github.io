@@ -1,14 +1,4 @@
 baseURL: /
-languageCode: en-us
-title: Pulsar Neighborhood
-noindex: true
-
-pygmentsCodeFences: true
-pygmentsCodefencesGuessSyntax: true
-pygmentsUseClasses: true
-
-enableEmoji: true
-disqusShortname: pulsar-neighborhood
 
 outputs:
   home:
@@ -37,12 +27,10 @@ markup:
     noClasses: true
     tabWidth: 2
 
-enableEmoji: true
-
 taxonomies:
   category: categories
   tag: tags
-  
+
 related:
   includeNewer: false
   indices:

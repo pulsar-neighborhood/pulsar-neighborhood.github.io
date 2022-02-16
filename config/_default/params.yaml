@@ -10,3 +10,19 @@ homepage_meta_tags:
   meta_twitter_card:
   meta_twitter_site:
   meta_twitter_creator:
+
+enableEmoji: true
+languageCode: en-us
+title: Pulsar Neighborhood
+noindex: true
+
+pygmentsCodeFences: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsUseClasses: true
+
+enableEmoji: true
+disqusShortname: pulsar-neighborhood
+
+ghrepo: "https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/" # keep the trailing slash
+ghrepo_issues: "https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/issues/new/choose"
+ghrepo_content: "https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/blob/main/content/" # keep the trailing slash
