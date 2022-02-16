@@ -62,15 +62,17 @@
 
         {{ if or $showToc $showNewsletterSignup }}
         <div class="col-0 col-md-2">
-          {{ if $showToc }}
-          <nav class="navbar navbar-light mb-3">
-            <div class="row">
-              <div class="col-12">
-                <h4>In this article</h4>
-              </div>
-              <div class="col-12 border-left border-primary">{{ .TableOfContents }}</div>
-            </div>
-          </nav>
+          {{ if and ($showToc) (gt (len .TableOfContents) 32) }}
+            {{ with .TableOfContents }}
+              <nav class="navbar navbar-light mb-3">
+                <div class="row">
+                  <div class="col-12">
+                    <h4>In this article</h4>
+                  </div>
+                  <div class="col-12 border-left border-primary">{{ . }}</div>
+                </div>
+              </nav>
+            {{ end }}
           {{ end }}
           {{ if $showNewsletterSignup }}
           <div class="row border border-primary rounded  no-gutters">
