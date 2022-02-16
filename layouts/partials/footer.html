@@ -8,6 +8,10 @@
 {{ $otherSvg := resources.Get "svg/address-card-solid.svg" }}
 {{ $stackoverflowSvg := resources.Get "svg/stack-overflow-brands.svg" }}
 {{ $pulsarJpg := resources.Get "png/pulsar-icon.jpg" }}
+{{ $analyticsPng := resources.Get "png/google-analytics.png" }}
+{{ $slackSvg := resources.Get "svg/slack-brands.svg" }}
+
+
 <div class="sub-footer m-5">
   <div class="row">
     <div class="col-12 text-center">
@@ -28,6 +32,8 @@
           </li>
           <li style="width:40px"><a href="https://www.youtube.com/c/ApachePulsarNeighborhood" target="_blank"><img src="{{ $youtubeSvg.RelPermalink }}" title="Pulsar Neighborhood on YouTube" class="img-fluid"></a>
           </li>
+          <li style="width:40px"><a href="https://datastudio.google.com/reporting/743d9f31-c80f-4e60-b520-730631d3c250" target="_blank"><img src="{{ $analyticsPng.RelPermalink }}" title="Pulsar Neighborhood analytics" class="img-fluid"></a>
+          </li>
         </ul>
       </div>
     </div>
@@ -43,7 +49,9 @@
           </li>
           <li class="mr-1" style="width:40px"><a href="https://twitter.com/Apache_Pulsar" target="_blank"><img src="{{ $twitterSvg.RelPermalink }}" title="Apache Pulsar on Twitter" class="img-fluid"></a>
           </li>
-          <li style="width:30px"><a href="https://stackoverflow.com/questions/tagged/apache-pulsar" target="_blank"><img src="{{ $stackoverflowSvg.RelPermalink }}" title="Apache Pulsar on Stackoverflow" class="img-fluid"></a>
+          <li class="mr-1" style="width:30px"><a href="https://stackoverflow.com/questions/tagged/apache-pulsar" target="_blank"><img src="{{ $stackoverflowSvg.RelPermalink }}" title="Apache Pulsar on Stackoverflow" class="img-fluid"></a>
+          </li>
+          <li style="width:40px"><a href="https://apache-pulsar.slack.com" target="_blank"><img src="{{ $slackSvg.RelPermalink }}" title="Apache Pulsar slack channel" class="img-fluid"></a>
           </li>
         </ul>
       </div>
