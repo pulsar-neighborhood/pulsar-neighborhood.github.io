@@ -1,4 +1,4 @@
-{{$currentNode := .}}
+{{ $spotLight := .Site.GetPage "/spotlight/index.md" }}
 {{ $githubSvg := resources.Get "svg/github-brands.svg" }}
 {{ $linkedinSvg := resources.Get "svg/linkedin-in-brands.svg" }}
 {{ $twitterSvg := resources.Get "svg/twitter-brands.svg" }}
@@ -8,11 +8,11 @@
 {{ $twitchSvg := resources.Get "svg/twitch-brands.svg" }}
 {{ $otherSvg := resources.Get "svg/address-card-solid.svg" }}
 
+{{ with $spotLight }}
 <div class="spotlight mb-2 border border-primary rounded">
   <div class="row bg-primary no-gutters p-1">
     <div class="col-12 text-secondary">&nbsp;Community Spotlight</div>
   </div>
-  {{ range where site.RegularPages "Layout" "spotlight" }}
   <div class="p-1">
     <div class="row">
       <div class="col-12 text-center">
@@ -51,8 +51,8 @@
         {{end}}
     </div>
   </div>
-  {{ end }}
 </div>
+{{ end }}
 <div class="spotlight mb-2 border border-primary rounded">
   <div class="row bg-primary no-gutters">
     <div class="col-12 text-secondary p-1">&nbsp;Find Articles and Guides</div>
