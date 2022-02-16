@@ -1,5 +1,7 @@
 baseURL: /
 
+title: "Pulsar Neighborhood"
+
 outputs:
   home:
     - HTML
