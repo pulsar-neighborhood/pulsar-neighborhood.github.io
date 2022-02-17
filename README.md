@@ -1,4 +1,5 @@
 # Pulsar Neighborhood web site
+
 Welcome to the home for the [Pulsar Neighborhood site](https://pulsar-neighborhood.com). This is the source behind the magic. As an open community we welcome all ideas and contributions, whether it is a new feature on the site or content you would like to see.
 
 ## About the site's framework
@@ -13,7 +14,6 @@ It was chosen to keep the original content type of `page` and create 3 new layou
 
  Don't sweat this. It's less about you and more about what you've done with Pulsar. If you've got something to share but don't feel like writing it all out let's put it in the spotlight. [Open a spotlight issue](https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/issues/new?assignees=&labels=&template=community-member-spotlight.md&title=Check%20my%20Pulsar%20skillz) and give us a sentence or two about the cool things you've done. Share a link if it's something public.
 
-
 ## Contributing ideas and content
 
 It can be a simple idea, a written article, or a half though-out step by step guide. However far along the content is, the community is here to help make it a pulitzer candidate.  Your options...
@@ -22,20 +22,22 @@ It can be a simple idea, a written article, or a half though-out step by step gu
 
 When you [open an issue](https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/issues/new/choose) in the repo you are asked to choose from a template. Use this to choose the type of content the best fits your idea. Paste your markdown within the "content" area of the new issue or simply type out a few lines of idea. There are a few additional areas of interest like title, author info, image, etc. All of this is optional. A content moderator will guide you through getting everything right.
 
-
 ### Running the site locally
 
 If you're feeling adventurous (and have a basic understanding of Hugo) you could fork the repo and develop your idea locally. Then open a pull request to suggest the idea in the main site. Below are commands you can use to get content started:
 
 Create a new article:
+
 ```bash
 hugo new articles/my-really-great-idea.md
 ```
 
 Create a new guide:
+
 ```bash
 hugo new guides/my-step-by-step-guide.md
 ```
+
 ## Content formatting examples
 
 As you write content for the community use the below markdown examples to take things to the next level. Spoiler - no one likes a wall of text and everyone loves reading code.
