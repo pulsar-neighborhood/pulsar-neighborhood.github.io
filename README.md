@@ -40,20 +40,20 @@ hugo new guides/my-step-by-step-guide.md
 
 As you write content for the community use the below markdown examples to take things to the next level. Spoiler - no one likes a wall of text and everyone loves reading code.
 
-[Guide steps](content/examples/guide.md) - use this to get a step by step guide started
+Guide steps [[Markdown](content/examples/guide.md)] [[Live](https://pulsar-neighborhood.github.io/examples/guide/)] - use this to get a step by step guide started
 
-[Tabs](content/examples/tabs.md) - share your code in multiple runtimes
+Tabs [[Markdown](content/examples/tabs.md)] [[Live](https://pulsar-neighborhood.github.io/examples/tabs/)] - share your code in multiple runtimes
 
-[Code Snippets](content/examples/code-snippet.md) - include snippets throughout your content, maybe even highlight a line and comment on it
+Code Snippets [[Markdown](content/examples/code-snippet.md)] [[Live](https://pulsar-neighborhood.github.io/examples/code-snippet/)] - include snippets throughout your content, maybe even highlight a line and comment on it
 
-[Blockquotes](content/examples/blockquote.md) - make a statement
+Blockquote [[Markdown](content/examples/blockquote.md)] [[Live](https://pulsar-neighborhood.github.io/examples/blockquote/)] - make a statement
 
-[Information Callout](content/examples/info-callout.md) - include a call out box with further info about a topic
+Information Callout [[Markdown](content/examples/info-callout.md)] [[Live](https://pulsar-neighborhood.github.io/examples/info-callou/)] - include a call out box with further info about a topic
 
-[Warning Callout](content/examples/warn-callout.md) - include a call out box with fair warning about something
+Warning Callout [[Markdown](content/examples/warn-callout.md)] [[Live](https://pulsar-neighborhood.github.io/examples/warn-callout/)] - include a call out box with fair warning about something
 
-[Danger Callout](content/examples/danger-callout.md) - include a call out box that warns of dragons or ill-tempered creatures ahead
+Danger Callout [[Markdown](content/examples/danger-callout.md)] [[Live](https://pulsar-neighborhood.github.io/examples/danger-callout/)] - include a call out box that warns of dragons or ill-tempered creatures ahead
 
-[Success Callout](content/examples/success-callout.md) - include a call out box declaring a win
+Success Callout [[Markdown](content/examples/success-callout.md)] [[Live](https://pulsar-neighborhood.github.io/examples/success-callout/)] - include a call out box declaring a win
 
-[Table](content/examples/table.md) - markdown tables aren't the best, use this to go a little further
+Table [[Markdown](content/examples/table.md)] [[Live](https://pulsar-neighborhood.github.io/examples/table/)] - markdown tables aren't the best, use this to go a little further
