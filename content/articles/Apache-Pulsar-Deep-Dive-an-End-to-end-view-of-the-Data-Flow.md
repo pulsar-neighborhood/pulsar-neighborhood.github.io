@@ -3,7 +3,7 @@ title: "[Video] Apache Pulsar Deep Dive an End-to-End View of the Data Flow"
 date: 2021-09-20T15:51:42-05:00
 draft: false
 weight: 100
-layout: article
+type: article
 showtoc: true
 categories:  # must be lowercase shishkabob
     - pulsar-architecture

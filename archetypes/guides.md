@@ -3,7 +3,7 @@ title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 weight: 100
-layout: guide
+type: guide
 showtoc: false
 categories: # must be lowercase shishkabob
     #- get-started

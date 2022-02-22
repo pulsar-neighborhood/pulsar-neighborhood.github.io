@@ -1,6 +1,6 @@
 ---
 draft: false
-layout: spotlight
+type: spotlight
 fullName: David Dieruf
 imgUrl: https://pulsar-neighborhood.github.io/images/spotlight/David.png
 github: https://github.com/ddieruf

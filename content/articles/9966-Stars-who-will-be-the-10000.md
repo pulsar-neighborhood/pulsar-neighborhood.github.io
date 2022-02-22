@@ -3,7 +3,7 @@ title: "9,966 Stars, who will be the 10,000?"
 date: 2021-11-24T15:57:19-05:00
 draft: false
 weight: 100
-layout: article
+type: article
 showtoc: true
 categories:  # must be lowercase shishkabob
     - project-news

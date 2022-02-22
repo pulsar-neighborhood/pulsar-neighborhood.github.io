@@ -8,7 +8,7 @@ Pulsar Neighborhood was created on the [Hugo framework](https://gohugo.io/). It 
 
 If you see something about the site's design that could be a little better please [make a suggestion](https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/issues) or PR that great idea right in to the project.
 
-It was chosen to keep the original content type of `page` and create 3 new layouts: article, guide, and spotlight. Articles are the most common and represent a blog post, video, or some other written story about Pulsar. Guides are step by step instructions on how to achieve some goal using Pulsar. Spotlight is a special type used for the community spotlight section of the site.
+The site has 3 content types: article, guide, and spotlight. Articles are the most common and represent a blog post, video, or some other written story about Pulsar. Guides are step by step instructions on how to achieve some goal using Pulsar. Spotlight is a special type used for the community spotlight section of the site.
 
 ## "I love the spotlight" - said no software engineer, ever
 

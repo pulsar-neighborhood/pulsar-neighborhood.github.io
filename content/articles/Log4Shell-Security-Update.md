@@ -3,7 +3,7 @@ title: "Log4Shell Security Update"
 date: 2021-12-10T16:10:30-05:00
 draft: false
 weight: 100
-layout: article
+type: article
 showtoc: true
 categories:  # must be lowercase shishkabob
     - pulsar-architecture
