@@ -3,22 +3,21 @@
     {{ $guides := where .Site.RegularPages "Type" "in" "getting-started" }}
     <div class="row mb-2">
         <div class="col-12">
-            <h2>Getting started with Pulsar</h2>
-            Choose your adventure below. Remember, all these guides are for getting started not going to production. Use as directed.
+            {{.Content}}
         </div>
     </div>
 
     <div class="row">
         <div class="col">
             <div class="list-group">
-                <div class="list-group-item list-group-item-action active ">Desktop</div>
+                <div class="list-group-item list-group-item-action list-group-item-dark text-muted">Desktop</div>
                 <a href="desktop/binaries" class="list-group-item list-group-item-action">Binaries</a>
                 <a href="desktop/docker" class="list-group-item list-group-item-action">Docker</a>
               </div>
         </div>
         <div class="col">
             <div class="list-group">
-                <div class="list-group-item list-group-item-action active">Kubernetes</div>
+                <div class="list-group-item list-group-item-action list-group-item-dark text-muted">Kubernetes</div>
                 <a href="kubernetes/manual" class="list-group-item list-group-item-action">Manual</a>
                 <a href="kubernetes/helm" class="list-group-item list-group-item-action">Helm</a>
                 <a href="kubernetes/operator" class="list-group-item list-group-item-action">Pulsar Operator</a>
@@ -27,14 +26,14 @@
         <div class="w-100 m-2"></div>
         <div class="col">
             <div class="list-group">
-                <div class="list-group-item list-group-item-action active">Amazon Web Services</div>
+                <div class="list-group-item list-group-item-action list-group-item-dark text-muted">Amazon Web Services</div>
                 <a href="desktop/binaries" class="list-group-item list-group-item-action">Binaries</a>
                 <a href="desktop/docker" class="list-group-item list-group-item-action">Docker</a>
               </div>
         </div>
         <div class="col">
             <div class="list-group">
-                <div class="list-group-item list-group-item-action active">Microsoft Azure</div>
+                <div class="list-group-item list-group-item-action list-group-item-dark text-muted">Microsoft Azure</div>
                 <a href="kubernetes/manual" class="list-group-item list-group-item-action">Manual</a>
                 <a href="kubernetes/helm" class="list-group-item list-group-item-action">Helm</a>
                 <a href="kubernetes/operator" class="list-group-item list-group-item-action">Pulsar Operator</a>
@@ -42,7 +41,7 @@
         </div>
         <div class="col">
             <div class="list-group">
-                <div class="list-group-item list-group-item-action active">Google Cloud</div>
+                <div class="list-group-item list-group-item-action list-group-item-dark text-muted">Google Cloud</div>
                 <a href="kubernetes/manual" class="list-group-item list-group-item-action">Manual</a>
                 <a href="kubernetes/helm" class="list-group-item list-group-item-action">Helm</a>
                 <a href="kubernetes/operator" class="list-group-item list-group-item-action">Pulsar Operator</a>
