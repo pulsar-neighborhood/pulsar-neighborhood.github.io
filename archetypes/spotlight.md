@@ -2,7 +2,7 @@
 title: Community Spotlight
 date: {{ .Date }}
 draft: true
-layout: spotlight
+type: spotlight
 fullName: "{{ replace .TranslationBaseName "-" " " | title }}"
 imgUrl:
 github:

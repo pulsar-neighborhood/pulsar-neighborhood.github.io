@@ -3,7 +3,7 @@ title: "[Video] Apache Bookkeeper and Apache Zookeeper for Apache Pulsar"
 date: 2021-10-13T15:42:47-05:00
 draft: false
 weight: 100
-layout: article
+type: article
 showtoc: true
 categories:  # must be lowercase shishkabob
     - pulsar-components

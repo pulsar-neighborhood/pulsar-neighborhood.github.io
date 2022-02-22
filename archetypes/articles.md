@@ -3,7 +3,7 @@ title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 weight: 100
-layout: article
+type: article
 showtoc: true
 categories:  # must be lowercase shishkabob
     #- get-started

@@ -3,7 +3,7 @@ title: "[Video] Apache Pulsar and Machine Learning"
 date: 2021-09-16T15:54:13-05:00
 draft: false
 weight: 100
-layout: article
+type: article
 showtoc: true
 categories:  # must be lowercase shishkabob
     - machine-learning

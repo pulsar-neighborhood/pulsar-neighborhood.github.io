@@ -3,7 +3,7 @@ title: "[Video] Using Open Source Software to improve Streaming on the Edge"
 date: 2021-11-02T15:39:51-05:00
 draft: false
 weight: 100
-layout: article
+type: article
 showtoc: true
 categories:  # must be lowercase shishkabob
     - at-the-edge

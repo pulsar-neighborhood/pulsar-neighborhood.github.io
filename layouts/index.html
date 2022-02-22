@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $latestPages := where .Site.Pages "Kind" "page" }}
+{{ $latestPages := where .Site.RegularPages "Type" "in" (slice "article" "guide") }}
 <div>
   <div class="container pt-0">
     <div class="row">
@@ -18,7 +18,7 @@
               <div class="m-1 mb-2">
                 <span class="text-muted font-weight-light">{{ .Date.Format "Jan 1" }}</span>
                 <div class="badge badge-pill border border-muted">
-                  {{ .Params.layout | title }}</span>
+                  {{ .Type | title }}</span>
                 </div>
                 {{if .Params.level }}<div class="pl-1 badge badge-pill  border border-muted">
 
