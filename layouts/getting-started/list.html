@@ -1,6 +1,6 @@
 
 {{ define "main"}}
-    {{ $sections := where (os.ReadDir "content\\getting-started") "IsDir" true  }}
+    {{ $sections := where (os.ReadDir "content/getting-started") "IsDir" true  }}
     {{ $allGuides := where .Site.RegularPages "Type" "in" "getting-started" }}
 
     <div class="container content">
@@ -17,7 +17,7 @@
             <div class="col">
                 <div class="list-group">
                     <div class="list-group-item list-group-item-action list-group-item-dark text-muted">{{ .Name | title }}</div>
-                    {{ range where ($allGuides) "File.Dir" (printf "getting-started\\%s\\" .Name)  }}
+                    {{ range where ($allGuides) "File.Dir" (printf "getting-started/%s/" .Name)  }}
                         <a href="{{.RelPermalink}}" class="list-group-item list-group-item-action">{{.Params.navLinkName}}</a>
                     {{end}}
                 </div>
