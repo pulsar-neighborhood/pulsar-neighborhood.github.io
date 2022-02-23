@@ -26,3 +26,5 @@ disqusShortname: pulsar-neighborhood
 ghrepo: "https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/" # keep the trailing slash
 ghrepo_issues: "https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/issues/new/choose"
 ghrepo_content: "https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/blob/main/content/" # keep the trailing slash
+
+current_pulsar_version: "2.9.1"

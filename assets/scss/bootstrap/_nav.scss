@@ -111,10 +111,15 @@
 // Hide tabbable panes to start, show them when `.active`
 
 .tab-content {
+  border: 1px solid $gray-200;
+  border-radius: 0 0 0.25rem 0.25rem;
+  padding: 5px;
+  margin-bottom: 20px;
   > .tab-pane {
     display: none;
   }
   > .active {
     display: block;
+    min-height: 100px;
   }
 }

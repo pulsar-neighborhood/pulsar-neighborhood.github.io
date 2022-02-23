@@ -1,0 +1,20 @@
+{{ $page1 := default (.Get "page1") "" }}
+
+<div class="row border border-primary rounded mb-4 mt-4">
+  <div class="col">
+    <h3>Next steps...</h3>
+    <div class="row">
+        {{ $p := .Site.GetPage $page1}}
+        {{ with $p }}
+        <div class="col text-center">
+            {{if .Params.imgUrl}}
+            <div><a href="{{ .RelPermalink }}"><img src="{{ .Params.imgUrl }}" alt="" class="img-fluid"
+                style="max-width:150px" /></a></div>
+            {{end}}
+            <div class=""><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+            <div class="">{{ .Params.Summary | truncate 100 }}</div>
+        </div>
+        {{end}}
+    </div>
+  </div>
+</div>
