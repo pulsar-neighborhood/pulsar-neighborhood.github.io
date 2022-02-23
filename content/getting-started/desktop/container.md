@@ -1,22 +1,37 @@
 ---
-title: "Getting Started with binaries"
+title: "Getting Started with containers"
 date: 2022-02-22T12:20:41-05:00
-draft: false
+draft: true
 type: getting-started
 showNewsletterSignup: false
-navLinkName: Binaries
-summary: This guide is for getting started using the Pulsar binaries. Lets do this!
+navLinkName: Container
+summary: Getting started with Pulsar using containers on your desktop
 ---
-
-This guide is for getting started using the Pulsar binaries. Lets do this!
 
 ## Prerequisites
 
-Pulsar is developed in 64-bit Java. To run the binaries you need either the Java Runtime Environment(JRE) or Java Developer Kit(JDK) version 8 or later installed. Installers and more info [available here](https://adoptopenjdk.net/installation.html).
-
-With a Java environment in place, all popular 64-bit desktops are supported - Windows, Linux, and MacOS.
+You're going to need virtualization enabled on your desktop and a container runtime. Options like Docker and containerd are a great choice.
 
 ## Steps
+
+### Start the Pulsar broker
+
+{{< tabs tabTotal="2">}}
+{{< tab tabName="Docker Cli" >}}
+
+```bash
+docker start -d -p 6650:6650 -n pulsar -p 8080:8080 apachepulsar/pulsar:2.9.1 bin/pulsar standalone
+```
+
+{{< /tab >}}
+{{< tab tabName="NerdCtl" >}}
+
+```bash
+nerdctl start -d -p 6650:6650 -n pulsar -p 8080:8080 apachepulsar/pulsar:2.9.1 bin/pulsar standalone
+```
+
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Get the Pulsar binaries
 
@@ -47,18 +62,6 @@ Expand the tarball and `cd` into the new directory.
 {{< /tab >}}
 {{< /tabs >}}
 
-### Start the Pulsar broker
-
-Pulsar has quite a few supporting services (Bookkeeper, Zookeeper, etc). Within the main binary there is a `standalone` command that will run everything needed. Learn more about the command [here](https://pulsar.apache.org/docs/en/reference-cli-tools/#standalone).
-
-```bash
-# This will run the broker in the background (where you can't see logs)
-./bin/pulsar-daemon start standalone
-
-# Switch to this, in a new terminal, to run the Broker in the current thread
-#./bin/pulsar standalone
-```
-
 ### Send a message to the Broker
 
 Otherwise known as _producing_ a message. Pulsar will create a new topic named "my-first-topic" automatically.
@@ -79,9 +82,22 @@ Otherwise known as _consuming_ messages. Similar to producing, if the topic does
 
 If you chose to run the Broker in the current thread `Ctrl+c` will stop the process. To stop the background process:
 
+{{< tabs tabTotal="2">}}
+{{< tab tabName="Docker Cli" >}}
+
 ```bash
-./bin/pulsar-daemon stop standalone
+docker stop pulsar 
 ```
+
+{{< /tab >}}
+{{< tab tabName="NerdCtl" >}}
+
+```bash
+nerdctl stop pulsar 
+```
+
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Summary
 

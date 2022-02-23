@@ -1,52 +1,30 @@
 
 {{ define "main"}}
-    {{ $guides := where .Site.RegularPages "Type" "in" "getting-started" }}
-    <div class="row mb-2">
-        <div class="col-12">
-            {{.Content}}
-        </div>
-    </div>
+    {{ $sections := where (os.ReadDir "content\\getting-started") "IsDir" true  }}
+    {{ $allGuides := where .Site.RegularPages "Type" "in" "getting-started" }}
 
-    <div class="row">
-        <div class="col">
-            <div class="list-group">
-                <div class="list-group-item list-group-item-action list-group-item-dark text-muted">Desktop</div>
-                <a href="desktop/binaries" class="list-group-item list-group-item-action">Binaries</a>
-                <a href="desktop/docker" class="list-group-item list-group-item-action">Docker</a>
-              </div>
+    <div class="container content">
+        <header class="mb-3">
+          <h1 class="title">{{ .Title }}</h1>
+        </header>
+        <article>
+        {{ .Content }}
+        </article>
+        {{ with $allGuides}}
+        
+        <div class="row">
+            {{range $sections}}
+            <div class="col">
+                <div class="list-group">
+                    <div class="list-group-item list-group-item-action list-group-item-dark text-muted">{{ .Name | title }}</div>
+                    {{ range where ($allGuides) "File.Dir" (printf "getting-started\\%s\\" .Name)  }}
+                        <a href="{{.RelPermalink}}" class="list-group-item list-group-item-action">{{.Params.navLinkName}}</a>
+                    {{end}}
+                </div>
+            </div>
+            {{end}}
         </div>
-        <div class="col">
-            <div class="list-group">
-                <div class="list-group-item list-group-item-action list-group-item-dark text-muted">Kubernetes</div>
-                <a href="kubernetes/manual" class="list-group-item list-group-item-action">Manual</a>
-                <a href="kubernetes/helm" class="list-group-item list-group-item-action">Helm</a>
-                <a href="kubernetes/operator" class="list-group-item list-group-item-action">Pulsar Operator</a>
-              </div>
-        </div>
-        <div class="w-100 m-2"></div>
-        <div class="col">
-            <div class="list-group">
-                <div class="list-group-item list-group-item-action list-group-item-dark text-muted">Amazon Web Services</div>
-                <a href="desktop/binaries" class="list-group-item list-group-item-action">Binaries</a>
-                <a href="desktop/docker" class="list-group-item list-group-item-action">Docker</a>
-              </div>
-        </div>
-        <div class="col">
-            <div class="list-group">
-                <div class="list-group-item list-group-item-action list-group-item-dark text-muted">Microsoft Azure</div>
-                <a href="kubernetes/manual" class="list-group-item list-group-item-action">Manual</a>
-                <a href="kubernetes/helm" class="list-group-item list-group-item-action">Helm</a>
-                <a href="kubernetes/operator" class="list-group-item list-group-item-action">Pulsar Operator</a>
-              </div>
-        </div>
-        <div class="col">
-            <div class="list-group">
-                <div class="list-group-item list-group-item-action list-group-item-dark text-muted">Google Cloud</div>
-                <a href="kubernetes/manual" class="list-group-item list-group-item-action">Manual</a>
-                <a href="kubernetes/helm" class="list-group-item list-group-item-action">Helm</a>
-                <a href="kubernetes/operator" class="list-group-item list-group-item-action">Pulsar Operator</a>
-              </div>
-        </div>
-    </div>
 
+    {{ end }}
+    </div>
 {{ end }}

@@ -1,6 +1,12 @@
 
 
 {{ define "main"}}
-A single getting started
-{{ .Content }}
+<div class="container guide">
+    <header class="mb-3">
+      <h1 class="title">{{ .Title }}</h1>
+    </header>
+    <article>
+    {{ .Content }}
+    </article>
+</div> 
 {{ end }}
