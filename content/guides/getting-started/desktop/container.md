@@ -1,11 +1,10 @@
 ---
 title: "Getting Started with containers"
 date: 2022-02-22T12:20:41-05:00
-draft: true
-type: getting-started
-showNewsletterSignup: false
-navLinkName: Container
+draft: false
 summary: Getting started with Pulsar using containers on your desktop
+tags:
+    - container
 ---
 
 ## Prerequisites
@@ -20,14 +19,14 @@ You're going to need virtualization enabled on your desktop and a container runt
 {{< tab tabName="Docker Cli" >}}
 
 ```bash
-docker start -d -p 6650:6650 -n pulsar -p 8080:8080 apachepulsar/pulsar:2.9.1 bin/pulsar standalone
+docker run -d -p 6650:6650 -p 8080:8080 --name pulsar apachepulsar/pulsar:2.9.1 bin/pulsar standalone
 ```
 
 {{< /tab >}}
 {{< tab tabName="NerdCtl" >}}
 
 ```bash
-nerdctl start -d -p 6650:6650 -n pulsar -p 8080:8080 apachepulsar/pulsar:2.9.1 bin/pulsar standalone
+nerdctl run -d -p 6650:6650 -p 8080:8080 --name pulsar apachepulsar/pulsar:2.9.1 bin/pulsar standalone
 ```
 
 {{< /tab >}}
@@ -35,48 +34,15 @@ nerdctl start -d -p 6650:6650 -n pulsar -p 8080:8080 apachepulsar/pulsar:2.9.1 b
 
 ### Get the Pulsar binaries
 
-{{< tabs tabTotal="3">}}
-{{< tab tabName="Bash" >}}
-
-```bash
-wget https://archive.apache.org/dist/pulsar/pulsar-2.9.1/apache-pulsar-2.9.1-bin.tar.gz
-tar xvfz ./apache-pulsar-2.9.1-bin.tar.gz
-cd ./apache-pulsar-2.9.1
-```
-
-{{< /tab >}}
-{{< tab tabName="Powershell" >}}
-
-```powershell
-Invoke-WebRequest -Uri https://archive.apache.org/dist/pulsar/pulsar-2.9.1/apache-pulsar-2.9.1-bin.tar.gz -OutFile apache-pulsar-2.9.1-bin.tar.gz
-tar xvfz ./apache-pulsar-2.9.1-bin.tar.gz
-cd ./apache-pulsar-2.9.1
-```
-
-{{< /tab >}}
-{{< tab tabName="Manual" >}}
-
-Visit the [Pulsar Downloads page](https://pulsar.apache.org/download/) and choose the current stable version.
-Expand the tarball and `cd` into the new directory.
-
-{{< /tab >}}
-{{< /tabs >}}
+{{< guide-partial "get-the-binaries" >}}
 
 ### Send a message to the Broker
 
-Otherwise known as _producing_ a message. Pulsar will create a new topic named "my-first-topic" automatically.
-
-```bash
-./bin/pulsar-client produce "my-first-topic" --messages "Hello there"
-```
+{{< guide-partial "pulsar-client-produce" >}}
 
 ### Get messages from the Broker
 
-Otherwise known as _consuming_ messages. Similar to producing, if the topic does not exists Pulsar will create it.
-
-```bash
-./bin/pulsar-client consume "my-first-topic"
-```
+{{< guide-partial "pulsar-client-consume" >}}
 
 ### Stop the Broker
 

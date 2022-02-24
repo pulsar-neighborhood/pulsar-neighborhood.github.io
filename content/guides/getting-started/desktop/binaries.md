@@ -2,50 +2,18 @@
 title: "Getting Started with binaries"
 date: 2022-02-22T12:20:41-05:00
 draft: false
-type: getting-started
-showNewsletterSignup: false
-navLinkName: Binaries
 summary: This guide is for getting started using the Pulsar binaries. Lets do this!
+tags:
+    - binaries
 ---
 
 This guide is for getting started using the Pulsar binaries. Lets do this!
-
-## Prerequisites
-
-Pulsar is developed in 64-bit Java. To run the binaries you need either the Java Runtime Environment(JRE) or Java Developer Kit(JDK) version 8 or later installed. Installers and more info [available here](https://adoptopenjdk.net/installation.html).
-
-With a Java environment in place, all popular 64-bit desktops are supported - Windows, Linux, and MacOS.
 
 ## Steps
 
 ### Get the Pulsar binaries
 
-{{< tabs tabTotal="3">}}
-{{< tab tabName="Bash" >}}
-
-```bash
-wget https://archive.apache.org/dist/pulsar/pulsar-2.9.1/apache-pulsar-2.9.1-bin.tar.gz
-tar xvfz ./apache-pulsar-2.9.1-bin.tar.gz
-cd ./apache-pulsar-2.9.1
-```
-
-{{< /tab >}}
-{{< tab tabName="Powershell" >}}
-
-```powershell
-Invoke-WebRequest -Uri https://archive.apache.org/dist/pulsar/pulsar-2.9.1/apache-pulsar-2.9.1-bin.tar.gz -OutFile apache-pulsar-2.9.1-bin.tar.gz
-tar xvfz ./apache-pulsar-2.9.1-bin.tar.gz
-cd ./apache-pulsar-2.9.1
-```
-
-{{< /tab >}}
-{{< tab tabName="Manual" >}}
-
-Visit the [Pulsar Downloads page](https://pulsar.apache.org/download/) and choose the current stable version.
-Expand the tarball and `cd` into the new directory.
-
-{{< /tab >}}
-{{< /tabs >}}
+{{< guide-partial "get-the-binaries" >}}
 
 ### Start the Pulsar broker
 
@@ -61,19 +29,11 @@ Pulsar has quite a few supporting services (Bookkeeper, Zookeeper, etc). Within 
 
 ### Send a message to the Broker
 
-Otherwise known as _producing_ a message. Pulsar will create a new topic named "my-first-topic" automatically.
-
-```bash
-./bin/pulsar-client produce "my-first-topic" --messages "Hello there"
-```
+{{< guide-partial "pulsar-client-produce" >}}
 
 ### Get messages from the Broker
 
-Otherwise known as _consuming_ messages. Similar to producing, if the topic does not exists Pulsar will create it.
-
-```bash
-./bin/pulsar-client consume "my-first-topic"
-```
+{{< guide-partial "pulsar-client-consume" >}}
 
 ### Stop the Broker
 
