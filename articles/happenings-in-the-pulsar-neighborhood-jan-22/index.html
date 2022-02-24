@@ -17,7 +17,7 @@
 <meta name=google-site-verification content="8Zd8cCKCyFkvP3na2C_RJEXZ7bx86vSoM81X28bj4aI">
 <link rel=icon href=https://pulsar-neighborhood.github.io/favicon.png>
 <meta name=robots content="noindex">
-<link rel=stylesheet href=/css/style.54b7ba7961947abc1bfcb95f8ad589c0c76006c8c54ec132c2e600bb7746b2e5.css>
+<link rel=stylesheet href=/css/style.704e5b6100ae0fa5711d902bef07628d85bd90d1e0f370effc49988b13cf470d.css>
 <style>.ctct-form-defaults{padding:15px!important}</style>
 </head>
 <body class="page bg-secondary">
@@ -54,7 +54,7 @@
 <div class="col-0 col-md-2">
 <div class=sidebar>
 <div class=mb-2>
-<a href=/getting-started><div class="col-12 btn btn-success">Get Started with Pulsar</div></a>
+<a href=/guides/getting-started><div class="col-12 btn btn-success">Get Started with Pulsar</div></a>
 </div>
 <div class="spotlight mb-2 border border-primary rounded">
 <div class="row bg-primary no-gutters">
@@ -75,8 +75,20 @@
 <h4>Category</h4>
 <ul>
 <li>
-<input class=form-check-input type=checkbox id=pulsar-architecture onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=pulsar-architecture>&nbsp;Pulsar Architecture [6]</label>
+<input class=form-check-input type=checkbox id=at-the-edge onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=at-the-edge>&nbsp;At the Edge [1]</label>
+</li>
+<li>
+<input class=form-check-input type=checkbox id=cheat-sheet onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=cheat-sheet>&nbsp;Cheat Sheet [1]</label>
+</li>
+<li>
+<input class=form-check-input type=checkbox id=getting-started onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=getting-started>&nbsp;Getting Started [4]</label>
+</li>
+<li>
+<input class=form-check-input type=checkbox id=machine-learning onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=machine-learning>&nbsp;Machine Learning [1]</label>
 </li>
 <li>
 <input class=form-check-input type=checkbox id=newsletter onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
@@ -87,16 +99,12 @@
 <label class=form-check-label for=project-news>&nbsp;Project News [3]</label>
 </li>
 <li>
+<input class=form-check-input type=checkbox id=pulsar-architecture onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=pulsar-architecture>&nbsp;Pulsar Architecture [6]</label>
+</li>
+<li>
 <input class=form-check-input type=checkbox id=pulsar-components onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
 <label class=form-check-label for=pulsar-components>&nbsp;Pulsar Components [2]</label>
-</li>
-<li>
-<input class=form-check-input type=checkbox id=at-the-edge onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=at-the-edge>&nbsp;At the Edge [1]</label>
-</li>
-<li>
-<input class=form-check-input type=checkbox id=machine-learning onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=machine-learning>&nbsp;Machine Learning [1]</label>
 </li>
 </ul>
 </div>
@@ -107,47 +115,82 @@
 </div>
 </div>
 <div class="col-12 col-md-8">
-<h1 class=title>Happenings in the Pulsar Neighborhood Jan 22</h1>
-<div class=content>
-<p>Was this forwarded to you? Click here to get future copies of <a href=https://lp.constantcontactpages.com/su/8nAlVKo/APNeighborhood>Happenings</a>!</p>
+<div class=container>
+<header class=mb-3>
+<div class=pb-2>
+</div>
+<h1>Happenings in the Pulsar Neighborhood Jan 22</h1>
+</header>
+<div class="row mb-3 no-gutters border-top border-bottom">
+<div class=col-2>
+<ul class="list-group list-group-horizontal mt-1 mb-1">
+<li class="list-group-item flex-fill border-0 p-0 mr-3">
+<a href="https://www.linkedin.com/sharing/share-offsite/?mini=true&url=https%3a%2f%2fpulsar-neighborhood.github.io%2farticles%2fhappenings-in-the-pulsar-neighborhood-jan-22%2f&title=Happenings%20in%20the%20Pulsar%20Neighborhood%20Jan%2022" target=_blank><img src=/svg/linkedin-in-brands.svg title="Share this on LinkedIn" class=img-fluid></a>
+</li>
+<li class="list-group-item flex-fill border-0 p-0 mr-3">
+<a target=_blank href="https://twitter.com/intent/tweet?text=Happenings%20in%20the%20Pulsar%20Neighborhood%20Jan%2022&url=https%3a%2f%2fpulsar-neighborhood.github.io%2farticles%2fhappenings-in-the-pulsar-neighborhood-jan-22%2f&hashtags=apachepulsar&via=pulsar_neighbor">
+<img src=/svg/twitter-brands.svg title="Share this on Twitter" class=img-fluid></a>
+</li>
+</ul>
+</div>
+<div class="col text-right">
+<span class=text-muted>Author:</span> Aaron Williams<br>
+<span class=text-muted>Published:</span> January 4, 2022
+</div>
+</div>
+<article>
+<p>Was this forwarded to you? Click here to get future copies of <a href=https://lp.constantcontactpages.com/su/8nAlVKo/APNeighborhood target=_blank>Happenings</a>!</p>
 <p>Happy New Year Everyone!</p>
 <p>For this issue, we have some end of the year stats, Log4j updates, a new PMC member, and lots of talks. Plus our normal features of a Stack Overflow question and some monthly community stats.</p>
 <h2 id=apache-pulsar-is-5-in-commits><strong>Apache Pulsar is #5 in Commits</strong></h2>
-<p>The Apache Software Foundation (ASF) released their “<a href=https://blogs.apache.org/foundation/entry/apache-in-2021-by-the>Apache by the digits</a>” report and among the interesting details about the ASF is the stat that Apache Pulsar is #5 in commits. We wrote a short blog on the <a href=https://apache-pulsar-neighborhood.medium.com/>Neighborhood’s Medium page</a>, check it out <a href=https://apache-pulsar-neighborhood.medium.com/2012ed0ab5c7>here</a> and learn about how we grew so much in 2021.</p>
+<p>The Apache Software Foundation (ASF) released their “<a href=https://blogs.apache.org/foundation/entry/apache-in-2021-by-the target=_blank>Apache by the digits</a>” report and among the interesting details about the ASF is the stat that Apache Pulsar is #5 in commits. We wrote a short blog on the <a href=https://apache-pulsar-neighborhood.medium.com/ target=_blank>Neighborhood’s Medium page</a>, check it out <a href=https://apache-pulsar-neighborhood.medium.com/2012ed0ab5c7 target=_blank>here</a> and learn about how we grew so much in 2021.</p>
 <p><img src=https://user-images.githubusercontent.com/1042872/153459175-21984b24-2bbf-47df-89be-3c86b9238fb7.png alt=pieChart></p>
 <p>Source: Apache by the digits</p>
 <h2 id=log4j-update><strong>Log4j Update</strong></h2>
-<p>The log4shell exploit is shaping up to be a very large issue going forward because of how widely used Log4j is. The exploit has even made it into the <a href=https://www.npr.org/2021/12/14/1064123144/companies-scramble-to-defend-against-newly-discovered-log4j-digital-flaw>popular press</a> and will pop up over the next year as some company will realize that they didn’t update their systems and will be exploited. That is the bad news. The good news is how quickly the Apache Pulsar community reacted. We wrote a quick post that captured those first hours <a href=/articles/log4shell-security-update/>here</a>. And the quick actions by our neighbors were noticed by the wider open source community. Specifically, Lari Hotari was mentioned in a Sonatype <a href=https://blog.sonatype.com/a-new-0-day-log4j-vulnerability-discovered-in-the-wild>article</a> (and in many other places) talking about his tester and docker updates.</p>
-<p>The official mitigation actions that you need to take are located on the Apache Pulsar <a href=https://pulsar.apache.org/blog/2021/12/11/Log4j-CVE/>website</a>. Although the best way to keep up this and other happenings is to sign up for the <a href=https://pulsar.apache.org/en/contact/>dev@ mailing list</a>.</p>
+<p>The log4shell exploit is shaping up to be a very large issue going forward because of how widely used Log4j is. The exploit has even made it into the <a href=https://www.npr.org/2021/12/14/1064123144/companies-scramble-to-defend-against-newly-discovered-log4j-digital-flaw target=_blank>popular press</a> and will pop up over the next year as some company will realize that they didn’t update their systems and will be exploited. That is the bad news. The good news is how quickly the Apache Pulsar community reacted. We wrote a quick post that captured those first hours <a href=/articles/log4shell-security-update/>here</a>. And the quick actions by our neighbors were noticed by the wider open source community. Specifically, Lari Hotari was mentioned in a Sonatype <a href=https://blog.sonatype.com/a-new-0-day-log4j-vulnerability-discovered-in-the-wild target=_blank>article</a> (and in many other places) talking about his tester and docker updates.</p>
+<p>The official mitigation actions that you need to take are located on the Apache Pulsar <a href=https://pulsar.apache.org/blog/2021/12/11/Log4j-CVE/ target=_blank>website</a>. Although the best way to keep up this and other happenings is to sign up for the <a href=https://pulsar.apache.org/en/contact/ target=_blank>dev@ mailing list</a>.</p>
 <h2 id=year-end-stats><strong>Year End Stats</strong></h2>
 <p>The Apache Pulsar Neighborhood grew a lot this year. We had over 3.3k contributions from 351 different neighbors. For comparison, in 2020 we had 1415 contributions (an increase of about 140%), from 212 unique contributors. For conversations in 2021, we had over 24k across GitHub, Slack, and Stack Overflow from 1.2k unique people. In 2020, we had 9,256 conversations from 665 speakers. As you can tell, the neighborhood has more than doubled in 2021!
-And a fun final little stat that you probably already heard about, on 29 November, we passed 10k stars on Github. We wrote a <a href=https://medium.com/apache-pulsar-neighborhood/9-966-stars-who-will-be-the-10-000-bea11ba92b48>short blog</a> about it in November. We are currently at 10,200, so if you haven’t starred the <a href=https://github.com/apache/pulsar>Pulsar GitHub</a>, please take a moment and do so.</p>
+And a fun final little stat that you probably already heard about, on 29 November, we passed 10k stars on Github. We wrote a <a href=https://medium.com/apache-pulsar-neighborhood/9-966-stars-who-will-be-the-10-000-bea11ba92b48 target=_blank>short blog</a> about it in November. We are currently at 10,200, so if you haven’t starred the <a href=https://github.com/apache/pulsar target=_blank>Pulsar GitHub</a>, please take a moment and do so.</p>
 <h2 id=new-pmc-member><strong>New PMC Member</strong></h2>
 <p>The PMC announced the addition of a new member in December, Liu Yu from StreamNative. If you don’t recognize the name Liu Yu, you probably recognize Anonymitaet who has made many contributions, especially around the documentation of the project. She brings the number of neighbors elevated to the PMC this year to four. The others were Hang Chen from StreamNative, Lin Lin from Tencent, and Enrico Olivelli from DataStax.</p>
 <h2 id=upcoming-events><strong>Upcoming Events</strong></h2>
-<p>Our first event of 2022 will be with Rob Morrow of SigmaX on 12 Jan 2022 at the <a href=https://www.meetup.com/nor-cal-apache-pulsar-meetup-group/events/281386918/>NorCal Neighborhood Meetup</a>. The talk is titled “Using Open Source Software to Improve Streaming on the Edge” and about how to use Apache Pulsar and Apache Arrow to get sensor data from the billions of IoT devices into an IoT Gateway, because going to the Cloud is too slow and too costly.</p>
-<p>Do you live in the Princeton, NJ area? The NYC Apache Pulsar Meetup is hosting a “<a href=https://www.meetup.com/new-york-city-apache-pulsar-meetup/events/282270385/>Pulsar, Pizza, and Phun</a>” event on 13 Jan 2022. Yes this is an in person event!</p>
+<p>Our first event of 2022 will be with Rob Morrow of SigmaX on 12 Jan 2022 at the <a href=https://www.meetup.com/nor-cal-apache-pulsar-meetup-group/events/281386918/ target=_blank>NorCal Neighborhood Meetup</a>. The talk is titled “Using Open Source Software to Improve Streaming on the Edge” and about how to use Apache Pulsar and Apache Arrow to get sensor data from the billions of IoT devices into an IoT Gateway, because going to the Cloud is too slow and too costly.</p>
+<p>Do you live in the Princeton, NJ area? The NYC Apache Pulsar Meetup is hosting a “<a href=https://www.meetup.com/new-york-city-apache-pulsar-meetup/events/282270385/ target=_blank>Pulsar, Pizza, and Phun</a>” event on 13 Jan 2022. Yes this is an in person event!</p>
 <p>15–16 Jan ‘22- Pulsar Summit Asia- Note that this event is now virtual only.
 With more on the way in February and March.</p>
-<p>If you missed any of the previous events, such as <a href=https://youtu.be/3suR1CV-zOE>Pedro Silvestre</a> of Imperial College London or <a href=https://youtu.be/hpvLVRWHu2A>Jowanza Joseph</a> of Finicity, we just added both of their talks to the <a href=https://www.youtube.com/channel/UCVVDEgdWslqCV7wgvpy_QQg>Neighborhood YouTube Channel</a>. There you will find the rest of the talks that we recorded in 2021, plus links to the ApacheCon talks, and some links to other talks.</p>
-<p>Would you and some colleagues like to set up a <a href=https://www.meetup.com/pro/apache-pulsar-neighborhood>Neighborhood Meetup</a> group or maybe you have someone who you would like to hear speak at a future meetup? Let us know and we can give you some help. Visit us at our Neighborhood Meetup page or our <a href=https://pulsar.apache.org/en/contact/>slack</a> channel #meetup and ask questions.</p>
-<h2 id=great-questions-from-the-apache-pulsar-stack-overflowhttpsstackoverflowcomquestionstaggedapache-pulsartabnewest><strong>Great questions from the Apache Pulsar <a href="https://stackoverflow.com/questions/tagged/apache-pulsar?tab=Newest">Stack Overflow</a></strong></h2>
+<p>If you missed any of the previous events, such as <a href=https://youtu.be/3suR1CV-zOE target=_blank>Pedro Silvestre</a> of Imperial College London or <a href=https://youtu.be/hpvLVRWHu2A target=_blank>Jowanza Joseph</a> of Finicity, we just added both of their talks to the <a href=https://www.youtube.com/channel/UCVVDEgdWslqCV7wgvpy_QQg target=_blank>Neighborhood YouTube Channel</a>. There you will find the rest of the talks that we recorded in 2021, plus links to the ApacheCon talks, and some links to other talks.</p>
+<p>Would you and some colleagues like to set up a <a href=https://www.meetup.com/pro/apache-pulsar-neighborhood target=_blank>Neighborhood Meetup</a> group or maybe you have someone who you would like to hear speak at a future meetup? Let us know and we can give you some help. Visit us at our Neighborhood Meetup page or our <a href=https://pulsar.apache.org/en/contact/ target=_blank>slack</a> channel #meetup and ask questions.</p>
+<h2 id=great-questions-from-the-apache-pulsar-stack-overflowhttpsstackoverflowcomquestionstaggedapache-pulsartabnewest><strong>Great questions from the Apache Pulsar <a href="https://stackoverflow.com/questions/tagged/apache-pulsar?tab=Newest" target=_blank>Stack Overflow</a></strong></h2>
 <p>As you know, we have a very active slack and Stack Overflow neighborhoods. You can ask questions at both locations and get answers quickly. Slack does have two big weaknesses. One, it is limited to the number of messages that can be saved at about 10k and we hit the limit about every three months. Two, it is not searchable by Google. Thus, when you put the error message that you received into Google, you won’t see that the question has already been answered once or twice on Slack. So to promote our great Stack Overflow channel, we thought that we would find a good question and include it here in Happenings.</p>
-<p><em><a href=https://stackoverflow.com/questions/70255724/pulsar-compression-decompression-cycle>Question</a>: I am curious about how compression works in pulsar. from the public doc, it states “You can compress messages published by producers during transportation” does it mean client compress the data and the data get decompressed when it arrives at broker so the decompressed data is persisted and consumer later? or it means the compression happens from end-to-end and the decompression happens at consumer side?</em></p>
+<p><em><a href=https://stackoverflow.com/questions/70255724/pulsar-compression-decompression-cycle target=_blank>Question</a>: I am curious about how compression works in pulsar. from the public doc, it states “You can compress messages published by producers during transportation” does it mean client compress the data and the data get decompressed when it arrives at broker so the decompressed data is persisted and consumer later? or it means the compression happens from end-to-end and the decompression happens at consumer side?</em></p>
 <p>Follow the link above to get the answer. Can you expand on the answer given?</p>
 <h2 id=stats-of-the-month><strong>Stats of the Month</strong></h2>
 <p>For Dec, we had 91 contributors making 411 contributions, with 19 of those contributors making their first contribution. We also had just under 3k conversations from 277 different people. This is about 50% more interaction in December than in November and with all of the holidays that are in December, it just shows how much the community is growing. Plus we now have over 5,700 members on our Slack channel!</p>
 <h2 id=apachepulsar-is-growing><strong>#ApachePulsar is Growing</strong></h2>
 <p>We have seen the tag #ApachePulsar appearing in some new places. We asked that Meetup to add it as a tag that you can add to your events a couple of months ago and they just added it. Also, we have see #ApachePulsar appear on Peloton, so if you are part of that community, add in #ApachePulsar and ride with others from the neighborhood.</p>
 <h2 id=apache-pulsar-in-the-news><strong>Apache Pulsar in the News</strong></h2>
-<p>Here are some blog posts that we have found from around the web. We think that they are good, but we might not have read them all. Let us know what you have written and we will share it. Post links on our <a href=https://apache-pulsar.slack.com/archives/C02CUPZ2KMZ>blogs-articles</a> channel on the Apache Pulsar Slack. Or to see more, plus presentations, go <a href=https://pulsar.apache.org/en/resources/>here</a>.</p>
-<p><a href=https://medium.com/building-the-open-data-stack/apache-pulsar-performance-testing-with-nosqlbench-3e9816175ba1>Apache Pulsar Performance Testing with NoSQL Bench</a>
-<a href=https://www.infoq.com/news/2021/12/log4j-zero-day-vulnerability/>Vulnerability Affecting Multiple Log4j Versions Permits RCE Exploit </a>(Neighbor Lari Hotari mentioned)
-<a href=https://betterprogramming.pub/distributed-locks-with-apache-pulsar-2d95a4d5ff5e>Distributed Locks With Apache Pulsar</a>
-<a href=https://memgraph.com/blog/memgraph-2-1-release>Announcing Memgraph 2.1</a>
-<a href=https://www.datastax.com/blog/infinite-scale-without-fail-starlight-rabbitmq>Infinite Scale without Fail</a>
-<a href=https://medium.com/splunk-maas/apache-bookkeeper-observability-part-1-introducing-the-metrics-7f0acb32d0dc>Apache BookKeeper Observability — Part 1 of 5</a></p>
+<p>Here are some blog posts that we have found from around the web. We think that they are good, but we might not have read them all. Let us know what you have written and we will share it. Post links on our <a href=https://apache-pulsar.slack.com/archives/C02CUPZ2KMZ target=_blank>blogs-articles</a> channel on the Apache Pulsar Slack. Or to see more, plus presentations, go <a href=https://pulsar.apache.org/en/resources/ target=_blank>here</a>.</p>
+<p><a href=https://medium.com/building-the-open-data-stack/apache-pulsar-performance-testing-with-nosqlbench-3e9816175ba1 target=_blank>Apache Pulsar Performance Testing with NoSQL Bench</a>
+<a href=https://www.infoq.com/news/2021/12/log4j-zero-day-vulnerability/ target=_blank>Vulnerability Affecting Multiple Log4j Versions Permits RCE Exploit </a>(Neighbor Lari Hotari mentioned)
+<a href=https://betterprogramming.pub/distributed-locks-with-apache-pulsar-2d95a4d5ff5e target=_blank>Distributed Locks With Apache Pulsar</a>
+<a href=https://memgraph.com/blog/memgraph-2-1-release target=_blank>Announcing Memgraph 2.1</a>
+<a href=https://www.datastax.com/blog/infinite-scale-without-fail-starlight-rabbitmq target=_blank>Infinite Scale without Fail</a>
+<a href=https://medium.com/splunk-maas/apache-bookkeeper-observability-part-1-introducing-the-metrics-7f0acb32d0dc target=_blank>Apache BookKeeper Observability — Part 1 of 5</a></p>
+</article>
+<div class="row border border-primary rounded">
+<div class="col p-2">
+<h3>You might also like...</h3>
+<div class=row>
+<div class="col text-center p-2">
+<div><a href=/articles/happenings-in-the-pulsar-neighborhood-dec-21/><img src=https://user-images.githubusercontent.com/1042872/153695964-14a47b49-8bd0-4d11-82ca-c92a2fa9bb81.png alt class=img-fluid style=max-width:150px></a></div>
+<div class=pt-2><a href=/articles/happenings-in-the-pulsar-neighborhood-dec-21/>Happenings in the AP Neighborhood Dec. ‘21</a></div>
+<div class=pt-2>For this issue, we have three new committers, a new milestone, and lots of talks. Plus our normal …</div>
 </div>
+</div>
+</div>
+</div>
+<br>
 </div>
 </div>
 <div class="col-0 col-md-2">
@@ -156,7 +199,7 @@ With more on the way in February and March.</p>
 <div class=col-12>
 <h4>In this article</h4>
 </div>
-<div class="col-12 border-left border-primary"><nav id=TableOfContents>
+<div class="col-12 border-left border-primary pr-0"><nav id=TableOfContents>
 <ul>
 <li><a href=#apache-pulsar-is-5-in-commits><strong>Apache Pulsar is #5 in Commits</strong></a></li>
 <li><a href=#log4j-update><strong>Log4j Update</strong></a></li>

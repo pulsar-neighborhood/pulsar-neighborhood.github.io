@@ -17,7 +17,7 @@
 <meta name=google-site-verification content="8Zd8cCKCyFkvP3na2C_RJEXZ7bx86vSoM81X28bj4aI">
 <link rel=icon href=https://pulsar-neighborhood.github.io/favicon.png>
 <meta name=robots content="noindex">
-<link rel=stylesheet href=/css/style.54b7ba7961947abc1bfcb95f8ad589c0c76006c8c54ec132c2e600bb7746b2e5.css>
+<link rel=stylesheet href=/css/style.704e5b6100ae0fa5711d902bef07628d85bd90d1e0f370effc49988b13cf470d.css>
 <style>.ctct-form-defaults{padding:15px!important}</style>
 </head>
 <body class="page bg-secondary">
@@ -54,7 +54,7 @@
 <div class="col-0 col-md-2">
 <div class=sidebar>
 <div class=mb-2>
-<a href=/getting-started><div class="col-12 btn btn-success">Get Started with Pulsar</div></a>
+<a href=/guides/getting-started><div class="col-12 btn btn-success">Get Started with Pulsar</div></a>
 </div>
 <div class="spotlight mb-2 border border-primary rounded">
 <div class="row bg-primary no-gutters">
@@ -75,8 +75,20 @@
 <h4>Category</h4>
 <ul>
 <li>
-<input class=form-check-input type=checkbox id=pulsar-architecture onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=pulsar-architecture>&nbsp;Pulsar Architecture [6]</label>
+<input class=form-check-input type=checkbox id=at-the-edge onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=at-the-edge>&nbsp;At the Edge [1]</label>
+</li>
+<li>
+<input class=form-check-input type=checkbox id=cheat-sheet onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=cheat-sheet>&nbsp;Cheat Sheet [1]</label>
+</li>
+<li>
+<input class=form-check-input type=checkbox id=getting-started onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=getting-started>&nbsp;Getting Started [4]</label>
+</li>
+<li>
+<input class=form-check-input type=checkbox id=machine-learning onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=machine-learning>&nbsp;Machine Learning [1]</label>
 </li>
 <li>
 <input class=form-check-input type=checkbox id=newsletter onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
@@ -87,16 +99,12 @@
 <label class=form-check-label for=project-news>&nbsp;Project News [3]</label>
 </li>
 <li>
+<input class=form-check-input type=checkbox id=pulsar-architecture onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
+<label class=form-check-label for=pulsar-architecture>&nbsp;Pulsar Architecture [6]</label>
+</li>
+<li>
 <input class=form-check-input type=checkbox id=pulsar-components onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
 <label class=form-check-label for=pulsar-components>&nbsp;Pulsar Components [2]</label>
-</li>
-<li>
-<input class=form-check-input type=checkbox id=at-the-edge onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=at-the-edge>&nbsp;At the Edge [1]</label>
-</li>
-<li>
-<input class=form-check-input type=checkbox id=machine-learning onclick=toggleFilter(filterOptions.categoryFilters,this.id)>
-<label class=form-check-label for=machine-learning>&nbsp;Machine Learning [1]</label>
 </li>
 </ul>
 </div>
@@ -107,18 +115,61 @@
 </div>
 </div>
 <div class="col-12 col-md-8">
-<h1 class=title>[Video] Internals of Stream Processing</h1>
-<div class=content>
+<div class=container>
+<header class=mb-3>
+<div class=pb-2>
+</div>
+<h1>[Video] Internals of Stream Processing</h1>
+</header>
+<div class="row mb-3 no-gutters border-top border-bottom">
+<div class=col-2>
+<ul class="list-group list-group-horizontal mt-1 mb-1">
+<li class="list-group-item flex-fill border-0 p-0 mr-3">
+<a href="https://www.linkedin.com/sharing/share-offsite/?mini=true&url=https%3a%2f%2fpulsar-neighborhood.github.io%2farticles%2finternals-of-stream-processing%2f&title=%5bVideo%5d%20Internals%20of%20Stream%20Processing" target=_blank><img src=/svg/linkedin-in-brands.svg title="Share this on LinkedIn" class=img-fluid></a>
+</li>
+<li class="list-group-item flex-fill border-0 p-0 mr-3">
+<a target=_blank href="https://twitter.com/intent/tweet?text=%5bVideo%5d%20Internals%20of%20Stream%20Processing&url=https%3a%2f%2fpulsar-neighborhood.github.io%2farticles%2finternals-of-stream-processing%2f&hashtags=apachepulsar&via=pulsar_neighbor">
+<img src=/svg/twitter-brands.svg title="Share this on Twitter" class=img-fluid></a>
+</li>
+</ul>
+</div>
+<div class="col text-right">
+<span class=text-muted>Author:</span> Apache Pulsar Neighborhood<br>
+<span class=text-muted>Published:</span> December 30, 2021
+</div>
+</div>
+<article>
 <p>Stream Processing Systems (SPSs) are an integral part of modern data-intensive companies. In a world where streams are becoming king, they are commonly employed for much more than data analytics. Yet, most of developers only use them and have never dove deep into the internals of the system.</p>
-<p>This was true for Pedro Silvestre, who with colleagues at TU Delft started to create <a href=https://delftdata.github.io/clonos-web/>Clonos</a> , a novel local recovery and high availability approach for SPS.</p>
+<p>This was true for Pedro Silvestre, who with colleagues at TU Delft started to create <a href=https://delftdata.github.io/clonos-web/ target=_blank>Clonos</a> , a novel local recovery and high availability approach for SPS.</p>
 <p>" I knew very little about the internals of SPSs. But now, I needed to modify one quite heavily and that would require a good mental model of their design. I understood what SPSs did from a theoretical standpoint and I had even used them extensively in previous projects, but I had no clue about their internal design. I scoured the internet for resources, and while I was able to piece together a little bit of what was going on, in the end I would need to spend weeks looking through the code of an SPS before feeling confident enough to start designing Clonos."[1]</p>
 <p>From this starting point he needed to dig deep into to code to get the understanding needed to finish Clonos. Pedro will walk us through his learnings about SPS and his recommendations for improving them.</p>
 <p>Pedro F. Silvestre is a PhD student with the Large-Scale Data & Systems (LSDS) Group at Imperial College London. His research focuses on the interplay between Dataflow Systems and novel Deep Learning Use Cases. Previously he was a Research Engineer at TU Delft&rsquo;s Web Information Systems Group working on Clonos.</p>
-<p>[1] <a href=https://www.doc.ic.ac.uk/~pms20/post/stream-processing-thread-model/>https://www.doc.ic.ac.uk/~pms20/post/stream-processing-thread-model/</a></p>
+<p>[1] <a href=https://www.doc.ic.ac.uk/~pms20/post/stream-processing-thread-model/ target=_blank>https://www.doc.ic.ac.uk/~pms20/post/stream-processing-thread-model/</a></p>
 <div class=youtube>
 <iframe src=https://www.youtube.com/embed/3suR1CV-zOE allowfullscreen title="YouTube Video"></iframe>
 </div>
+</article>
+<div class="row border border-primary rounded">
+<div class="col p-2">
+<h3>You might also like...</h3>
+<div class=row>
+<div class="col text-center p-2">
+<div><a href=/articles/log4shell-security-update/><img src=https://user-images.githubusercontent.com/1042872/153687998-4532d5b6-252a-430a-a5cc-41cf0d96c873.png alt class=img-fluid style=max-width:150px></a></div>
+<div class=pt-2><a href=/articles/log4shell-security-update/>Log4Shell Security Update</a></div>
+<div class=pt-2>Within the last 10 hours (current time 10:00 am Pacific, 10 December 21), there has been a severe …</div>
 </div>
+<div class="col text-center p-2">
+<div class=pt-2><a href=/articles/apache-pulsar-deep-dive-an-end-to-end-view-of-the-data-flow/>[Video] Apache Pulsar Deep Dive an End-to-End View of the Data Flow</a></div>
+<div class=pt-2>Enrico Olivelli gives us a tour of how data moves from the Producer to the Consumer.</div>
+</div>
+<div class="col text-center p-2">
+<div class=pt-2><a href=/articles/leveraging-pulsars-next-gen-streaming-capabilities-from-a-javaee-application/>[Video] Leveraging Pulsar's Next Gen Streaming Capabilities from a JavaEE Application</a></div>
+<div class=pt-2>In this session you will see how to use Pulsar in a JakartaEE Web Application deployed on Apache …</div>
+</div>
+</div>
+</div>
+</div>
+<br>
 </div>
 </div>
 <div class="col-0 col-md-2">
