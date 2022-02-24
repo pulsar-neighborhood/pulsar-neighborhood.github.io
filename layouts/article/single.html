@@ -1,7 +1,9 @@
 {{ define "main"}}
 {{ $linkedinSvg := resources.Get "svg/linkedin-in-brands.svg" }}
 {{ $twitterSvg := resources.Get "svg/twitter-brands.svg" }}
+{{ $emailSvg := resources.Get "svg/envelope-solid.svg" }}
 
+{{ $related := .Site.RegularPages.RelatedIndices . "categories" "tags" | first 3 }}
 <div class="container">
   <header class="mb-3">
     <div class="pb-2">
@@ -11,11 +13,11 @@
     </div>
     <h1>{{ .Title }}</h1>
   </header>
-  <div class="row mb-3 no-gutters">
+  <div class="row mb-3 no-gutters border-top border-bottom">
     <div class="col-2">
-      <ul class="list-group list-group-horizontal">
+      <ul class="list-group list-group-horizontal mt-1 mb-1">
         <li class="list-group-item flex-fill border-0 p-0 mr-3" >
-          <a href="https://www.linkedin.com/sharing/share-offsite/?mini=true&url=https:{{ .Permalink }}&title={{ .Title }}" target="_blank"><img src="{{ $linkedinSvg.RelPermalink }}" title="Share this on LinkedIn" class="img-fluid"></a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?mini=true&url={{ .Permalink }}&title={{ .Title }}" target="_blank"><img src="{{ $linkedinSvg.RelPermalink }}" title="Share this on LinkedIn" class="img-fluid"></a>
         </li>
         <li class="list-group-item flex-fill border-0 p-0 mr-3">
           <a  target="_blank"
@@ -37,6 +39,26 @@
   <article>
     {{ .Content }}
   </article>
+
+  {{ with $related }}
+  <div class="row border border-primary rounded">
+    <div class="col p-2">
+      <h3>You might also like...</h3>
+      <div class="row">
+        {{ range . }}
+        <div class="col text-center p-2">
+          {{if .Params.imgUrl}}
+          <div><a href="{{ .RelPermalink }}"><img src="{{ .Params.imgUrl }}" alt="" class="img-fluid"
+                style="max-width:150px" /></a></div>
+          {{end}}
+          <div class="pt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+          <div class="pt-2">{{ .Params.Summary | truncate 100 }}</div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
   <br />
   {{ template "_internal/disqus.html" . }}
 </div>

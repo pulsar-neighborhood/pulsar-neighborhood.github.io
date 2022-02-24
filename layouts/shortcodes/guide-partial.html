@@ -1,0 +1,11 @@
+{{ $filePath := printf "/content/guides/partials/%s.md" (.Get 0) }}
+
+{{ if os.FileExists $filePath }}
+    {{ $file := .Site.GetPage $filePath }}
+
+    {{ with $file }}
+        {{ .Content}}
+    {{ end }}
+{{ else }}
+    !! File not found at path '{{$filePath}}'
+{{ end }}

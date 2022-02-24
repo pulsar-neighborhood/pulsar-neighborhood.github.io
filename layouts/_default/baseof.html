@@ -51,7 +51,7 @@
             {{ partial "sidebar.html" . }}
           </div>
         </div>
-        {{ if $showToc }}
+        {{ if or $showToc $showNewsletterSignup }}
           <div class="col-12 col-md-8">
         {{ else }}
         <div class="col-12 col-md-10">
@@ -69,7 +69,7 @@
                   <div class="col-12">
                     <h4>In this article</h4>
                   </div>
-                  <div class="col-12 border-left border-primary">{{ . }}</div>
+                  <div class="col-12 border-left border-primary pr-0">{{ . }}</div>
                 </div>
               </nav>
             {{ end }}

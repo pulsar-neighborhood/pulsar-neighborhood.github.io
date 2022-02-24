@@ -7,6 +7,7 @@
 {{ $facebookSvg := resources.Get "svg/facebook-brands.svg" }}
 {{ $twitchSvg := resources.Get "svg/twitch-brands.svg" }}
 {{ $otherSvg := resources.Get "svg/address-card-solid.svg" }}
+{{ $categories := $.Site.Taxonomies.categories.Alphabetical }}
 
 {{ with $spotLight }}
 <div class="spotlight mb-2 border border-primary rounded">
@@ -55,7 +56,7 @@
 {{ end }}
 {{if not .IsHome}}
   <div class="mb-2">
-    <a href="/getting-started"><div class="col-12 btn btn-success">Get Started with Pulsar</div></a>
+    <a href="/guides/getting-started"><div class="col-12 btn btn-success">Get Started with Pulsar</div></a>
   </div>
 {{ end }}
 <div class="spotlight mb-2 border border-primary rounded">
@@ -76,7 +77,7 @@
         <div class="col-12">
           <h4>Category</h4>
           <ul>
-            {{ range $.Site.Taxonomies.categories.ByCount }}
+            {{ range $categories }}
               {{ $foramttedTerm := .Term | replaceRE "[.]" "_" | urlize}}
               <li>
                 <input class="form-check-input" type="checkbox" value="" id="{{ $foramttedTerm }}"  onclick="toggleFilter(filterOptions.categoryFilters, this.id)">

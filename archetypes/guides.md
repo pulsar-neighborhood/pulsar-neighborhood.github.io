@@ -2,9 +2,7 @@
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-weight: 100
 type: guide
-showtoc: false
 categories: # must be lowercase shishkabob
     #- get-started
     #- use-cases
@@ -23,37 +21,12 @@ author:
     imgUrl:
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+Something about the guide, like it's goals.
 
-{{< tabs tabTotal="4">}}
-{{< tab tabName="C#" >}}
+## Prerequisites
 
-```csharp
-public void DoSomehting(){
-    return;
-}
-```
+## Steps
 
-{{< /tab >}}
-{{< tab tabName="Java" >}}
+## Summary
 
-```java
-public void DoSomehting(){
-    return;
-}
-```
-
-{{< /tab >}}
-{{< tab tabName="Go">}}
-
-**Go Content**
-
-{{< /tab >}}
-{{< tab tabName="Python">}}
-
-**Python Content**
-
-{{< /tab >}}
-{{< /tabs >}}
+## Troubleshooting
