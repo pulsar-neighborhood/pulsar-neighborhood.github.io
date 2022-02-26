@@ -14,7 +14,6 @@ homepage_meta_tags:
 enableEmoji: true
 languageCode: en-us
 title: Pulsar Neighborhood
-noindex: true
 
 pygmentsCodeFences: true
 pygmentsCodefencesGuessSyntax: true
