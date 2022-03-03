@@ -1,1 +1,0 @@
-String.prototype.format=function(){var a=arguments;return this.replace(/{([0-9]+)}/g,function(c,b){return typeof a[b]=='undefined'?c:a[b]})},String.prototype.toCamelCase=function(a){return a.replace(/\s(.)/g,function(a){return a.toUpperCase()}).replace(/\s/g,'').replace(/^(.)/,function(a){return a.toLowerCase()})}
