@@ -13,7 +13,7 @@ This guide is for getting started using the Pulsar binaries. Lets do this!
 
 ### Get the Pulsar binaries
 
-{{< guide-partial "get-the-binaries" >}}
+{{< guide-partial file="get-the-binaries" >}}
 
 ### Start the Pulsar broker
 
@@ -29,11 +29,11 @@ Pulsar has quite a few supporting services (Bookkeeper, Zookeeper, etc). Within 
 
 ### Send a message to the Broker
 
-{{< guide-partial "pulsar-client-produce" >}}
+{{< guide-partial file="pulsar-client-produce" >}}
 
 ### Get messages from the Broker
 
-{{< guide-partial "pulsar-client-consume" >}}
+{{< guide-partial file="pulsar-client-consume" >}}
 
 ### Stop the Broker
 

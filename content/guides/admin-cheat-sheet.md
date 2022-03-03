@@ -4,7 +4,7 @@ date: 2022-02-24T13:42:16-05:00
 draft: false
 type: guide
 categories: # must be lowercase shishkabob
-    - cheat-sheet
+    - cluster-administration
 tags:
     - pulsar-admin
 level: 100
@@ -15,7 +15,7 @@ summary:  Cheat sheet of admin commands
 
 To run these commands you'll need the binaries installed...
 
-{{< guide-partial "get-the-binaries" >}}
+{{< guide-partial file="get-the-binaries" >}}
 
 ## Admin commands
 

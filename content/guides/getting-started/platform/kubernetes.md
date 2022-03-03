@@ -30,15 +30,15 @@ kubectl -n pulsar port-forward service/pulsar-broker 6650:6650
 
 ### Get the Pulsar binaries
 
-{{< guide-partial "get-the-binaries" >}}
+{{< guide-partial file="get-the-binaries" >}}
 
 ### Send a message to the Broker
 
-{{< guide-partial "pulsar-client-produce" >}}
+{{< guide-partial file="pulsar-client-produce" >}}
 
 ### Get messages from the Broker
 
-{{< guide-partial "pulsar-client-consume" >}}
+{{< guide-partial file="pulsar-client-consume" >}}
 
 ### Stop the Broker
 

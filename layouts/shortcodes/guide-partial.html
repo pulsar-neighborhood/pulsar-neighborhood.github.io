@@ -1,10 +1,21 @@
-{{ $filePath := printf "/content/guides/partials/%s.md" (.Get 0) }}
+{{ $filePath := printf "/content/guides/partials/%s.md" (.Get "file") }}
 
 {{ if os.FileExists $filePath }}
+    {{ $url := default  "pulsar://localhost:6650" (.Get "url") }}
+    {{ $tenantName := default  "default" (.Get "tenant-name") }}
+    {{ $namespace := default  "public" (.Get "namespace") }}
+    {{ $topicName := default "my-first-topic" (.Get "topic-name") }}
+    {{ $subscriptionName := default  "my-subscription" (.Get "subscription-name") }}
     {{ $file := .Site.GetPage $filePath }}
 
     {{ with $file }}
-        {{ .Content}}
+        {{ $content := replace .Content "{{tenant_name}}" $tenantName }}
+        {{ $content = replace $content "{{url}}" $url }}
+        {{ $content = replace $content "{{topic_name}}" $topicName }}
+        {{ $content = replace $content "{{tenant_name}}" $tenantName }}
+        {{ $content = replace $content "{{namespace}}" $namespace }}
+        {{ $content = replace $content "{{subscription_name}}" $subscriptionName }}
+        {{ $content | safeHTML }}
     {{ end }}
 {{ else }}
     !! File not found at path '{{$filePath}}'

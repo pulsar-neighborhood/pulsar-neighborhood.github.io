@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $latestPages := where .Site.RegularPages "Type" "in" (slice "article" "guide") }}
+{{ $latestPages := (where .Site.Pages "Type" "in" (slice "article" "guide")).ByDate.Reverse }}
 <div>
   <div class="container pt-0">
     <div class="row">

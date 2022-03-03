@@ -13,36 +13,23 @@ You're going to need virtualization enabled on your desktop and a container runt
 
 ## Steps
 
-### Start the Pulsar broker
-
-{{< tabs tabTotal="2">}}
-{{< tab tabName="Docker Cli" >}}
+### Start a standalone broker
 
 ```bash
-docker run -d -p 6650:6650 -p 8080:8080 --name pulsar apachepulsar/pulsar:2.9.1 bin/pulsar standalone
+docker run -d -p 6650:6650 -p 8080:8080 --name pulsar apachepulsar/pulsar:latest bin/pulsar standalone
 ```
-
-{{< /tab >}}
-{{< tab tabName="NerdCtl" >}}
-
-```bash
-nerdctl run -d -p 6650:6650 -p 8080:8080 --name pulsar apachepulsar/pulsar:2.9.1 bin/pulsar standalone
-```
-
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Get the Pulsar binaries
 
-{{< guide-partial "get-the-binaries" >}}
+{{< guide-partial file="get-the-binaries" >}}
 
 ### Send a message to the Broker
 
-{{< guide-partial "pulsar-client-produce" >}}
+{{< guide-partial file="pulsar-client-produce" >}}
 
 ### Get messages from the Broker
 
-{{< guide-partial "pulsar-client-consume" >}}
+{{< guide-partial file="pulsar-client-consume" >}}
 
 ### Stop the Broker
 
