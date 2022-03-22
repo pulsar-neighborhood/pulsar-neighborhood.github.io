@@ -62,6 +62,9 @@ body {
   padding-left: $grid-gutter-width;
   padding-right: $grid-gutter-width;
 }
+.highlight {
+  margin-bottom: 1rem;
+}
 
 // Display breakpoints for DEV
 // body:after {
