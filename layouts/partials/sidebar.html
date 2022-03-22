@@ -1,4 +1,4 @@
-{{ $spotLight := .Site.GetPage "/spotlight/index.md" }}
+{{ $spotLight := .Site.GetPage "/spotlight/enrico-olivelli.md" }}
 {{ $githubSvg := resources.Get "svg/github-brands.svg" }}
 {{ $linkedinSvg := resources.Get "svg/linkedin-in-brands.svg" }}
 {{ $twitterSvg := resources.Get "svg/twitter-brands.svg" }}
@@ -9,6 +9,7 @@
 {{ $otherSvg := resources.Get "svg/address-card-solid.svg" }}
 {{ $categories := $.Site.Taxonomies.categories.Alphabetical }}
 
+{{if .IsHome}}
 {{ with $spotLight }}
 <div class="spotlight mb-2 border border-primary rounded">
   <div class="row bg-primary no-gutters p-1">
@@ -18,7 +19,7 @@
     <div class="row">
       <div class="col-12 text-center">
         {{if .Params.imgUrl}}
-          <a href="{{ .RelPermalink }}"><img src="{{.Params.imgUrl}}" alt="" class="img-fluid " style="max-width:80%" /></a>
+          <a href="{{ .RelPermalink }}"><img src="{{.Params.imgUrl}}" alt="" class="img-fluid rounded-circle" style="max-width:80%" /></a>
         {{end}}
       </div>
     </div>
@@ -27,32 +28,33 @@
     </div>
     <div class="row text-center no-gutters">
         {{if .Params.github}}
-        <div class="col pr-1"><a href="{{ .Params.github }}" target="_blank"><img src="{{ $githubSvg.RelPermalink }}" title="{{.Params.fullName }} on GitHub" class="img-fluid"></a></div>
+        <div class="col pr-1"><a href="{{ .Params.github }}" target="_blank"><img src="{{ $githubSvg.RelPermalink }}" title="{{.Params.fullName }} on GitHub" class="img-fluid" style="max-height: 37px"></a></div>
         {{end}}
         {{if .Params.twitter}}
-        <div class="col pr-1"><a href="{{ .Params.twitter }}" target="_blank"><img src="{{ $twitterSvg.RelPermalink }}" title="{{.Params.fullName }} on Twitter" class="img-fluid"></a></div>
+        <div class="col pr-1"><a href="{{ .Params.twitter }}" target="_blank"><img src="{{ $twitterSvg.RelPermalink }}" title="{{.Params.fullName }} on Twitter" class="img-fluid" style="max-height: 37px"></a></div>
         {{end}}
         {{if .Params.facebook}}
-        <div class="col pr-1"><a href="{{ .Params.facebook }}" target="_blank"><img src="{{ $facebookSvg.RelPermalink }}" title="{{.Params.fullName }} on Facebook" class="img-fluid"></a></div>
+        <div class="col pr-1"><a href="{{ .Params.facebook }}" target="_blank"><img src="{{ $facebookSvg.RelPermalink }}" title="{{.Params.fullName }} on Facebook" class="img-fluid" style="max-height: 537px0px"></a></div>
         {{end}}
         {{if .Params.youtube}}
-        <div class="col pr-1"><a href="{{ .Params.youtube }}" target="_blank"><img src="{{ $youtubeSvg.RelPermalink }}" title="{{.Params.fullName }} on YouTube" class="img-fluid"></a></div>
+        <div class="col pr-1"><a href="{{ .Params.youtube }}" target="_blank"><img src="{{ $youtubeSvg.RelPermalink }}" title="{{.Params.fullName }} on YouTube" class="img-fluid" style="max-height: 37px"></a></div>
         {{end}}
         {{if .Params.linkedin}}
-        <div class="col pr-1"><a href="{{ .Params.linkedin }}" target="_blank"><img src="{{ $linkedinSvg.RelPermalink }}" title="{{.Params.fullName }} on LinkedIn" class="img-fluid"></a></div>
+        <div class="col pr-1"><a href="{{ .Params.linkedin }}" target="_blank"><img src="{{ $linkedinSvg.RelPermalink }}" title="{{.Params.fullName }} on LinkedIn" class="img-fluid" style="max-height: 5037pxpx"></a></div>
         {{end}}
         {{if .Params.twitch}}
-        <div class="col pr-1"><a href="{{ .Params.twitch }}" target="_blank"><img src="{{ $twitchSvg.RelPermalink }}" title="{{.Params.fullName }} on Twitch" class="img-fluid"></a></div>
+        <div class="col pr-1"><a href="{{ .Params.twitch }}" target="_blank"><img src="{{ $twitchSvg.RelPermalink }}" title="{{.Params.fullName }} on Twitch" class="img-fluid" style="max-height: 37px"></a></div>
         {{end}}
         {{if .Params.email}}
-        <div class="col pr-1"><a href="{{ .Params.email }}" target="_blank"><img src="{{ $emailSvg.RelPermalink }}" title="Email {{.Params.fullName }}" class="img-fluid"></a></div>
+        <div class="col pr-1"><a href="{{ .Params.email }}" target="_blank"><img src="{{ $emailSvg.RelPermalink }}" title="Email {{.Params.fullName }}" class="img-fluid" style="max-height: 37px"></a></div>
         {{end}}
         {{if .Params.other}}
-        <div class="col pr-1"><a href="{{ .Params.other }}" target="_blank"><img src="{{ $otherSvg.RelPermalink }}" title="{{.Params.fullName }}'s site" class="img-fluid"></a></div>
+        <div class="col pr-1"><a href="{{ .Params.other }}" target="_blank"><img src="{{ $otherSvg.RelPermalink }}" title="{{.Params.fullName }}'s site" class="img-fluid" style="max-height: 37px"></a></div>
         {{end}}
     </div>
   </div>
 </div>
+{{ end }}
 {{ end }}
 {{if not .IsHome}}
   <div class="mb-2">

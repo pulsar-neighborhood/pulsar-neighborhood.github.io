@@ -13,6 +13,7 @@ youtube:
 twitch:
 email:
 other:
+showtoc: false
 ---
 
 Meet this really cool person
