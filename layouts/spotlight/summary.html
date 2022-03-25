@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="summary mb-2">
+        <div class="row">
+            <div class="col-2">
+                {{ if .Params.imgUrl }}
+                    <a href="{{ .Permalink }}"><img alt="{{ .Title }}" src="{{ .Params.imgUrl }}" /></a>
+                {{ end}}
+            </div>
+            <div class="col">
+                <h2 class="title-summary"><a href="{{ .Permalink }}">{{ .Params.fullName }}</a></h2>
+                <p>{{ .Summary }}</p>
+            </div>
+        </div>
+    </div>
+</div>
