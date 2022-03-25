@@ -4,7 +4,7 @@ date: {{ .Date }}
 draft: true
 type: guide
 categories: # must be lowercase shishkabob
-    #- get-started
+    #- getting-started
     #- use-cases
     #- managed-pulsar
     #- pulsar-architectures
