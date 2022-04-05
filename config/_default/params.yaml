@@ -1,15 +1,14 @@
 google_analytics_id: G-8S9SD43SBH
 
 homepage_meta_tags:
-  meta_description: ""
-  meta_og_title:
-  meta_og_type:
-  meta_og_url:
-  meta_og_image:
-  meta_og_description:
-  meta_twitter_card:
-  meta_twitter_site:
-  meta_twitter_creator:
+  meta_description: "The Pulsar Neighborhood community enables Apache Pulsar users and developers to learn about Pulsar and how to use it in their professional lives; via useful, interactive content (including blogs, Meetups, and YouTube videos). This is all driven by a passionate, vendor neutral, and inclusive community of members."
+  meta_og_title: "The Pulsar Neighborhood"
+  meta_og_type: article
+  meta_og_url: https://pulsar-neighborhood.github.io
+  meta_og_image: https://pulsar-neighborhood.github.io/png/blue-logotype.png
+  meta_og_description: "The Pulsar Neighborhood community enables Apache Pulsar users and developers to learn about Pulsar and how to use it in their professional lives; via useful, interactive content (including blogs, Meetups, and YouTube videos). This is all driven by a passionate, vendor neutral, and inclusive community of members."
+  meta_twitter_site: "@pulsar_neighbor"
+  meta_twitter_creator: "@pulsar_neighbor"
 
 enableEmoji: true
 languageCode: en-us
