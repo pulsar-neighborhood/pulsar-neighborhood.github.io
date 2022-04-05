@@ -16,7 +16,7 @@ tags:
     #- functions
     #- storage
 level: 100
-summary:
+summary: Almost any application that requires real-time or near-real-time data processing benefits from having a message queue or streaming data processing component in its architecture. Online food ordering apps, e-commerce sites, media streaming services, and online gaming are straightforward examples. But weather apps, smart cars, health status apps with smartwatch technology, or anything Internet of things (IoT) typically rely on a message queue or streaming engine as well.
 imgUrl: https://user-images.githubusercontent.com/16946028/159678986-ccaf6b62-e9ea-43c5-8901-3361f5392bfb.png
 author:
     name: Pulsar Neighborhood

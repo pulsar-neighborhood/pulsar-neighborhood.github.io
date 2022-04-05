@@ -16,7 +16,7 @@ tags:
     #- functions
     #- storage
 level: 100
-summary:
+summary: I would also like to focus this reading on what is Pulsar and how it works under its own merits rather than comparing it against apache Kafka. I am taking this approach as there is plenty literature doing this already and because from a messaging system architecture both of these paradigms, up to a point, are different.
 imgUrl:
 author:
     name: Ivan Garcia
