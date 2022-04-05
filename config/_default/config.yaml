@@ -48,3 +48,6 @@ enableEmoji: true
 sitemap:
   changefreq: weekly
   filename: sitemap.xml
+
+disableKinds:
+  - sitemap
