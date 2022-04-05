@@ -44,3 +44,7 @@ related:
   toLower: false
 
 enableEmoji: true
+
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
