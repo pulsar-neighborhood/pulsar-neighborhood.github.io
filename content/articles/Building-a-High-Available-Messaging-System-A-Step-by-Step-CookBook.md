@@ -6,7 +6,7 @@ weight: 100
 type: article
 showtoc: true
 categories:
-    - get-started
+    - getting-started
 tags:
     - high-availability
 level: 200

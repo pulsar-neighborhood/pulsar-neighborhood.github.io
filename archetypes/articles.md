@@ -9,7 +9,7 @@ categories:  # must be lowercase shishkabob
     #- getting-started
     #- use-cases
     #- managed-pulsar
-    #- pulsar-architectures
+    #- pulsar-architecture
     #- moving-to-pulsar
 tags:
     #- microservices

@@ -6,7 +6,7 @@ weight: 100
 type: article
 showtoc: true
 categories:  # must be lowercase shishkabob
-    - get-started
+    - getting-started
     #- use-cases
     #- managed-pulsar
     #- pulsar-architectures
