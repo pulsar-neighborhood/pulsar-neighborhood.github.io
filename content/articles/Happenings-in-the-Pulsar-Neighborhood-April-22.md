@@ -19,6 +19,8 @@ author:
     imgUrl:
 ---
 
+Was this forwarded to you? Click here to get future copies of [Happenings](https://lp.constantcontactpages.com/su/8nAlVKo/APNeighborhood)!
+
 For this issue, ApacheCon ‘21, new Neighborhood article, a new committer, and our first in person event.  Plus our normal features of a Stack Overflow question and some monthly community stats.
 
 ### **ApacheCon ‘21**
@@ -81,3 +83,9 @@ Here are some blog posts that we have found from around the web. We think that t
 [The Path to Getting the Full Data Stack on Kubernetes](https://www.linkedin.com/posts/datastaxdevs_the-path-to-getting-the-full-data-stack-o[%E2%80%A6]r96k?utm_source=linkedin_share&utm_medium=member_desktop_web)
 
 [Building Asynchronous Microservices with ZIO](https://www.linkedin.com/posts/ziverge_building-asynchronous-microservices-with-activ[%E2%80%A6]u4hx?utm_source=linkedin_share&utm_medium=member_desktop_web)
+
+### **The Pulsar Neighborhood on Social Media**
+
+Follow us on: [twitter](https://twitter.com/pulsar_neighbor), [YouTube](https://www.youtube.com/apachepulsarneighborhood), [Meetup](https://www.meetup.com/pro/apache-pulsar-neighborhood), and [website](https://pulsar-neighborhood.com/)
+
+To sign up to receive Happenings click [here](https://lp.constantcontactpages.com/su/8nAlVKo/APNeighborhood).
