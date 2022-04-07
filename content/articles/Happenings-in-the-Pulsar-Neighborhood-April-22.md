@@ -21,9 +21,9 @@ author:
 
 Was this forwarded to you? Click here to get future copies of [Happenings](https://lp.constantcontactpages.com/su/8nAlVKo/APNeighborhood)!
 
-For this issue, ApacheCon ‘21, new Neighborhood article, a new committer, and our first in person event.  Plus our normal features of a Stack Overflow question and some monthly community stats.
+For this issue, ApacheCon ‘22, new Neighborhood article, a new committer, and our first in person event.  Plus our normal features of a Stack Overflow question and some monthly community stats.
 
-### **ApacheCon ‘21**
+### **ApacheCon ‘22**
 
 ApacheCon North America dates and location have been announced.  The event is October 3-6 in New Orleans.  The Call for Papers has opened and there is an Apache Pulsar track!  Other tracks include Big Data, Search, IoT, Cloud, Fintech, and Tomcat.  And we bet that our neighbors can come up with a talk that would fit in each of these categories, so please submit your talks and lets have Pulsar take over Apache Con!  
 
