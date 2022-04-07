@@ -25,7 +25,7 @@ For this issue, ApacheCon ‘22, new Neighborhood article, a new committer, and 
 
 ### **ApacheCon ‘22**
 
-ApacheCon North America dates and location have been announced.  The event is October 3-6 in New Orleans.  The Call for Papers has opened and there is an Apache Pulsar track!  Other tracks include Big Data, Search, IoT, Cloud, Fintech, and Tomcat.  And we bet that our neighbors can come up with a talk that would fit in each of these categories, so please submit your talks and lets have Pulsar take over Apache Con!  
+ApacheCon North America dates and location have been announced, October 3-6 in New Orleans.  The [Call for Papers](https://www.apachecon.com/acna2022/) has opened and there is an Apache Pulsar track!  Other tracks include Big Data, Search, IoT, Cloud, Fintech, and Tomcat.  And we bet that our neighbors can come up with a talk that would fit in each of these categories, so please submit your talks and lets have Pulsar take over Apache Con!  
 
 Also, we want to take a moment to thank David Fisher, PMC member (and former mentor to Pulsar when it was in incubation) for proposing and captaining the CFP process for the Pulsar track.
 
