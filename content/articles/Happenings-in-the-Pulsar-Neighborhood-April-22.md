@@ -41,7 +41,7 @@ If you have a suggestion on what we should write next, let us know via the form 
 
 ### **New Committer Announced**
 
-The PMC announced that Andrey Yegorov of DataStax was named as new a committer.  Andrey made his first contribution to Pulsar in Feb 2021.  He has done great work for Pulsar including Connector and Adaptor work plus updating dependencies for CVE’s.  Andrey, thank you so much for what you have done and we look forward to your next contributions to the Neighborhood.
+The PMC announced that [Andrey Yegorov](https://github.com/dlg99) of DataStax was named as new a committer.  Andrey made his first contribution to Pulsar in Feb 2021.  He has done great work for Pulsar including Connector and Adaptor work plus updating dependencies for CVE’s.  Andrey, thank you so much for what you have done and we look forward to your next contributions to the Neighborhood.
 
 ### **In Person Meetup**
 
@@ -49,13 +49,14 @@ Coming up very quickly is our first in person event.  On 8 April, we will be hos
 
 The second talk will be by Neighbor Christophe Bornet, Sr. Software Engineer from DataStax.  He will be doing a deep dive into the Pulsar Binary Protocol.  This part will be virtual, so everyone can join.  But beer will only be served at the in person event.  Christophe’s talk will begin about 8 pm and you can get all of the information on the [NL Pulsar Meetup](https://www.meetup.com/netherlands-apache-pulsar-meetup/events/284660180/) group’s site.
 
-### **New Website’s Survey**
+### **New Website Survey**
 
 We have mentioned this a couple of times (we are just really excited about it), a group of our neighbors has been working hard to improve the Apache Pulsar home page.  The complete redesign of the site is in Beta and they would like you to fill out a [survey](https://forms.office.com/r/QK6FYdQ158) giving them feedback about the [new site](https://pulsar-next.staged.apache.org/).  So check out the new site and take a moment to help them make it even better.
 
 ### **Upcoming events…**
 
 April 8 - [NL Pulsar Meetup Group](https://www.meetup.com/netherlands-apache-pulsar-meetup/events/284660180/) (see above)
+
 Oct - [ApacheCon](https://www.apachecon.com/acna2022/)- CFP is out now.
 
 Would you and some colleagues like to set up a [Neighborhood Meetup](https://www.meetup.com/pro/apache-pulsar-neighborhood) group or maybe you have someone who you would like to hear speak at a future meetup?  Let us know and we can give you some help.  Visit us at our Neighborhood Meetup page or our slack channel #meetup and ask questions.
@@ -63,8 +64,9 @@ Would you and some colleagues like to set up a [Neighborhood Meetup](https://www
 ### **Great questions from the Apache Pulsar Stack Overflow**
 
 As you know, we have a very active [slack](https://pulsar.apache.org/en/contact/) and [Stack Overflow](https://stackoverflow.com/questions/tagged/apache-pulsar?tab=Newest) neighborhoods.  You can ask questions at both locations and get answers quickly.  Slack does have two big weaknesses.  One, it is limited to the number of messages that can be saved at about 10k and we hit the limit about every three months.  Two, it is not searchable by Google.  Thus, when you put the error message that you received into Google, you won’t see that the question has already been answered once or twice on Slack.  So to promote our great Stack Overflow channel, we thought that we would find a good question and include it here in Happenings.  
-Last month we pulled one from the archives, but for this month, we liked the newest one (well when this was published, it was the newest one.)
+
 [Question](https://stackoverflow.com/questions/70872157/non-persistent-message-is-lost-when-throughput-is-high): non-persistent message is lost when throughput is high?
+
 I found that non-persistent messages are lost sometimes even though the my pulsar client is up and running. Those non-persistent messages are lost when the throughput is high (more than 1000 messages within a very short period of time. I personally think that this is not high). If I increase the parameter receiverQueueSize or change the message type to persistent message, the problem is gone.
 The question has been viewed well over a 100 times and has an accepted answer.  Do you know the answer?  Do you agree with the answer? Can you improve it?
 
