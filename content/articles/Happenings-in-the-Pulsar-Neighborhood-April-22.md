@@ -80,7 +80,7 @@ Here are some blog posts that we have found from around the web. We think that t
 
 [Pulsar or Kafka? And the lessons from doing our own testing](https://www.linkedin.com/posts/owentl_pulsar-or-kafka-and-the-lessons-from-doing-acti[%E2%80%A6]ssbB?utm_source=linkedin_share&utm_medium=member_desktop_web)
 
-[Apache Pulsar Client Application Best Practices](https://www.linkedin.com/posts/polyzos_apache-pulsar-client-application-best-practice[%E2%80%A6]WV0E?utm_source=linkedin_share&utm_medium=member_desktop_web)
+[Apache Pulsar Client Application Best Practices](https://www.linkedin.com/posts/polyzos_apache-pulsar-client-application-best-practices-activity-6907936077219524608-WV0E/)
 
 [The Path to Getting the Full Data Stack on Kubernetes](https://www.linkedin.com/posts/datastaxdevs_the-path-to-getting-the-full-data-stack-o[%E2%80%A6]r96k?utm_source=linkedin_share&utm_medium=member_desktop_web)
 
