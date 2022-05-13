@@ -13,7 +13,7 @@ tags:
     #- storage
 level: #100, 200, 300
 summary: For this issue, we have three new committers, a new milestone, and lots of talks. Plus our normal features of a Stack Overflow question and some community stats.
-imgUrl: https://user-images.githubusercontent.com/1042872/153695964-14a47b49-8bd0-4d11-82ca-c92a2fa9bb81.png
+imgUrl: https://miro.medium.com/fit/c/1360/1360/1*KTNrGZT4pvfz5B9_KE2BZg.png
 author:
     name: Aaron Williams
     imgUrl:
