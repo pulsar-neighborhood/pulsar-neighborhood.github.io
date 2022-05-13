@@ -13,7 +13,7 @@ tags:
     #- storage
 level: #100, 200, 300
 summary: For this issue, another new milestone, a preview of the new website, 2 new committers, the community technical meetings, and new events.  Plus our normal features of a Stack Overflow question and some monthly community stats.
-imgUrl:
+imgUrl: https://miro.medium.com/fit/c/1360/1360/1*KTNrGZT4pvfz5B9_KE2BZg.png
 author:
     name: Aaron Williams
     imgUrl:

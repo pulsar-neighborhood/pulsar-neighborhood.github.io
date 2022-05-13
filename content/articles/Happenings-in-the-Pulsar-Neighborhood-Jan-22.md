@@ -13,7 +13,7 @@ tags:
     #- storage
 level: 
 summary: For this issue, we have some end of the year stats, Log4j updates, a new PMC member, and lots of talks. Plus our normal features of a Stack Overflow question and some monthly community stats.
-imgUrl:
+imgUrl: https://miro.medium.com/fit/c/1360/1360/1*KTNrGZT4pvfz5B9_KE2BZg.png
 author:
     name: Aaron Williams
     imgUrl:
