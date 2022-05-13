@@ -6,11 +6,16 @@ weight: 100
 type: article
 showtoc: true
 categories:  # must be lowercase shishkabob
+    #- at-the-edge
+    #- cluster-administration
     #- getting-started
-    #- use-cases
-    #- managed-pulsar
-    #- pulsar-architecture
+    #- machine-learning
     #- moving-to-pulsar
+    #- newsletter
+    #- project-news
+    #- pulsar-architecture
+    #- pulsar-components
+    #- use-cases
 tags:
     #- microservices
     #- functions
