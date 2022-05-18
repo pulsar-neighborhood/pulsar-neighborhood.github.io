@@ -50,3 +50,6 @@ sitemap:
   filename: sitemap.xml
 
 enableRobotsTXT: true
+enableEmoji: true
+languageCode: en-us
+disqusShortname: pulsar-neighborhood

@@ -10,16 +10,10 @@ homepage_meta_tags:
   meta_twitter_site: "@pulsar_neighbor"
   meta_twitter_creator: "@pulsar_neighbor"
 
-enableEmoji: true
-languageCode: en-us
-title: Pulsar Neighborhood
 
 pygmentsCodeFences: true
 pygmentsCodefencesGuessSyntax: true
 pygmentsUseClasses: true
-
-enableEmoji: true
-disqusShortname: pulsar-neighborhood
 
 ghrepo: "https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/" # keep the trailing slash
 ghrepo_issues: "https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/issues/new/choose"
