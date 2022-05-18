@@ -16,8 +16,4 @@ other:
 showtoc: false
 ---
 
-![Jowanza Josep](https://user-images.githubusercontent.com/1042872/157561061-d6f0299b-7127-4512-9f01-543338af98fd.jpeg)
-
-### Jowanza Josep
-
 Jowanza is VP of Engineering with Finicity, a Mastercard Company and is the author of the recently released book "[Mastering Apache Pulsar](https://www.oreilly.com/library/view/mastering-apache-pulsar/9781492084891/)" from O’Reilly Media. He has also spoken at our Neighborhood meetup.

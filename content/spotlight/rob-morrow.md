@@ -16,8 +16,4 @@ other: https://sigmaxai.com/
 showtoc: false
 ---
 
-![Rob Morrow](https://user-images.githubusercontent.com/1042872/157562412-15a72cb5-8cac-45ec-b396-f706c811505d.jpeg)
-
-### Rob Morrow
-
 Robert is the CEO and Founder of [SigmaX.ai](https://sigmaxai.com/) and previously was the CTO Federal of Cloudera and served as a technical thought leader at Sun Microsystems and has published many scientific peer-reviewed papers.

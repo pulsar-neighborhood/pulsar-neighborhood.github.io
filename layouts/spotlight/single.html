@@ -1,6 +1,9 @@
 {{ define "main"}}
   <div class="container">
-    <h1>{{ .Title }}</h1>
+    {{if .Params.imgUrl}}
+      <img src="{{ .Params.imgUrl }}" />
+    {{end}}
+    <h1>{{ .Params.fullName }}</h1>
     <article>
       {{ .Content }}
     </article>
