@@ -1,13 +1,16 @@
 {{ $logoFull := resources.Get "png/blue-logotype.png" }}
 {{ $logoMobile := resources.Get "png/blue-logotype.png" }}
 
+{{ $iconSvg := resources.Get "svg/Neighborhood-Icon.svg" }}
+{{ $logoSvg := resources.Get "svg/Pulsar-Neighborhood-Logo.svg" }}
+
 <div class='header sticky-top bg-secondary'>
   <div class="container">
     <div class="logo">
-      <a href="{{ .Site.BaseURL }}"><img src="{{ $logoFull.RelPermalink }}" class="img-fluid" /></a>
+      <a href="{{ .Site.BaseURL }}"><img src="{{ $logoSvg.RelPermalink }}" class="img-fluid"  /></a>
     </div>
     <div class="logo-mobile">
-      <a href="{{ .Site.BaseURL }}"><img src="{{ $logoMobile.RelPermalink }}" class="img-fluid"/></a>
+      <a href="{{ .Site.BaseURL }}"><img src="{{ $iconSvg.RelPermalink }}" class="img-fluid" /></a>
     </div>
     {{ partial "main-menu.html" . }}
     {{ partial "hamburger.html" . }}
