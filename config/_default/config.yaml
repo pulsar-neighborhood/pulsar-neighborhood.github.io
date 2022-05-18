@@ -47,6 +47,6 @@ enableEmoji: true
 
 sitemap:
   changefreq: weekly
-  filename: sitemap1.xml
+  filename: sitemap.xml
 
 enableRobotsTXT: true
