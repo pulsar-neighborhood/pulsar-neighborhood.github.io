@@ -1,5 +1,5 @@
 ---
-title: "Happenings in the AP Neighborhood Dec. ‘21"
+title: "Happenings in the AP Neighborhood Dec. '21"
 date: 2021-12-06T16:01:27-05:00
 draft: false
 weight: 100

@@ -1,5 +1,5 @@
 ---
-title: "Happenings in the Pulsar Neighborhood Jan 22"
+title: "Happenings in the Pulsar Neighborhood Jan '22"
 date: 2022-01-04T15:32:45-05:00
 draft: false
 weight: 100
