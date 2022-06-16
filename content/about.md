@@ -18,9 +18,9 @@ The Pulsar Neighborhood is not the official location of Apache Pulsar informatio
 
 ### Our Values
 
-**“Community over Code”**- this is the mantra of the ASF and The Pulsar Neighborhood (TPN) fully embraces this mantra by creating a Neighborhood where all are welcome to contribute.
-**Promote Apache Pulsar and its Neighborhood-** like all ASF projects, Apache Pulsar is only as strong as the community (Neighborhood) around it.
-**Amplify the content of our fellow Neighbors-** By working as a Neighborhood, we can better promote the great work of our neighbors in a louder and more effective way than we could as individuals.  
-**Openness-** Everything that we do is open to all, and all of our content freely available. (just give the Neighborhood and the individual neighbor or neighbors credit!)
-**Vendor Neutrality-** We believe in it and our actions show it.
-**Success-** When one neighbor succeeds, the entire Pulsar Neighborhood succeeds.
+- **“Community over Code”**- this is the mantra of the ASF and The Pulsar Neighborhood (TPN) fully embraces this mantra by creating a Neighborhood where all are welcome to contribute.
+- **Promote Apache Pulsar and its Neighborhood-** like all ASF projects, Apache Pulsar is only as strong as the community (Neighborhood) around it.
+- **Amplify the content of our fellow Neighbors-** By working together as a Neighborhood, we can better promote the great work of our neighbors in a louder and more effective way than we could as individuals.  
+- **Openness-** Everything that we do is open to all, and all of our content freely available. (just give TPN and the individual neighbor or neighbors credit!)
+- **Vendor Neutrality-** We believe in it and our actions show it.
+- **Success-** When one neighbor succeeds, the entire Pulsar Neighborhood succeeds.
