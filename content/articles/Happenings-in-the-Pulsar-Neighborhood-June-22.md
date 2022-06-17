@@ -21,7 +21,7 @@ tags:
     #- functions
     #- storage
 level: #100, 200, 300
-summary: "For this issue, new articles on the Neighborhood site, ApacheCon ‘22, Pulsar in italiano #3, two new committers and new language Slack Channels?  Plus our normal features of a Stack Overflow question and some monthly community stats."
+summary: "For this issue, new articles on the Neighborhood site, ApacheCon ‘22, Pulsar in italiano #3, and free Pulsar stickers.  Plus our normal features of a Stack Overflow question and some monthly community stats."
 imgUrl: https://miro.medium.com/fit/c/1360/1360/1*KTNrGZT4pvfz5B9_KE2BZg.png
 author:
     name: Aaron Williams
@@ -30,7 +30,7 @@ author:
 
 Was this forwarded to you? Click here to get future copies of [Happenings](https://lp.constantcontactpages.com/su/8nAlVKo/APNeighborhood)!
 
-_For this issue, new articles on the Neighborhood site, ApacheCon ‘22, Pulsar in italiano #3, two new committers and new language Slack Channels?  Plus our normal features of a Stack Overflow question and some monthly community stats._
+_For this issue, new articles on the Neighborhood site, ApacheCon ‘22, Pulsar in italiano #3, and free Pulsar stickers.  Plus our normal features of a Stack Overflow question and some monthly community stats._
 
 ### New Neighborhood Article- How Pulsar and Kafka Partitions Work
 
@@ -38,7 +38,7 @@ We are now publishing new articles on a regular basis and have even started rece
 
 _The main differences between Kafka and Pulsar relate to how they deal with resiliency. When dealing with large, time-dependent systems, it’s important to consider their resiliency if part of the system fails. For example, if one of the brokers hosting a partition dies, what happens to the data that’s been written to it? How do we continue consuming new data?_
 
-Check out the article [here](https://www.pulsar-neighborhood.io/articles/how-pulsar-and-kafka-partitions-work-and-how-they-differ/) and you can check it out with our other articles from the Pulsar Neighborhood on the Neighborhood's [website](https://pulsar-neighborhood.com/).
+Check out the full article [here](https://www.pulsar-neighborhood.io/articles/how-pulsar-and-kafka-partitions-work-and-how-they-differ/) and our other articles from the Pulsar Neighborhood on our [website](https://pulsar-neighborhood.io/).
 
 Do you have a Pulsar article that you would like us to publish? Let us know by submitting our [form](https://github.com/pulsar-neighborhood/pulsar-neighborhood.github.io/issues/new/choose).  Already wrote an article that has been published?  Great, we want to help you promote it.  You can use the same form as above and just tell us the abstract and the URL or you can post it in the #blogs-articles channel on the Apache Pulsar Workspace.
 
@@ -56,7 +56,7 @@ Speaking of ApacheCon, if you need financial assistance to attend the event, ASF
 
 ### Pulsar in italiano #3
 
-And speaking of events, the Pulsar Neighborhood is co-hosting its third [Pulsar in italiano](https://www.meetup.com/nor-cal-apache-pulsar-meetup-group/events/286425963/)event with the JUG Bologna.  Our guest speaker and Neighbor is Nicolo Boschi from DataStax (and newly appointed Committer for Pulsar.  The event is 22 June at 19:00 in Bologna, 10:00 am Pacific.  It is virtual, so anyone can attend by registering on our NorCal Neighborhood meetup group.  Below is the abstract.
+And speaking of events, the Pulsar Neighborhood is co-hosting its third [Pulsar in italiano](https://www.meetup.com/nor-cal-apache-pulsar-meetup-group/events/286425963/)event with the JUG Bologna.  Our guest speaker and Neighbor is Nicolo Boschi from DataStax (and newly appointed Committer for Pulsar).  The event is 22 June at 19:00 in Bologna, 10:00 am Pacific.  It is virtual, so anyone can attend by registering on our NorCal Neighborhood meetup group.  Below is the abstract.
 
 Nella nostra terza puntata della “Serie Pulsar in italiano”; Nicolò Boschi, Committer per i progetti Apache Pulsar e BookKeeper, ci illustrerà come costruire una pipeline di dati in streaming in tempo reale altamente scalabile e performante utilizzando i progetti Apache Cassandra e Pulsar.
 
@@ -69,9 +69,9 @@ The PMC announced one new committer in May, [Qiang Zhao](https://github.com/matt
 
 ### Upcoming events…
 
-June 22 -  [Pulsar in italiano](https://www.meetup.com/nor-cal-apache-pulsar-meetup-group/events/286425963/) - Nicolo Boschi from DataStax.
-August 18- [Pulsar Summit](https://pulsar-summit.org/) - CFP ends 20 May
-Oct - [ApacheCon](https://www.apachecon.com/acna2022/)- CFP ends 23 May.
+- June 22 -  [Pulsar in italiano](https://www.meetup.com/nor-cal-apache-pulsar-meetup-group/events/286425963/) - Nicolo Boschi from DataStax.
+- August 18- [Pulsar Summit](https://pulsar-summit.org/) - CFP ends 20 May
+- Oct - [ApacheCon](https://www.apachecon.com/acna2022/)- CFP ends 23 May.
 
 Would you and some colleagues like to set up a [Neighborhood Meetup](https://www.meetup.com/pro/apache-pulsar-neighborhood) group or maybe you have someone who you would like to hear speak at a future meetup?  Let us know and we can give you some help.  Visit us at our Neighborhood Meetup page or our slack channel #meetup and ask questions.  
 
@@ -105,5 +105,5 @@ Here are some blog posts that we have found from around the web. We think that t
 [What is Apache Pulsar?](https://mindmajix.com/what-is-apache-pulsar)
 
 The Pulsar Neighborhood on Social Media
-Follow us on: [twitter](https://twitter.com/pulsar_neighbor), [YouTube](https://www.youtube.com/apachepulsarneighborhood), [Meetup](https://www.meetup.com/pro/apache-pulsar-neighborhood), and [website](https://pulsar-neighborhood.com/)
+Follow us on: [twitter](https://twitter.com/pulsar_neighbor), [YouTube](https://www.youtube.com/apachepulsarneighborhood), [Meetup](https://www.meetup.com/pro/apache-pulsar-neighborhood), and [website](https://pulsar-neighborhood.io/)
 To sign up to receive Happenings click [here](https://lp.constantcontactpages.com/su/8nAlVKo/APNeighborhood).
