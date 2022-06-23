@@ -14,7 +14,7 @@ tags:
     #- functions
     #- storage
 level: #100, 200, 300
-summary:
+summary: In this article, we’ll explore why and how using a managed Apache Pulsar service saves you time and energy by reducing toil. We’ll explore some partners that offer a Pulsar as a service solution and highlight their strengths and challenges to help you select a managed service to use.
 imgUrl: https://user-images.githubusercontent.com/16946028/175392736-555608d6-d5cb-426a-b41a-7b2babadff9c.png
 author:
     name: Pulsar Neighborhood
