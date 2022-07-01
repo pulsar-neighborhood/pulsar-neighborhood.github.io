@@ -19,7 +19,7 @@ categories:  # must be lowercase shishkabob
 tags:
     - schemas
 level: 100
-summary:
+summary: The Apache Pulsar Schema is one of the most critical components of Apache Pulsar, an open-source distributed system messaging and streaming platform. In this article, we’ll explore the role of schemas in data streaming and how JSON, Avro, and Apache Pulsar work together to make edge computing possible.
 imgUrl: https://user-images.githubusercontent.com/16946028/176909975-6cd31a0d-f5f6-4928-8b21-adf5c5156736.png
 author:
     name: Pulsar Neighborhood
