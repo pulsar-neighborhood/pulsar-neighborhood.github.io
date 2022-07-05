@@ -2,7 +2,7 @@
 {{ $linkedinSvg := resources.Get "svg/linkedin-in-brands.svg" }}
 {{ $twitterSvg := resources.Get "svg/twitter-brands.svg" }}
 
-<div class="container guide">
+<div class="container guide" itemscope itemtype="http://schema.org/TechArticle">
   <header class="mb-3">
     <div class="pb-2">
       {{if .Params.imgUrl}}
