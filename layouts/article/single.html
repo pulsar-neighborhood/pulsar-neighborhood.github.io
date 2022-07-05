@@ -4,7 +4,7 @@
 {{ $emailSvg := resources.Get "svg/envelope-solid.svg" }}
 
 {{ $related := .Site.RegularPages.RelatedIndices . "categories" "tags" | first 3 }}
-<div class="container">
+<div class="container" itemscope itemtype="http://schema.org/Article">
   <header class="mb-3">
     <div class="pb-2">
       {{if .Params.imgUrl}}
@@ -36,7 +36,7 @@
     <div class="col-1"><img src="{{.Params.author.imgUrl}}" alt="" class="img-fluid" style="max-height:100px;" /></div>
     {{end}}
   </div>
-  <article>
+  <article itemprop="articleBody">
     {{ .Content }}
   </article>
 
