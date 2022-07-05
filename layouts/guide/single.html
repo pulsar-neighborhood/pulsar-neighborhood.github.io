@@ -2,7 +2,27 @@
 {{ $linkedinSvg := resources.Get "svg/linkedin-in-brands.svg" }}
 {{ $twitterSvg := resources.Get "svg/twitter-brands.svg" }}
 
-<div class="container guide" itemscope itemtype="http://schema.org/TechArticle">
+<script type="application/ld+json">
+  {
+		"@context":"http://schema.org",
+		"@type": "TechArticle",
+		"headline": "{{ .Title }}",
+    "dependencies": "Apache Pulsar Cluster",
+    "proficiencyLevel": "{{ .Params.level }}",
+		"image": "{{ .Params.imgUrl }}",
+    "author": "{{ .Params.author.name }}",
+    "genre": "Apache Pulsar",
+    "publisher": "Pulsar Neighborhood",
+		"url": "{{ .Permalink }}",
+		"dateCreated": "{{ .Params.date }}",
+		"datePublished": "{{ .Params.date }}",
+		"dateModified": "{{ .Params.date }}",
+    "description": "{{ .Params.summary }}",
+		"articleBody": "{{ .Content }}"
+	}
+</script>
+
+<div class="container guide">
   <header class="mb-3">
     <div class="pb-2">
       {{if .Params.imgUrl}}

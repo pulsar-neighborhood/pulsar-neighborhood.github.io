@@ -2,9 +2,33 @@
 {{ $linkedinSvg := resources.Get "svg/linkedin-in-brands.svg" }}
 {{ $twitterSvg := resources.Get "svg/twitter-brands.svg" }}
 {{ $emailSvg := resources.Get "svg/envelope-solid.svg" }}
-
 {{ $related := .Site.RegularPages.RelatedIndices . "categories" "tags" | first 3 }}
-<div class="container" itemscope itemtype="http://schema.org/Article">
+
+<script type="application/ld+json">
+  {
+		"@context":"http://schema.org",
+		"@type": "BlogPosting",
+		"image": "{{ .Params.imgUrl }}",
+		"url": "{{ .Permalink }}",
+		"headline": "{{ .Title }}",
+		"dateCreated": "{{ .Params.date }}",
+		"datePublished": "{{ .Params.date }}",
+		"dateModified": "{{ .Params.date }}",
+		"inLanguage": "en-US",
+		"isFamilyFriendly": "true",
+		"copyrightYear": "2022",
+		"copyrightHolder": "",
+		"author": {
+			"@type": "Person",
+			"name": "{{ .Params.author.name }}"
+		},
+		"mainEntityOfPage": "True",
+		"articleSection": "{{ delimit .Params.categories ">" }}",
+		"articleBody": "{{ .Content }}"
+	}
+  </script>
+
+<div class="container">
   <header class="mb-3">
     <div class="pb-2">
       {{if .Params.imgUrl}}
@@ -36,7 +60,7 @@
     <div class="col-1"><img src="{{.Params.author.imgUrl}}" alt="" class="img-fluid" style="max-height:100px;" /></div>
     {{end}}
   </div>
-  <article itemprop="articleBody">
+  <article>
     {{ .Content }}
   </article>
 
