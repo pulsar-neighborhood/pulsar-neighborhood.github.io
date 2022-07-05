@@ -17,18 +17,22 @@
   <link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title" />
   <meta name="google-site-verification" content="m-1Z-0k0EvG9PD7R24pKuETSaBpEvqoXgOYT-0MtuPU" />
   <link rel="icon" href="{{ "favicon.png" | absURL}}">
+
   {{ if .Site.IsServer }}
   {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
   <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
   {{ else }}
   {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" false) }}
   <link rel="stylesheet" href="{{ ($style | fingerprint).RelPermalink }}">
-  <link rel="canonical" href="{{ .Site.Config.baseURL }}/{{ .Page.RelPermalink }}" />
   {{ end }}
+  <link rel="canonical" href="{{ .Page.Permalink }}" />
+
   {{ block "header_css" . }}{{ end }}
+
   <style>
     .ctct-form-defaults { padding: 15px !important;}
   </style>
+  
 </head>
 {{ $showToc := and (.Params.showtoc | default true) (.Page.TableOfContents) }}
 {{ $showNewsletterSignup := and (.Params.showNewsletterSignup | default true) (.Page.TableOfContents) }}
