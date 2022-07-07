@@ -1,41 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_description }}" />
-  <meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" />
-  <meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
-  <meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
-  <meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
-  <meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
-  <meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
-  <meta name="twitter:creator" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_creator }}" />
-  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title" />
-  <meta name="google-site-verification" content="m-1Z-0k0EvG9PD7R24pKuETSaBpEvqoXgOYT-0MtuPU" />
-  <link rel="icon" href="{{ "favicon.png" | absURL}}">
-
-  {{ if .Site.IsServer }}
-  {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
-  <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
-  {{ else }}
-  {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" false) }}
-  <link rel="stylesheet" href="{{ ($style | fingerprint).RelPermalink }}">
-  {{ end }}
-  <link rel="canonical" href="{{ .Page.Permalink }}" />
-
-  {{ block "header_css" . }}{{ end }}
-
-  <style>
-    .ctct-form-defaults { padding: 15px !important;}
-  </style>
-  
-</head>
 {{ $showToc := and (.Params.showtoc | default true) (.Page.TableOfContents) }}
 {{ $showNewsletterSignup := and (.Params.showNewsletterSignup | default true) (.Page.TableOfContents) }}
+
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "page-head.html" . }}
 <body class='page bg-secondary'>
   {{ partial "main-menu-mobile.html" . }}
   <div class="wrapper">
@@ -120,5 +88,4 @@
 
   {{ partial "google-analytics.html" . }}
 </body>
-
 </html>
