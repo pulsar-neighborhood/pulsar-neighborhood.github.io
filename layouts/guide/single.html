@@ -38,3 +38,26 @@
   </article>
 </div>
 {{ end }}
+{{ define "jsonLd"}}
+{
+  "@context":"http://schema.org",
+  "@type": "TechArticle",
+  "headline": "{{ .Title }}",
+  "image": "{{ default "https://www.pulsar-neighborhood.io/images/blue-logotype.png" .Params.imgUrl }}",
+  "dependencies": "Apache Pulsar Cluster",
+  "proficiencyLevel": "{{ .Params.level }}",
+  "genre": "Apache Pulsar",
+  "publisher": "Pulsar Neighborhood",
+  "url": "{{ .Permalink }}",
+  "dateCreated": "{{ .Params.date }}",
+  "datePublished": "{{ .Params.date }}",
+  "dateModified": "{{ .Params.date }}",
+  "description": "{{ .Params.summary }}",
+  "author": {
+      "@type": "Person",
+      "name": "{{ default "Pulsar Neighborhood" .Params.author.name }}",
+      "url": "https://www.pulsar-neighborhood.io"
+  },
+  "articleBody": "{{ .Content }}"
+}
+{{ end }}

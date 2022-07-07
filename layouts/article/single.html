@@ -63,3 +63,38 @@
   {{ partial "disqus.html" . }}
 </div>
 {{ end }}
+{{ define "jsonLd" }}
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "Pulsar Neighborhood - {{ .Title }}",
+  "description": "{{ .Params.summary }}",
+  "publisher": {
+      "@type": "Organization",
+      "name": "Pulsar Neighborhood"
+  }
+},
+{
+  "@context":"http://schema.org",
+  "@type": "BlogPosting",
+  "image": {{ default "https://www.pulsar-neighborhood.io/images/blue-logotype.png" .Params.imgUrl }},
+  "url": "{{ .Permalink }}",
+  "publisher": "Pulsar Neighborhood",
+  "headline": "{{ .Title }}",
+  "dateCreated": "{{ .Params.date }}",
+  "datePublished": "{{ .Params.date }}",
+  "dateModified": "{{ .Params.date }}",
+  "inLanguage": "en-US",
+  "isFamilyFriendly": "true",
+  "copyrightYear": "2022",
+  "copyrightHolder": "",
+  "author": {
+      "@type": "Person",
+      "name": "{{ default "Pulsar Neighborhood" .Params.author.name }}",
+      "url": "https://www.pulsar-neighborhood.io"
+  },
+  "mainEntityOfPage": "True",
+  "articleSection": [{{ delimit .Params.categories ", " }}],
+  "articleBody": "{{ .Content }}"
+}
+{{ end }}

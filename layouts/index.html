@@ -1,3 +1,24 @@
+{{ define "jsonLd" }}
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "Pulsar Neighborhood",
+  "description": "The Pulsar Neighborhood community enables Apache Pulsar users and developers to learn about Pulsar and how to use it in their professional lives; via useful, interactive content (including blogs, Meetups, and YouTube videos). This is all driven by a passionate, vendor neutral, and inclusive community of members.",
+  "publisher": {
+      "@type": "Organization",
+      "name": "Pulsar Neighborhood"
+  }
+},
+{
+  "@context": "https://schema.org",
+  "@type": "SpecialAnnouncement",
+  "name": "Apache Pulsar users and developers learn about Pulsar and how to use it via useful, interactive content.",
+  "text": "The Pulsar Neighborhood is an independent community (Neighborhood) of Apache Pulsar users, developers, and enthusiasts looking to improve their Apache Pulsar skills, find new features & best practices of the project, and promote Apache Pulsar & its community enabling the project’s continued growth and prosperity. This is done both through creation of content (blogs, tutorials, videos, and speaking engagements) and by the consumption of content created by other “neighbors”. This is all driven by a passionate, vendor neutral community of members for the betterment of the Apache Pulsar community.<br><a href=https://www.pulsar-neighborhood.io/about>Learn more about the Neighborhood</a> ",
+  "datePosted": "2022-07-07T08:00",
+  "category": "Pub/Sub Message Streaming Platform"
+}
+{{ end }}
+
 {{ define "main" }}
 
 {{ $latestPages := (where .Site.Pages "Type" "in" (slice "article" "guide")).ByDate.Reverse }}
