@@ -29,10 +29,6 @@ markup:
     noClasses: true
     tabWidth: 2
 
-taxonomies:
-  category: categories
-  tag: tags
-
 related:
   includeNewer: false
   indices:
