@@ -1,9 +1,9 @@
 ---
-title: "[Video] Leveraging Pulsar's Next Gen Streaming Capabilities from a JavaEE Application"
+title: "Leveraging Pulsar's Next Gen Streaming Capabilities from a JavaEE Application"
 date: 2021-09-01T15:57:41-05:00
 draft: false
 weight: 100
-type: article
+type: video
 showtoc: true
 categories:  # must be lowercase shishkabob
     - pulsar-architecture

@@ -8,6 +8,7 @@
               (not (in .Permalink "example"))
               (not (in .Permalink "articles")) 
               (not (in .Permalink "guides")) 
+              (not (in .Permalink "videos")) 
               (not (in .Permalink "search")) }}
   <url>
     <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
@@ -27,7 +28,7 @@
   </url>
   {{ end }}
   {{ end }}
-  {{ range where .Site.RegularPages "Type" "in" (slice "article" "guide") }}
+  {{ range where .Site.RegularPages "Type" "in" (slice "article" "guide" "video") }}
     {{- if .Permalink -}}
   <url>
     <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}

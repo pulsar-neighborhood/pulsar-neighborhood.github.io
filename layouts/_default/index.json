@@ -1,5 +1,5 @@
 {{- $.Scratch.Add "index" slice -}}
-{{- range where (where .Site.RegularPages "Type" "in" (slice "article" "guide")) "_build.List" "!=" "false" -}}
+{{- range where (where .Site.RegularPages "Type" "in" (slice "article" "guide" "video")) "_build.List" "!=" "false" -}}
     {{- $.Scratch.Add "index" (dict "date" .Date 
                                     "type" (.Type | singularize | title) 
                                     "title" (.Title | title | truncate 100)
