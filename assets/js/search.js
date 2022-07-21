@@ -36,7 +36,6 @@ function populateResults(results) {
     var searchResultTemplate = document.getElementById("search-result-template");
 
     results.forEach(function (result, key) {
-        console.log(result);
         var searchResultRoot = searchResultTemplate.content.cloneNode(true);
         var typeNode = searchResultRoot.getElementById("search-result-type") ?? null;
         var dateNode = searchResultRoot.getElementById("search-result-date") ?? null;
@@ -107,7 +106,7 @@ function buildSearchQuery(){
     
     if(tagFilters.length > 0)
         searchFilters.push(convertArrayToOrSearch("tags", tagFilters));
-
+    
 	return {$and: searchFilters.filter(n => n)};
 }
 function convertArrayToOrSearch(label, arr){
@@ -149,8 +148,8 @@ var fuseOptions = {
 };
 
 var searchQuery = buildSearchQuery();
-if(searchQuery === null){
-	document.getElementById('search-results').innerHTML = '<p class="search-results-empty">Please enter a word or phrase above, or see <a href="/tags/">all tags</a>.</p>';
+if(searchQuery === null || searchQuery.$and.length < 1){
+	document.location = "/";
 }else{
 	search(searchQuery);
 }
