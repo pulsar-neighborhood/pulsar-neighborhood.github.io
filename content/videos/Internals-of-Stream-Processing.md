@@ -1,9 +1,9 @@
 ---
-title: "[Video] Internals of Stream Processing"
+title: "Internals of Stream Processing"
 date: 2021-12-30T15:36:15-05:00
 draft: false
 weight: 100
-type: article
+type: video
 showtoc: true
 categories:  # must be lowercase shishkabob
     - pulsar-architecture
