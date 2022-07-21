@@ -78,19 +78,23 @@
           <li><input class="form-check-input" type="checkbox" value="" id="300"  onclick="toggleFilter(filterOptions.levelFilters, this.id)"><label class="form-check-label" for="300">&nbsp;Advanced (300)</label></li>
         </ul>
       </div>
-      <div class="row no-gutters">
-        <div class="col-12">
-          <h4>Category</h4>
-          <ul>
-            {{ range $categories }}
-              {{ $foramttedTerm := .Term | replaceRE "[.]" "_" | urlize}}
-              <li>
-                <input class="form-check-input" type="checkbox" value="" id="{{ $foramttedTerm }}"  onclick="toggleFilter(filterOptions.categoryFilters, this.id)">
-                  <label class="form-check-label" for="{{ $foramttedTerm }}">&nbsp;{{.Term | humanize | title }} [{{len .Pages}}]</label>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
+      <div class="col-12 mb-1">
+        <h4>Category</h4>
+        <ul>
+          {{ range $categories }}
+            {{ $foramttedTerm := .Term | replaceRE "[.]" "_" | urlize}}
+            <li>
+              <input class="form-check-input" type="checkbox" value="" id="{{ $foramttedTerm }}"  onclick="toggleFilter(filterOptions.categoryFilters, this.id)">
+                <label class="form-check-label" for="{{ $foramttedTerm }}">&nbsp;{{.Term | humanize | title }} [{{len .Pages}}]</label>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-12">
+        <h4>View All</h4>
+        <div class="mt-1 pb-1"><a href="/articles">Articles</a>
+          &nbsp;|&nbsp;<a href="/guides">Guides</a>
+          &nbsp;|&nbsp;<a href="/videos">Videos</a></div>
       </div>
     </div>
   </div>
