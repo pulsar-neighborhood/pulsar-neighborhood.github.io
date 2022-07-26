@@ -26,11 +26,15 @@ imgUrl:
 author:
     name: Hellmar Becker
     imgUrl:
+meta:
+    description: Apache Druid is a great database for event analytics. Druid connects natively to various event streaming systems like Kafka & AWS Kinesis. Read to find out more.
+    keywords:
+        - apache druid
 ---
 
 This blog post originally appeared on [blog.hellmar-becker.de](https://blog.hellmar-becker.de/2022/04/25/integrating-apache-druid-with-apache-pulsar/)
 
-![2022-04-25-01-banner](https://user-images.githubusercontent.com/1042872/168392825-24f2ef83-c646-46dc-a5e5-c20eb7f7f0c5.png)
+![Pulsar and Druid banner](https://user-images.githubusercontent.com/1042872/168392825-24f2ef83-c646-46dc-a5e5-c20eb7f7f0c5.png)
 
 With companies adopting the [event streaming pattern](https://medium.com/capital-one-tech/event-streaming-an-additional-architectural-style-to-supplement-api-design-703c4f801722), analytics has to become more "realtime" too. A great database for event analytics is [Apache Druid](https://druid.apache.org/). Druid connects natively to various event streaming systems such as Kafka and AWS Kinesis.
 
@@ -164,7 +168,7 @@ This works fine. (Side note: `kcat` needs Kafka transactions enabled, too!)
 ### Ingesting Pulsar Data into Druid
 Let’s try if we can connect to Pulsar from the Druid console! Start a new ingestion, choose Kafka and enter the connection detail just like you would for Kafka:
 
-![2022-04-25-02-druid](https://user-images.githubusercontent.com/1042872/168396156-6449d29b-2b67-4600-b45b-1784c194d065.jpeg)
+![Pulsar Druid output](https://user-images.githubusercontent.com/1042872/168396156-6449d29b-2b67-4600-b45b-1784c194d065.jpeg)
 
 And from here it’s just [standard steps to ingest data](https://druid.apache.org/docs/0.22.1/tutorials/index.html#step-4-load-data)!
 

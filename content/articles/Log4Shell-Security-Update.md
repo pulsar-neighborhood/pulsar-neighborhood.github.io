@@ -18,6 +18,10 @@ imgUrl: https://user-images.githubusercontent.com/1042872/153687998-4532d5b6-252
 author:
     name: Aaron Williams
     imgUrl:
+meta:
+    description: A severe RCE 0-day exploit found in the Java library log4j that when used, results in a Remote Code Execution (RCE). Read more to find out about the exploit.
+    keywords:
+        - Log4Shell Security Update
 ---
 
 Image Credit: LunaSec
@@ -31,7 +35,7 @@ That is the bad news, the good news is that since the Apache Pulsar Neighborhood
 
 We have not heard of any exploits affecting Apache Pulsar, but we highly recommend that you follow the instructions above and update your systems and then install the latest versions of Apache Pulsar once they are released.
 
-By the way, a little side note on how fast all of this was completed. At time=0 (about 10 pm EST) Log4j released 2.15 and announced the vulnerability. Neighbor and Apache Pulsar Committer ZhangJian He had created a [PR ](https://github.com/apache/pulsar/pull/13226#issuecomment-990643946)for the latest version about 2 hours later. It was soon reviewed and suggestions made from other Neighbors in Japan, China, Finland, Italy, and the US. By t=+7 hours, workarounds were created and the email was released. About this time the vulnerability was given its [number](https://nvd.nist.gov/vuln/detail/CVE-2021-44228).
+By the way, a little side note on how fast all of this was completed. At time=0 (about 10 pm EST) Log4j released 2.15 and announced the vulnerability. Neighbor and Apache Pulsar Committer ZhangJian He had created a [PR](https://github.com/apache/pulsar/pull/13226#issuecomment-990643946)for the latest version about 2 hours later. It was soon reviewed and suggestions made from other Neighbors in Japan, China, Finland, Italy, and the US. By t=+7 hours, workarounds were created and the email was released. About this time the vulnerability was given its [number](https://nvd.nist.gov/vuln/detail/CVE-2021-44228).
 
 To everyone who helped with this and for doing it so quickly, on behalf of all your Neighbors, a big THANK YOU for your hard work!
 

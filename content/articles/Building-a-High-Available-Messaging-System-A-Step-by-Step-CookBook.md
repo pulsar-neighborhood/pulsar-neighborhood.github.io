@@ -15,6 +15,8 @@ imgUrl:
 author:
     name: Ivan Garcia
     imgUrl:
+meta:
+    description: This article will guide you step by step to deploy a Pulsar instance with one cluster to extend the deployment further to build high available messaging system.
 ---
 
 ### A step by step cookbook

@@ -14,6 +14,8 @@ twitch:
 email:
 other:
 showtoc: false
+meta:
+    description: Enrico Olivelli is a member of Apache Pulsar, Sr. Software Engineer, a PMC ZooKeeper & BookKeeper projects & has multiple talks at Neighborhood Meetups
 ---
 
 Enrico is a PMC member of Apache Pulsar, Sr. Software Engineer at DataStax, PMC for Apache ZooKeeper & BookKeeper projects, Committer for Apache Maven, and PMC Chair of Apache Curator. Enrico has done multiple talks at Neighborhood Meetups, plus outside talks at various JUGs.

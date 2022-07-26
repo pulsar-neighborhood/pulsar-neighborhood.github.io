@@ -14,6 +14,8 @@ twitch:
 email:
 other: https://sigmaxai.com/
 showtoc: false
+meta:
+    description: Robert is CEO & Founder of SigmaX, previously the CTO Federal of Cloudera. Served as a technical thought leader at Sun Microsystems with many publications.
 ---
 
 Robert is the CEO and Founder of [SigmaX.ai](https://sigmaxai.com/) and previously was the CTO Federal of Cloudera and served as a technical thought leader at Sun Microsystems and has published many scientific peer-reviewed papers.

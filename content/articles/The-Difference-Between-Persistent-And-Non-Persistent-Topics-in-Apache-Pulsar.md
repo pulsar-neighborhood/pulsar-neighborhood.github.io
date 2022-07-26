@@ -16,6 +16,8 @@ imgUrl: https://user-images.githubusercontent.com/16946028/175392241-c8347127-d3
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Topic in Apache Pulsar is a logical entity that producers write messages to & consumers read from. Read more to know about Persistent & Non-Persistent topics.
 ---
 
 A topic in Apache Pulsar is a logical entity that producers write messages/events to, and consumers read messages/events from. A topic is a critical concept in any publish-subscribe (pub-sub), pattern-based architecture.
@@ -24,7 +26,7 @@ Conceptually, Pulsar topics are similar to online news feeds, where news station
 
 This article will explore what Pulsar topics are, the differences between persistent and non-persistent topics in Apache Pulsar, and review some example use cases for both methods.
 
-### What are Pulsar Topics, and How Do They Work?
+## What are Pulsar Topics, and How Do They Work?
 
 Pulsar topics are similar to database tables. However, by default they don’t have constraints like data types. It’s a good practice to define a schema/type for the message received on each topic level to guarantee a smoother processing of messages by consumers, as the consumers know what form of messages are expected from the producers. To facilitate this schema definition capability, Apache Pulsar provides a [schema registry](https://pulsar.apache.org/docs/next/schema-get-started).
 
@@ -44,7 +46,7 @@ A persistent topic stores received messages. They’re stored on one or more dis
 
 So, where do the incoming messages in persistent topics get stored? The answer is in BookKeeper nodes (bookies). Below is a diagram that shows how a message flows through the Apache Pulsar cluster and gets stored in a persistent topic using bookies.
 
-![image1](https://user-images.githubusercontent.com/16946028/175391962-642b9c70-57e4-45fa-b05e-6dfb8fc5eece.png)
+![apache pulsar persistent topics](https://user-images.githubusercontent.com/16946028/175391962-642b9c70-57e4-45fa-b05e-6dfb8fc5eece.png)
 
 An application generates messages (Producer), and gets to the broker via a Pulsar proxy. The pulsar proxy layer abstracts away the pulsar cluster from client applications, acting as a safety layer as well. The Pulsar proxy node knows how to communicate with Pulsar brokers and forwards the incoming messages to the broker.
 

@@ -19,6 +19,8 @@ imgUrl: https://user-images.githubusercontent.com/16946028/175392736-555608d6-d5
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Managed Pulsar service options provide capabilities of Apache Pulsar without the need for Pulsar experts. Read to learn what to consider for Managed Pulsar.
 ---
 
 Apache Pulsar combines the best features of a traditional messaging system like Apache Kafka and a queuing system like RabbitMQ. It’s a cloud-native, multi-tenant, high-performance system that performs server-to-server messaging, streaming, and queuing.

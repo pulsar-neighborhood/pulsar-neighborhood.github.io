@@ -24,6 +24,8 @@ imgUrl: https://user-images.githubusercontent.com/16946028/176909975-6cd31a0d-f5
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Schema is one of the most critical components of Apache Pulsar, open-source distributed system. Read more & explore the role of schemas in data streaming.
 ---
 
 Today, most businesses are data-driven and rely heavily on fast insights generated from that data. Traditionally, organizations embraced the approach of storing and processing their data in one central location or data center, organizing this raw data based on attributes such as primary keys, IDs, types, and maximum length. While this approach was once sufficient, it doesn’t hold its own as your events move closer to the edge than your database.

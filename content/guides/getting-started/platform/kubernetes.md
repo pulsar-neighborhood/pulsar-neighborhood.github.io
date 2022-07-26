@@ -5,6 +5,10 @@ draft: false
 summary: This guide is for getting started using the Pulsar on Kubernetes
 tags:
     - kubernetes
+meta:
+    description: Learn how to get started with Kubernetes but to run the binaries you need either the Java Runtime Environment(JRE) or Java Developer Kit(JDK) version 8.
+    keywords:
+      - kubernetes
 ---
 
 This guide is for getting started using the Pulsar on Kubernetes.

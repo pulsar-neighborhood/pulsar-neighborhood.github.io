@@ -24,6 +24,10 @@ imgUrl: https://user-images.githubusercontent.com/16946028/168359869-21a4d6b6-b7
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Event streaming receives insights based on most up-to-date data. Event streaming uses data points that emerge from a system & creates data in near real-time.
+    keywords:
+        - event streaming
 ---
 
 A few years back, data used to be collected, stored, and later on analyzed to get meaningful insights. In fact, businesses that did this were seen as data-guided. But today, data collection, analysis, and storage all run concurrently. Static applications that require regular refreshing to understand the current state of events are becoming a thing of the past. We want the latest observed data to be reflected in the insights and messages we’re receiving.

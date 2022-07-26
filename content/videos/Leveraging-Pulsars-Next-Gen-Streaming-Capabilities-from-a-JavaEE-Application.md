@@ -17,6 +17,8 @@ imgUrl:
 author:
     name: Apache Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Java Messaging Service was used as API for messaging systems. The messaging ecosystem is moving towards the next generation of streaming like Apache Pulsar.
 ---
 
 For a long time Java Messaging Service has been the API to handle messaging systems in the Java World, and now the messaging ecosystem is moving towards the next generation of streaming services like Apache Pulsar.

@@ -23,6 +23,8 @@ imgUrl: https://user-images.githubusercontent.com/16946028/163627115-5ecb2834-3c
 author:
     name: Pulsar Neighborhood
     imgUrl: 
+meta:
+    description: In this article, we’ll examine how Pulsar Schemas work and contrast them with schemaless systems to determine the best approach. We’ll also demonstrate how to use Java clients with Pulsar.
 ---
 
 Apache Pulsar is a cloud-native, open-source distributed streaming and messaging platform. Yahoo designed the system to fulfill the need for durability and scalability. One of its unique and critical components is the [Apache Pulsar Schema](https://pulsar.apache.org/docs/en/schema-get-started/).

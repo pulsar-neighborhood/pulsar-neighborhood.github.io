@@ -24,6 +24,10 @@ imgUrl: https://user-images.githubusercontent.com/16946028/176910739-60d5f639-6c
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: RabbitMQ is an open-source, free, and flexible message queuing system, RabbitMQ. Read more to learn and find out the main differences with Apache Pulsar.
+    keywords:
+        - rabbitmq
 ---
 
 Yahoo! developed Apache Pulsar, an enterprise-level, publish-subscribe messaging system. Before it was open source, Yahoo! Mail, Yahoo! Finance, Yahoo! Sports, Flickr, the Gemini Ads platform, and the distributed key-value store, Sherpa, were all powered by Apache Pulsar.
@@ -48,7 +52,7 @@ Another key distinction is that Apache Pulsar manages and controls a significant
 
 ### Apache Pulsar
 
-![image3](https://user-images.githubusercontent.com/16946028/176910996-3cb25a56-5935-4a33-868b-56c3d471fe9d.png)
+![Apache Pulsar Architecture](https://user-images.githubusercontent.com/16946028/176910996-3cb25a56-5935-4a33-868b-56c3d471fe9d.png)
 (Source - [Apache Pulsar](https://pulsar.apache.org/docs/concepts-architecture-overview/))
 
 Apache Pulsar’s architecture consists of clients like producers and consumers. Producers send messages to a broker’s topic. This broker stores the messages in the order they were sent.
@@ -59,7 +63,7 @@ The crucial part of Apache Pulsar architecture is a Pulsar cluster. Several Puls
 
 ### RabbitMQ
 
-![image2](https://user-images.githubusercontent.com/16946028/176911047-b4e6ee3e-6488-4876-aa1a-c88fe58c88df.jpg)
+![RabbitMQ Producer Consumer](https://user-images.githubusercontent.com/16946028/176911047-b4e6ee3e-6488-4876-aa1a-c88fe58c88df.jpg)
 
 The producer, broker, exchange, queue, and consumer are the main components of RabbitMQ’s architecture. Producers are client apps that create and transmit messages to the broker. Producers generate the routing keys and send messages to exchange rather than a queue, where they are immediately broadcasted.
 

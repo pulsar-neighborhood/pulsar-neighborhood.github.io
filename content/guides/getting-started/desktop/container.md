@@ -5,6 +5,8 @@ draft: false
 summary: Getting started with Pulsar using containers on your desktop
 tags:
     - container
+meta:
+    description: This is a guide to starting with containers, but you need virtualization enabled on desktop & container runtime.  Docker and containerd are a great choice.
 ---
 
 ## Prerequisites

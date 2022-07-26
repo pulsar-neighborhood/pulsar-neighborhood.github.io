@@ -2,11 +2,13 @@
 title: "About Pulsar Neighborhood"
 showtoc: false
 showNewsletterSignup: true
+meta:
+    description: Pulsar Neighborhood is an Apache Pulsar users & developers community, with how to guides & experience sharing via interactive content such as videos, & blogs.
 ---
 
 ## Mission Statement
 
-The Pulsar Neighborhood community enables Apache Pulsar users and developers to learn about Pulsar and how to use it in their professional lives; via useful, interactive content (including blogs, Meetups, and YouTube videos). This is all driven by a passionate, vendor neutral, and inclusive community of members.
+The [Pulsar Neighborhood community](index.html) enables [Apache Pulsar](https://pulsar.apache.org) users and developers to learn about Pulsar and how to use it in their professional lives; via useful, interactive content (including blogs, Meetups, and YouTube videos). This is all driven by a passionate, vendor neutral, and inclusive community of members.
 
 ### What We Are
 

@@ -17,6 +17,10 @@ imgUrl: https://user-images.githubusercontent.com/16946028/175393332-fbd80156-a0
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: REST and event-driven architectures rule different computer systems to communicate and create reliable APIs. Read more to learn about the benefits of REST architecture.
+    keywords:
+        - rest architecture
 ---
 
 Building for an improved customer experience should be at the forefront of every organization’s mind during development. Improving engagement and customer information is one way of ensuring an enhanced customer experience.
@@ -46,7 +50,7 @@ In REST architecture, the server retains no information from a session, and the 
 
 Other guiding principles of REST include its ability to cache information and its layered system, which helps promote system scalability.
 
-![image1](https://user-images.githubusercontent.com/16946028/175393212-e5d354a9-f2c4-4922-be7f-9e6a1c16f044.png)
+![REST architecture](https://user-images.githubusercontent.com/16946028/175393212-e5d354a9-f2c4-4922-be7f-9e6a1c16f044.png)
 
 As a request-based architecture, a single orchestrator coordinates all interactions between microservices, introducing a single failure point.
 
