@@ -14,6 +14,8 @@ twitch:
 email:
 other: https://sessionize.com/shivjijha/
 showtoc: false
+meta:
+    description: Shiv is an architect at Nutanix & runs the stream platforms team to support multiple products. Shiv is a Pulsar geek & contributes to code, docs, and blogs.
 ---
 
-Shiv is a an architect at Nutanix and runs the stream platforms team to support multiple Nutanix products. Shiv is a Pulsar geek who contributes code, docs, blogs and talks to the Pulsar codebase and community. Shiv loves spending time on data stores (databases, streams, analytics etc), is an avid reader (tech, fiction, sports, economics, leadership to name a few) and is always looking at ways to simplify software architectures.
+Shiv is an architect at Nutanix and runs the stream platforms team to support multiple Nutanix products. Shiv is a Pulsar geek who contributes code, docs, blogs and talks to the Pulsar codebase and community. Shiv loves spending time on data stores (databases, streams, analytics etc), is an avid reader (tech, fiction, sports, economics, leadership to name a few) and is always looking at ways to simplify software architectures.

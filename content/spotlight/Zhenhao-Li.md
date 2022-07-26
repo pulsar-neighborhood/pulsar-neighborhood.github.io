@@ -14,6 +14,8 @@ twitch:
 email:
 other: https://www.meetup.com/netherlands-apache-pulsar-meetup/
 showtoc: false
+meta:
+    description: Zhenhao Li, Senior Data Engineer with the Royal Schiphol Group & founder of Natural Transformation B.V. also the organizer of Amsterdam Neighborhood Meetup.
 ---
 
 Zhenhao is a Senior Data Engineer with the Royal Schiphol Group and is the founder of Natural Transformation B.V. He is also the organizer of [Amsterdam Neighborhood Meetup](https://www.meetup.com/netherlands-apache-pulsar-meetup/).

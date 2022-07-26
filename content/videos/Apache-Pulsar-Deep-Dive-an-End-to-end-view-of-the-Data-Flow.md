@@ -17,6 +17,8 @@ imgUrl:
 author:
     name: Apache Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Check out the video tutorial by Enrico Olivelli, guiding us on how data moves from the Producer to the Consumer. Enrico is a member of the Apache Pulsar PMC.
 ---
 
 Enrico Olivelli gives us a tour of how data moves from the Producer to the Consumer. [Client -- to the proxy, broker, bookie and then all the way back to the client on the consumer side]

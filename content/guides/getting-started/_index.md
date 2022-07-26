@@ -14,6 +14,8 @@ cascade:
     showNewsletterSignup: false
     categories:
         - getting-started
+meta:
+    description: Here is a selection of how to get started guides, noting that these guides are for getting started not going to production. Choose your adventure below.
 ---
 
 Choose your adventure below. Remember, all these guides are for getting started not going to production. Use as directed.

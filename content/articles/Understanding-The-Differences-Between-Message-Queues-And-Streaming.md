@@ -21,6 +21,8 @@ imgUrl: https://user-images.githubusercontent.com/16946028/159678986-ccaf6b62-e9
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Message queues & streaming are both valid solutions for event-based architectures depending on the nature of the application workload & the foreseeable outcome.
 ---
 
 Almost any application that requires real-time or near-real-time data processing benefits from having a message queue or streaming data processing component in its architecture. Online food ordering apps, e-commerce sites, media streaming services, and online gaming are straightforward examples. But weather apps, smart cars, health status apps with smartwatch technology, or anything Internet of things (IoT) typically rely on a message queue or streaming engine as well.

@@ -14,6 +14,8 @@ twitch:
 email:
 other:
 showtoc: false
+meta:
+    description: Jowanza is VP of Engineering with Finicity, a Mastercard Company, and the author of “Mastering Apache Pulsar”. He is also a speaker at Neighborhood meetups.
 ---
 
 Jowanza is VP of Engineering with Finicity, a Mastercard Company and is the author of the recently released book "[Mastering Apache Pulsar](https://www.oreilly.com/library/view/mastering-apache-pulsar/9781492084891/)" from O’Reilly Media. He has also spoken at our Neighborhood meetup.

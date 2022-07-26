@@ -26,6 +26,8 @@ imgUrl: https://user-images.githubusercontent.com/16946028/168374625-c69691a5-42
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Apache Pulsar & Apache Kafka use partitions in a similar fashion, but there are subtle differences in how the underlying technology. Read more to find out.
 ---
 
 The purpose of stream processing platforms is to enable real-time, high-throughput data processing. In addition, decoupling the system that produces the data from the system that processes it helps us meet scaling demands.

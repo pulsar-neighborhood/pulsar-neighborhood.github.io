@@ -8,7 +8,7 @@
   <header class="mb-3">
     <div class="pb-2">
       {{if .Params.imgUrl}}
-      <img src="{{.Params.imgUrl}}" alt="" class="img-fluid" style="max-width:85%;max-height:200px" />
+      <img src="{{.Params.imgUrl}}" alt="{{ .Title }}" class="img-fluid" style="max-width:85%;max-height:200px" />
       {{end}}
     </div>
     <h1>{{ .Title }}</h1>
@@ -68,11 +68,18 @@
   "@context": "http://schema.org",
   "@type": "WebPage",
   "name": "Pulsar Neighborhood - {{ .Title }}",
+  {{ if .Params.meta.description }}
+  "description": "{{ .Params.meta.description }}",
+  {{ else }}
   "description": "{{ .Params.summary }}",
+  {{ end }}
   "publisher": {
       "@type": "Organization",
       "name": "Pulsar Neighborhood"
-  }
+  },
+  {{ if .Params.meta.keywords }}
+  "keywords": [{{ delimit .Params.meta.keywords ", " }}],
+  {{ end }}
 },
 {
   "@context":"http://schema.org",
@@ -95,6 +102,9 @@
   },
   "mainEntityOfPage": "True",
   "articleSection": [{{ delimit .Params.categories ", " }}],
+  {{ if .Params.meta.keywords }}
+  "keywords": [{{ delimit .Params.meta.keywords ", " }}],
+  {{ end }}
   "articleBody": "{{ .Content }}"
 }
 {{ end }}

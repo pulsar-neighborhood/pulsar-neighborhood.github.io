@@ -26,6 +26,8 @@ imgUrl: https://user-images.githubusercontent.com/16946028/168373605-fbf250c5-0f
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: There is an exponential increase in the number of devices included in the IoT in the global market. Learn more about how to avoid the internet with Pulsar.
 ---
 
 There are no upsides to lengthy trips around the Internet for end users. Apart from reducing the quality of experience (QoE), it affects timely business decision-making. When data travels across the Internet, latency and lack of bandwidth become two significant problems for performance-sensitive devices.

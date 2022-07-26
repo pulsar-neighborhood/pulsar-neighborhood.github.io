@@ -21,6 +21,8 @@ imgUrl: https://user-images.githubusercontent.com/16946028/163627966-dc0b4e18-d7
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: In this article, we'll evaluate the features, architectures, performance, and use cases of Apache Pulsar versus Kafka, to help you decide which is the better solution for you.
 ---
 
 In today’s modern age of social media and online interconnectivity, real-time information relies on efficient systems that quickly and consistently distribute data to a wide range of consumers.

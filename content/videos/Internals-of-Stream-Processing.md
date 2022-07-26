@@ -15,6 +15,8 @@ imgUrl:
 author:
     name: Apache Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Stream Processing Systems are an integral part of modern data-intensive companies where they are more commonly employed for much more than data analytics.
 ---
 
 Stream Processing Systems (SPSs) are an integral part of modern data-intensive companies. In a world where streams are becoming king, they are commonly employed for much more than data analytics. Yet, most of developers only use them and have never dove deep into the internals of the system.

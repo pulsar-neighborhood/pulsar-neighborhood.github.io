@@ -24,6 +24,8 @@ imgUrl: https://user-images.githubusercontent.com/16946028/176910575-a0a813bc-1f
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Multi-tenancy is a software architecture that allows a single instance of running software to serve multiple tenants, customers, or teams within an organization.
 ---
 
 Multi-tenancy is a software architecture that allows a single instance of running software to serve multiple tenants, customers, or teams within an organization. In this context, a tenant represents a group of users and a multi-tenant software platform represents multiple users of an organization — or several organizations — sharing system resources of a common software platform. Thus, multi-tenancy falls under the shared design principle.
@@ -43,7 +45,7 @@ In Apache Pulsar, an instance can have multiple clusters. Each cluster consists 
 
 To help understand the concept of multi-tenancy in Apache Pulsar, take a look at the following diagram.
 
-![image2](https://user-images.githubusercontent.com/16946028/176910509-3b14bc4f-fba4-4341-9ac0-49194cc1e48d.png)
+![Pulsar Multi Tenancy](https://user-images.githubusercontent.com/16946028/176910509-3b14bc4f-fba4-4341-9ac0-49194cc1e48d.png)
 
 * All Cluster 1 components are purple and Cluster 2 components are green.
 * All components/resources related to Tenant 1 are **bolded**.

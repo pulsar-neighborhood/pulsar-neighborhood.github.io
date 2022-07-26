@@ -5,6 +5,8 @@ draft: false
 summary: This guide is for getting started using the Pulsar binaries. Lets do this!
 tags:
     - binaries
+meta:
+    description: This guide is for getting started using the Pulsar binaries, To run the binaries you need either the Java Runtime Environment or Java Developer Kit version 8.
 ---
 
 This guide is for getting started using the Pulsar binaries. Lets do this!

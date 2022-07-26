@@ -15,6 +15,8 @@ imgUrl:
 author:
     name: Apache Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Meet Zeke Dean, who will walk us through how to run Apache Pulsar in multiple regions. Watch the interactive video to learn more about running Apache Pulsar.
 ---
 
 Zeke Dean walks us through how to run Apache Pulsar in multiple regions

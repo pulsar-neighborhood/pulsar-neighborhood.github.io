@@ -9,3 +9,22 @@
     </article>
   </div>
 {{ end }}
+{{ define "jsonLd" }}
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "Pulsar Neighborhood - {{ .Title }}",
+  {{ if .Params.meta.description }}
+  "description": "{{ .Params.meta.description }}",
+  {{ else }}
+  "description": "{{ .Params.summary }}",
+  {{ end }}
+  "publisher": {
+      "@type": "Organization",
+      "name": "Pulsar Neighborhood"
+  },
+  {{ if .Params.meta.keywords }}
+  "keywords": [{{ delimit .Params.meta.keywords ", " }}],
+  {{ end }}
+}
+{{ end }}

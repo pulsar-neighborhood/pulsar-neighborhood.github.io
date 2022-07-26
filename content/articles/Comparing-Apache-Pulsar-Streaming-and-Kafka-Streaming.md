@@ -24,6 +24,10 @@ imgUrl: https://user-images.githubusercontent.com/16946028/176911260-f6072ced-ce
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Kafka is structured as a set of servers, communicate over TCP using a binary protocol. Find out the main difference between Apache pulsar and Kafka streaming.
+    keywords:
+        - kafka streaming
 ---
 
 The distributed architectures and microservices of the average application often require massive flows of data that needs to be processed in real time. This demand for data-driven and scalable applications created an industry-wide push to create more capable event streaming solutions. Among these solutions are Pulsar and Kafka, which different companies initially developed before being open-sourced and adopted by [Apache](https://www.apache.org/).
@@ -115,7 +119,7 @@ In theory, you could develop a stream processing application around a chain of c
 
 Kafka Streams implements its parallelism by sectioning input streams and treating them as separate logical units for processing:
 
-![image1](https://user-images.githubusercontent.com/16946028/176911506-41bcfef4-52fe-4871-9e3e-08baf23464d5.png)
+![Kafka Streaming](https://user-images.githubusercontent.com/16946028/176911506-41bcfef4-52fe-4871-9e3e-08baf23464d5.png)
 
 * Each Kafka message maps to a data record.
 * Each Kafka topic partition maps to a stream partition.
@@ -194,7 +198,7 @@ Functions is a much lighter implementation of stream processing than Kafka Strea
 
 ## Conclusion
 
-Apache Kafka and Apache Pulsar both offer event streaming and stream processing capabilities, but they approach the task in different ways.
+Apache Kafka and Apache Pulsar both offer event streaming and stream processing capabilities, but they [approach the task in different ways](https://www.pulsar-neighborhood.io/articles/apache-pulsar-versus-apache-kafka/).
 
 Kafka’s replica-based topic storage, massive parallelization potential, and powerful stream processing capabilities make it a strong choice for systems that require high resilience and reliable storage but rely on simpler messaging patterns.
 

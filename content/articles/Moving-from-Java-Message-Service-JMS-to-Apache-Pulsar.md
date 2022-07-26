@@ -26,6 +26,10 @@ imgUrl: https://user-images.githubusercontent.com/16946028/168343481-a852dd84-ff
 author:
     name: Pulsar Neighborhood
     imgUrl: 
+meta:
+    description: JMS systems fail to provide solutions for modern business challenges while Pulsar can improve & modernize legacy JMS infrastructure. Read to find out more.
+    keywords:
+        - JMS
 ---
 
 Many mission-critical business applications rely on Java Message Service ([JMS](https://jcp.org/en/jsr/detail?id=343)), a popular enterprise messaging API. Enterprise messaging systems provide a way to create, send, receive, and read messages in an application, and JMS defines a common way for Java programs to interact with messaging systems.

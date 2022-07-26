@@ -40,6 +40,23 @@
 {{ end }}
 {{ define "jsonLd"}}
 {
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "Pulsar Neighborhood - {{ .Title }}",
+  {{ if .Params.meta.description }}
+  "description": "{{ .Params.meta.description }}",
+  {{ else }}
+  "description": "{{ .Params.summary }}",
+  {{ end }}
+  "publisher": {
+      "@type": "Organization",
+      "name": "Pulsar Neighborhood"
+  },
+  {{ if .Params.meta.keywords }}
+  "keywords": [{{ delimit .Params.meta.keywords ", " }}],
+  {{ end }}
+},
+{
   "@context":"http://schema.org",
   "@type": "TechArticle",
   "headline": "{{ .Title }}",
@@ -52,12 +69,19 @@
   "dateCreated": "{{ .Params.date }}",
   "datePublished": "{{ .Params.date }}",
   "dateModified": "{{ .Params.date }}",
+  {{ if .Params.meta.description }}
+  "description": "{{ .Params.meta.description }}",
+  {{ else }}
   "description": "{{ .Params.summary }}",
+  {{ end }}
   "author": {
       "@type": "Person",
       "name": "{{ default "Pulsar Neighborhood" .Params.author.name }}",
       "url": "https://www.pulsar-neighborhood.io"
   },
+  {{ if .Params.meta.keywords }}
+  "keywords": [{{ delimit .Params.meta.keywords ", " }}],
+  {{ end }}
   "articleBody": "{{ .Content }}"
 }
 {{ end }}

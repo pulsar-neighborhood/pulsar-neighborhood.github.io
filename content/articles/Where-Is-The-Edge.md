@@ -15,6 +15,8 @@ imgUrl: https://user-images.githubusercontent.com/16946028/176909786-d8966dcf-bd
 author:
     name: Pulsar Neighborhood
     imgUrl:
+meta:
+    description: Explore how performance-sensitive applications and devices benefit from the edge, and how you can use Apache Pulsar to support data streaming at the edge.
 ---
 
 Although cloud computing has been the topic of conversation for the past decade, edge computing has just recently taken off. The pressing need for high-performant, cost-efficient, and decentralized infrastructure has shifted the focus away from the databases and the cloud. Instead, you can turn to the edge, which solves two fundamental problems that persist in the cloud: network dependency and data privacy.
