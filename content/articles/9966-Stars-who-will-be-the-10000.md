@@ -1,7 +1,7 @@
 ---
 title: "9,966 Stars, who will be the 10,000?"
 date: 2021-11-24T15:57:19-05:00
-draft: false
+draft: true
 weight: 100
 type: article
 showtoc: true

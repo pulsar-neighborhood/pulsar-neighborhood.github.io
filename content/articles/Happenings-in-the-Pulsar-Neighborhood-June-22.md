@@ -1,7 +1,7 @@
 ---
 title: "Happenings in the Pulsar Neighborhood June '22"
 date: 2022-06-16T16:29:32-04:00
-draft: false
+draft: true
 weight: 100
 type: article
 showtoc: true

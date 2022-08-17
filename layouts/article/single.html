@@ -12,6 +12,15 @@
       {{end}}
     </div>
     <h1>{{ .Title }}</h1>
+    {{ if .Params.categories }}
+      <div class="row no-gutters">
+        <div class="col col-auto mr-1">Categories: </div>
+        {{ $itemCnt := (add (len .Params.categories) -1)}}
+        {{ range $key, $category := .Params.categories }}
+          <div class="col col-auto"><a class="text-decoration-none" href="/categories/{{ $category }}">{{$category | humanize | title }}</a>{{ if lt $key $itemCnt }},&nbsp;{{ end }}</div>
+        {{ end }}
+      </div>
+    {{ end }}
   </header>
   <div class="row mb-3 no-gutters border-top border-bottom">
     <div class="col-2">
