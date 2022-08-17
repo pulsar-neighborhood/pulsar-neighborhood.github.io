@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<div class="container">
+    <header class="mb-3">
+    <h1><a href="/">Home</a>&nbsp;/&nbsp;{{ .Title | humanize | title }}</h1>
+    </header>
+
+    {{ range .Pages }}
+        <div>
+            <div class="row">
+                <div class="col-auto">{{ .Date.Format "January 2, 2006" }}</div>
+                <div class="col-auto">
+                    <div class="badge badge-pill border border-muted">
+                        {{ (.Type | singularize | title) }}
+                    </div>
+                    <div class="pl-1 badge badge-pill  border border-muted">
+                        <span class="text-muted small">level </span>{{ .Params.level }}
+                    </div>
+                </div>
+                <div class="col">
+                    <h3><a class="" href="{{ .Permalink }}">{{ (.Title | title | truncate 100) }}</a></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 text-muted mb-2">{{ (.Params.summary | truncate 400) }}</div>
+            </div>
+        </div>
+    {{ end }}
+</div>
+
+{{ end }}

@@ -5,14 +5,10 @@ title: "Pulsar Neighborhood"
 outputs:
   home:
     - HTML
-    - JSON
     - RSS
   page:
     - HTML
     - RSS
-  search:
-    - HTML
-    - JSON
   section:
     - HTML
 
@@ -46,6 +42,5 @@ sitemap:
   filename: sitemap.xml
 
 enableRobotsTXT: true
-enableEmoji: true
 languageCode: en-us
 disqusShortname: pulsar-neighborhood
