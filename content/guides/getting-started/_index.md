@@ -11,7 +11,6 @@ cascade:
         list: false
     type: guide
     level: 100
-    showNewsletterSignup: false
     categories:
         - getting-started
 meta:

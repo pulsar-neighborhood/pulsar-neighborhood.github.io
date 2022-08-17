@@ -1,7 +1,6 @@
 ---
 title: "About Pulsar Neighborhood"
 showtoc: false
-showNewsletterSignup: true
 meta:
     description: Pulsar Neighborhood is an Apache Pulsar users & developers community, with how to guides & experience sharing via interactive content such as videos, & blogs.
 ---
