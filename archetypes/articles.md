@@ -26,6 +26,8 @@ imgUrl:
 author:
     name:
     imgUrl:
+meta:
+    description: 
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
